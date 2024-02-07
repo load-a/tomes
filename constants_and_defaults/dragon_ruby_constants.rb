@@ -1,0 +1,3 @@
+SCREEN_WIDTH = 1280
+SCREEN_HEIGHT = 720
+DEFAULT_SPRITESHEET_PATH = 'sprites/misc/simple-mood-16x16.png'
