@@ -1,14 +1,14 @@
 class Dice
 
-	private
+	attr_writer :dice_spread
 
-	def initialize(*dice_as_strings)
+	def initialize(*dice_as_strings) # i.e. '2d4', '1d8', etc...
 		self.dice_spread = dice_as_strings
 	end
 
-	def self.roll_single(dice_as_string)
+	def self.roll_single(die_as_string)
 		total = 0
-		quantity, sides = dice_as_string.downcase.split('d')
+		quantity, sides = die_as_string.downcase.split('d')
 
 		quantity.to_i.times do 
 			total += rand(sides.to_i)+1
@@ -16,8 +16,6 @@ class Dice
 
 		total
 	end
-
-	public
 
 	def self.roll(*dice_as_strings)
 		total = 0
@@ -27,7 +25,5 @@ class Dice
 		
 		total
 	end
-	alias to_i self::roll
-
 
 end

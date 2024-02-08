@@ -70,7 +70,7 @@ EQUAL_SIGN 							= [13,	3]
 GREATER_THAN 						= [14,	3]
 QUESTION_MARK 					= [15,	3]
 
-AT 											= [0,		4]
+AT_SYMBOL 							= [0,		4]
 CAPITAL_A 							= [1,		4]
 CAPITAL_B 							= [2,		4]
 CAPITAL_C 							= [3,		4]

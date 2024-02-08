@@ -4,6 +4,8 @@
 # Note that the order of attributes is important when referencing Cards by their values.
 
 class Card
+	attr_reader :card_attributes
+
 	def initialize(attributes, values)
 
 		@card_attributes = Hash.new(0)
@@ -18,10 +20,8 @@ class Card
 		@card_attributes.to_a
 	end
 
-	def attributes
-		@card_attributes
-	end
-	alias to_h attributes
+	alias attributes card_attributes
+	alias to_h card_attributes
 
 	def to_s
 		output = ""
@@ -36,7 +36,7 @@ class Card
 	end
 
 	def remove_attribute(type)
-		@card_attributes.reject! {|card_type, value| card_type.to_s == type}
+		@card_attributes.reject! {|card_type| card_type.to_s == type}
 	end
 
 	def suit

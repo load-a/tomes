@@ -3,11 +3,11 @@
 # At the vary end is a demonstration of how this class may be used in a CLI Mahjong game.
 
 # WESTERN CARDS
-bike = Deck.new(suits: ["spades", "hearts", "clubs", "diamonds"], values: ['ace', (2..10), 'jack', 'queen', 'king'])
+bike = Deck.new(suits: %w[spades hearts clubs diamonds], values: ['ace', (2..10), 'jack', 'queen', 'king'])
 
 bike.append_deck_attribute('color') { |card| if card.suit == 'diamonds' or card.suit == 'spades' then 'black' else 'red' end }
 
-bike.add_cards(['joker', 'small', 'red'], ['joker', 'big', 'black'])
+bike.add_cards(%w[joker small red], %w[joker big black])
 # Optional Rules:
 # bike.delete_cards! {|card| card.suit == 'joker'}
 # bike.remove_deck_attribute('color')
@@ -23,20 +23,20 @@ bike.add_cards(['joker', 'small', 'red'], ['joker', 'big', 'black'])
 
 
 # HANAFUDA
-hana = Deck.new(suits: ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'], values: ['chaff'] )
+hana = Deck.new(suits: %w[january february march april may june july august september october november december], values: ['chaff'] )
 # NOTE: all of these could be condensed into a single #add_cards call.
-hana.add_cards(['january', 'chaff'], ['january', 'light'], ['january', 'poem'])
-hana.add_cards(['february', 'chaff'], ['february', 'seed'], ['february', 'poem'])
-hana.add_cards(['march', 'chaff'], ['march', 'light'], ['march', 'poem'])
-hana.add_cards(['april', 'chaff'], ['april', 'seed'], ['april', 'poem'])
-hana.add_cards(['may', 'chaff'], ['may', 'seed'], ['may', 'poem'])
-hana.add_cards(['june', 'chaff'], ['june', 'seed'], ['june', 'poem'])
-hana.add_cards(['july', 'chaff'], ['july', 'seed'], ['july', 'poem'])
-hana.add_cards(['august', 'chaff'], ['august', 'light'], ['august', 'seed'])
-hana.add_cards(['september', 'chaff'], ['september', 'seed'], ['september', 'poem'])
-hana.add_cards(['october', 'chaff'], ['october', 'seed'], ['october', 'poem'])
-hana.add_cards(['november', 'seed'], ['november', 'light'], ['november', 'poem'])
-hana.add_cards(['december', 'chaff'], ['december', 'light'], ['december', 'chaff'])
+hana.add_cards(%w[january chaff], %w[january light], %w[january poem])
+hana.add_cards(%w[february chaff], %w[february seed], %w[february poem])
+hana.add_cards(%w[march chaff], %w[march light], %w[march poem])
+hana.add_cards(%w[april chaff], %w[april seed], %w[april poem])
+hana.add_cards(%w[may chaff], %w[may seed], %w[may poem])
+hana.add_cards(%w[june chaff], %w[june seed], %w[june poem])
+hana.add_cards(%w[july chaff], %w[july seed], %w[july poem])
+hana.add_cards(%w[august chaff], %w[august light], %w[august seed])
+hana.add_cards(%w[september chaff], %w[september seed], %w[september poem])
+hana.add_cards(%w[october chaff], %w[october seed], %w[october poem])
+hana.add_cards(%w[november seed], %w[november light], %w[november poem])
+hana.add_cards(%w[december chaff], %w[december light], %w[december chaff])
 
 hana.append_deck_attribute('points') do |card|
 	case card.value
@@ -51,13 +51,13 @@ hana.append_deck_attribute('points') do |card|
 	end
 end
 
-hana.change_value_order(['chaff', 'poem', 'seed', 'light'])
+hana.change_value_order(%w[chaff poem seed light])
 
 
 # MAHJONG (basic)
-mah = Deck.new(suits: ['sticks', 'circles', 'characters'], values: [1..9])
-mah.create_cards(['winds', 'east'], ['winds', 'south'], ['winds', 'west'], ['winds', 'north'])
-mah.create_cards(['dragons', 'green'], ['dragons', 'red'], ['dragons', 'white'])
+mah = Deck.new(suits: %w[sticks circles characters], values: [1..9])
+mah.create_cards(%w[winds east], %w[winds south], %w[winds west], %w[winds north])
+mah.create_cards(%w[dragons green], %w[dragons red], %w[dragons white])
 
 circles = mah.deck.select {|tiles| tiles.suit == 'circles'}.map {|tile| tile.type_values}
 sticks = mah.deck.select {|tiles| tiles.suit == 'sticks'}.map {|tile| tile.type_values}

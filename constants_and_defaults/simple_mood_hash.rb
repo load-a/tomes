@@ -71,7 +71,7 @@ SPRITE_HASH = {
 	greater_than:  [14,	3],
 	question_mark:  [15,	3],
 
-	at:  [0,		4],
+	at_symbol:  [0,		4],
 	capital_a:  [1,		4],
 	capital_b:  [2,		4],
 	capital_c:  [3,		4],

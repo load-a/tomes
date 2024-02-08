@@ -20,5 +20,4 @@ module Location
 	end
 	alias change_position! set_position!
 
-
 end
