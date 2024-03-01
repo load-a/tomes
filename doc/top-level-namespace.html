@@ -1,0 +1,1712 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Top Level Namespace
+  
+    &mdash; Documentation by YARD 0.9.34
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index</a> &raquo;
+    
+    
+    <span class="title">Top Level Namespace</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Top Level Namespace
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+</div>
+
+<h2>Defined Under Namespace</h2>
+<p class="children">
+  
+    
+      <strong class="modules">Modules:</strong> <span class='object_link'><a href="Colors.html" title="Colors (module)">Colors</a></span>, <span class='object_link'><a href="DeckManipulation.html" title="DeckManipulation (module)">DeckManipulation</a></span>, <span class='object_link'><a href="Location.html" title="Location (module)">Location</a></span>, <span class='object_link'><a href="QuickRender.html" title="QuickRender (module)">QuickRender</a></span>, <span class='object_link'><a href="RequireFile.html" title="RequireFile (module)">RequireFile</a></span>
+    
+  
+    
+      <strong class="classes">Classes:</strong> <span class='object_link'><a href="ArgsObject.html" title="ArgsObject (class)">ArgsObject</a></span>, <span class='object_link'><a href="Card.html" title="Card (class)">Card</a></span>, <span class='object_link'><a href="Color.html" title="Color (class)">Color</a></span>, <span class='object_link'><a href="Deck.html" title="Deck (class)">Deck</a></span>, <span class='object_link'><a href="Dice.html" title="Dice (class)">Dice</a></span>, <span class='object_link'><a href="Die.html" title="Die (class)">Die</a></span>, <span class='object_link'><a href="Keyboard.html" title="Keyboard (class)">Keyboard</a></span>, <span class='object_link'><a href="Mouse.html" title="Mouse (class)">Mouse</a></span>, <span class='object_link'><a href="SpriteSheet.html" title="SpriteSheet (class)">SpriteSheet</a></span>
+    
+  
+</p>
+
+  
+    <h2>
+      Constant Summary
+      <small><a href="#" class="constants_summary_toggle">collapse</a></small>
+    </h2>
+
+    <dl class="constants">
+      
+        <dt id="SPRITE_HASH-constant" class="">SPRITE_HASH =
+          <div class="docstring">
+  <div class="discussion">
+    
+<p>A hash table for the Simple Mood sprite sheet included with Dragon Ruby. The arrays reference a 16x16 cell on an image using a flipped Y axis. Sprites can be referenced via the constant. i.e. ‘<a href=":right_pointer">SPRITE_HASH</a>`</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+        </dt>
+        <dd><pre class="code"><span class='lbrace'>{</span>
+	<span class='label'>null:</span>  <span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span>		<span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span> 
+	<span class='label'>w_smile:</span> 	<span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span> 	<span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>b_smile:</span> 	<span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span> 	<span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>heart:</span>  <span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span> 	<span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>diamond:</span> 	<span class='lbracket'>[</span><span class='int'>4</span><span class='comma'>,</span> 	<span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>club:</span>  <span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span> 	<span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>spade:</span>  <span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span> 	<span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>bullet:</span> 	<span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span> 	<span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>inv_bullet:</span> 	<span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span> 	<span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>circle:</span> 	<span class='lbracket'>[</span><span class='int'>9</span><span class='comma'>,</span> 	<span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>inv_circle:</span> 	<span class='lbracket'>[</span><span class='int'>10</span><span class='comma'>,</span> 	<span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>male:</span>  <span class='lbracket'>[</span><span class='int'>11</span><span class='comma'>,</span> 	<span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>female:</span> 	<span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span> 	<span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>eighth_note:</span> 	<span class='lbracket'>[</span><span class='int'>13</span><span class='comma'>,</span> 	<span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>beamed_eighth_notes:</span> 	<span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span> 	<span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>sun:</span>  <span class='lbracket'>[</span><span class='int'>15</span><span class='comma'>,</span> 	<span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+
+	<span class='label'>right_pointer:</span>  <span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span> 	<span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>left_pointer:</span>  <span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span> 	<span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>up_down_arrow:</span>  <span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span> 	<span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>double_exclamation:</span>  <span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span> 	<span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>pilcrow:</span>  <span class='lbracket'>[</span><span class='int'>4</span><span class='comma'>,</span> 	<span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>section:</span>  <span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span> 	<span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>rectangle:</span>  <span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span> 	<span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>up_down_arrow_with_base:</span>  <span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span> 	<span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>up_arrow:</span>  <span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span> 	<span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>down_arrow:</span>  <span class='lbracket'>[</span><span class='int'>9</span><span class='comma'>,</span> 	<span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>right_arrow:</span>  <span class='lbracket'>[</span><span class='int'>10</span><span class='comma'>,</span> 	<span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>left_arrow:</span>  <span class='lbracket'>[</span><span class='int'>11</span><span class='comma'>,</span> 	<span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>right_angle:</span>  <span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span> 	<span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>left_right_arrow:</span>  <span class='lbracket'>[</span><span class='int'>13</span><span class='comma'>,</span> 	<span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>up_triangle:</span>  <span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span> 	<span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>down_triangle:</span>  <span class='lbracket'>[</span><span class='int'>15</span><span class='comma'>,</span> 	<span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+
+	<span class='label'>white_space:</span>  <span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span>		<span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>exclamation_point:</span>  <span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span>		<span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>quotes:</span>  <span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span>		<span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>hash:</span>  <span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span>		<span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>dollar:</span>  <span class='lbracket'>[</span><span class='int'>4</span><span class='comma'>,</span>		<span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>percent:</span>  <span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span>		<span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>ampersand:</span>  <span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span>		<span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span> 
+	<span class='label'>apostrophe:</span>  <span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span>		<span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>open_paren:</span>  <span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span>		<span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>close_paren:</span>  <span class='lbracket'>[</span><span class='int'>9</span><span class='comma'>,</span>		<span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>asterisk:</span>  <span class='lbracket'>[</span><span class='int'>10</span><span class='comma'>,</span>	<span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>plus:</span>  <span class='lbracket'>[</span><span class='int'>11</span><span class='comma'>,</span>	<span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>comma:</span>  <span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span>	<span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>dash:</span>  <span class='lbracket'>[</span><span class='int'>13</span><span class='comma'>,</span>	<span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>period:</span>  <span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span>	<span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>forward_slash:</span>  <span class='lbracket'>[</span><span class='int'>15</span><span class='comma'>,</span>	<span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+
+	<span class='label'>zero:</span>  <span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span> 	<span class='int'>3</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>one:</span>  <span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span> 	<span class='int'>3</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>two:</span>  <span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span> 	<span class='int'>3</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>three:</span>  <span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span> 	<span class='int'>3</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>four:</span>  <span class='lbracket'>[</span><span class='int'>4</span><span class='comma'>,</span> 	<span class='int'>3</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>five:</span>  <span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span> 	<span class='int'>3</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>six:</span>  <span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span> 	<span class='int'>3</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>seven:</span>  <span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span> 	<span class='int'>3</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>eight:</span>  <span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span> 	<span class='int'>3</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>nine:</span>  <span class='lbracket'>[</span><span class='int'>9</span><span class='comma'>,</span> 	<span class='int'>3</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>colon:</span>  <span class='lbracket'>[</span><span class='int'>10</span><span class='comma'>,</span>	<span class='int'>3</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>semicolon:</span>  <span class='lbracket'>[</span><span class='int'>11</span><span class='comma'>,</span>	<span class='int'>3</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>less_than:</span>  <span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span>	<span class='int'>3</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>equal_sign:</span>  <span class='lbracket'>[</span><span class='int'>13</span><span class='comma'>,</span>	<span class='int'>3</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>greater_than:</span>  <span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span>	<span class='int'>3</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>question_mark:</span>  <span class='lbracket'>[</span><span class='int'>15</span><span class='comma'>,</span>	<span class='int'>3</span><span class='rbracket'>]</span><span class='comma'>,</span>
+
+	<span class='label'>at_symbol:</span>  <span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span>		<span class='int'>4</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_a:</span>  <span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span>		<span class='int'>4</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_b:</span>  <span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span>		<span class='int'>4</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_c:</span>  <span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span>		<span class='int'>4</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_d:</span>  <span class='lbracket'>[</span><span class='int'>4</span><span class='comma'>,</span>		<span class='int'>4</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_e:</span>  <span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span>		<span class='int'>4</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_f:</span>  <span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span>		<span class='int'>4</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_g:</span>  <span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span>		<span class='int'>4</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_h:</span>  <span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span>		<span class='int'>4</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_i:</span>  <span class='lbracket'>[</span><span class='int'>9</span><span class='comma'>,</span>		<span class='int'>4</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_j:</span>  <span class='lbracket'>[</span><span class='int'>10</span><span class='comma'>,</span>	<span class='int'>4</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_k:</span>  <span class='lbracket'>[</span><span class='int'>11</span><span class='comma'>,</span>	<span class='int'>4</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_l:</span>  <span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span>	<span class='int'>4</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_m:</span>  <span class='lbracket'>[</span><span class='int'>13</span><span class='comma'>,</span>	<span class='int'>4</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_n:</span>  <span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span>	<span class='int'>4</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_o:</span>  <span class='lbracket'>[</span><span class='int'>15</span><span class='comma'>,</span>	<span class='int'>4</span><span class='rbracket'>]</span><span class='comma'>,</span>
+
+	<span class='label'>capital_p:</span>  <span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span>		<span class='int'>5</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_q:</span>  <span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span>		<span class='int'>5</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_r:</span>  <span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span>		<span class='int'>5</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_s:</span>  <span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span>		<span class='int'>5</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_t:</span>  <span class='lbracket'>[</span><span class='int'>4</span><span class='comma'>,</span>		<span class='int'>5</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_u:</span>  <span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span>		<span class='int'>5</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_v:</span>  <span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span>		<span class='int'>5</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_w:</span>  <span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span>		<span class='int'>5</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_x:</span>  <span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span>		<span class='int'>5</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_y:</span>  <span class='lbracket'>[</span><span class='int'>9</span><span class='comma'>,</span>		<span class='int'>5</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_z:</span>  <span class='lbracket'>[</span><span class='int'>10</span><span class='comma'>,</span>	<span class='int'>5</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>open_bracket:</span>  <span class='lbracket'>[</span><span class='int'>11</span><span class='comma'>,</span>	<span class='int'>5</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>back_slash:</span>  <span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span>	<span class='int'>5</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>close_bracket:</span>  <span class='lbracket'>[</span><span class='int'>13</span><span class='comma'>,</span>	<span class='int'>5</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>caret:</span>  <span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span>	<span class='int'>5</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>underscore:</span>  <span class='lbracket'>[</span><span class='int'>15</span><span class='comma'>,</span>	<span class='int'>5</span><span class='rbracket'>]</span><span class='comma'>,</span>
+
+	<span class='label'>tick:</span>  <span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span>		<span class='int'>6</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_a:</span>  <span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span>		<span class='int'>6</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_b:</span>  <span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span>		<span class='int'>6</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_c:</span>  <span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span>		<span class='int'>6</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_d:</span>  <span class='lbracket'>[</span><span class='int'>4</span><span class='comma'>,</span>		<span class='int'>6</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_e:</span>  <span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span>		<span class='int'>6</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_f:</span>  <span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span>		<span class='int'>6</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_g:</span>  <span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span>		<span class='int'>6</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_h:</span>  <span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span>		<span class='int'>6</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_i:</span>  <span class='lbracket'>[</span><span class='int'>9</span><span class='comma'>,</span>		<span class='int'>6</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_j:</span>  <span class='lbracket'>[</span><span class='int'>10</span><span class='comma'>,</span>	<span class='int'>6</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_k:</span>  <span class='lbracket'>[</span><span class='int'>11</span><span class='comma'>,</span>	<span class='int'>6</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_l:</span>  <span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span>	<span class='int'>6</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_m:</span>  <span class='lbracket'>[</span><span class='int'>13</span><span class='comma'>,</span>	<span class='int'>6</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_n:</span>  <span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span>	<span class='int'>6</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_o:</span>  <span class='lbracket'>[</span><span class='int'>15</span><span class='comma'>,</span>	<span class='int'>6</span><span class='rbracket'>]</span><span class='comma'>,</span>
+
+	<span class='label'>lowercase_p:</span>  <span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span>		<span class='int'>7</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_q:</span>  <span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span>		<span class='int'>7</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_r:</span>  <span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span>		<span class='int'>7</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_s:</span>  <span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span>		<span class='int'>7</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_t:</span>  <span class='lbracket'>[</span><span class='int'>4</span><span class='comma'>,</span>		<span class='int'>7</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_u:</span>  <span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span>		<span class='int'>7</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_v:</span>  <span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span>		<span class='int'>7</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_w:</span>  <span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span>		<span class='int'>7</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_x:</span>  <span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span>		<span class='int'>7</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_y:</span>  <span class='lbracket'>[</span><span class='int'>9</span><span class='comma'>,</span>		<span class='int'>7</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_z:</span>  <span class='lbracket'>[</span><span class='int'>10</span><span class='comma'>,</span>	<span class='int'>7</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>open_brace:</span>  <span class='lbracket'>[</span><span class='int'>11</span><span class='comma'>,</span>	<span class='int'>7</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>split_bar:</span>  <span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span>	<span class='int'>7</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>close_brace:</span>  <span class='lbracket'>[</span><span class='int'>13</span><span class='comma'>,</span>	<span class='int'>7</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>tilde:</span>  <span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span>	<span class='int'>7</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>home:</span>  <span class='lbracket'>[</span><span class='int'>15</span><span class='comma'>,</span>	<span class='int'>7</span><span class='rbracket'>]</span><span class='comma'>,</span>
+
+	<span class='label'>capital_ç:</span>  <span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span>		<span class='int'>8</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_ü:</span>  <span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span>		<span class='int'>8</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_é:</span>  <span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span>		<span class='int'>8</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_â:</span>  <span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span>		<span class='int'>8</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_ä:</span>  <span class='lbracket'>[</span><span class='int'>4</span><span class='comma'>,</span>		<span class='int'>8</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_à:</span>  <span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span>		<span class='int'>8</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_å:</span>  <span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span>		<span class='int'>8</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_ç:</span>  <span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span>		<span class='int'>8</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_ê:</span>  <span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span>		<span class='int'>8</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_ë:</span>  <span class='lbracket'>[</span><span class='int'>9</span><span class='comma'>,</span>		<span class='int'>8</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_è:</span>  <span class='lbracket'>[</span><span class='int'>10</span><span class='comma'>,</span>	<span class='int'>8</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_î:</span>  <span class='lbracket'>[</span><span class='int'>11</span><span class='comma'>,</span>	<span class='int'>8</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_ï:</span>  <span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span>	<span class='int'>8</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_ì:</span>  <span class='lbracket'>[</span><span class='int'>13</span><span class='comma'>,</span>	<span class='int'>8</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_ä:</span>  <span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span>	<span class='int'>8</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_å:</span>  <span class='lbracket'>[</span><span class='int'>15</span><span class='comma'>,</span>	<span class='int'>8</span><span class='rbracket'>]</span><span class='comma'>,</span>
+
+	<span class='label'>capital_é:</span>  <span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span>		<span class='int'>9</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_ashe:</span>  <span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span>		<span class='int'>9</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_ashe:</span>  <span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span>		<span class='int'>9</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_ô:</span>  <span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span>		<span class='int'>9</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_ö:</span>  <span class='lbracket'>[</span><span class='int'>4</span><span class='comma'>,</span>		<span class='int'>9</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_ò:</span>  <span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span>		<span class='int'>9</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_û:</span>  <span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span>		<span class='int'>9</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_ù:</span>  <span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span>		<span class='int'>9</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_ÿ:</span>  <span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span>		<span class='int'>9</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_ö:</span>  <span class='lbracket'>[</span><span class='int'>9</span><span class='comma'>,</span>		<span class='int'>9</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_ü:</span>  <span class='lbracket'>[</span><span class='int'>10</span><span class='comma'>,</span>	<span class='int'>9</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>cent:</span>  <span class='lbracket'>[</span><span class='int'>11</span><span class='comma'>,</span>	<span class='int'>9</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>pound:</span>  <span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span>	<span class='int'>9</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>yen:</span>  <span class='lbracket'>[</span><span class='int'>13</span><span class='comma'>,</span>	<span class='int'>9</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>peseta:</span>  <span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span>	<span class='int'>9</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_ƒ:</span>  <span class='lbracket'>[</span><span class='int'>15</span><span class='comma'>,</span>	<span class='int'>9</span><span class='rbracket'>]</span><span class='comma'>,</span>
+
+	<span class='label'>lowercase_á:</span>  <span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span>		<span class='int'>10</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_í:</span>  <span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span>		<span class='int'>10</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_ó:</span>  <span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span>		<span class='int'>10</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_ú:</span>  <span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span>		<span class='int'>10</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_ñ:</span>  <span class='lbracket'>[</span><span class='int'>4</span><span class='comma'>,</span>		<span class='int'>10</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>capital_ñ:</span>  <span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span>		<span class='int'>10</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>ordinal_indicator_fem:</span>  <span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span>		<span class='int'>10</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>ordinal_indicator_masc:</span>  <span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span>		<span class='int'>10</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>inv_question_mark:</span>  <span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span>		<span class='int'>10</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>back_not:</span>  <span class='lbracket'>[</span><span class='int'>9</span><span class='comma'>,</span> 	<span class='int'>10</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>not:</span>  <span class='lbracket'>[</span><span class='int'>10</span><span class='comma'>,</span> 	<span class='int'>10</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>half:</span>  <span class='lbracket'>[</span><span class='int'>11</span><span class='comma'>,</span>	<span class='int'>10</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>quarter:</span>  <span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span>	<span class='int'>10</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>inv_exclamation_point:</span>  <span class='lbracket'>[</span><span class='int'>13</span><span class='comma'>,</span>	<span class='int'>10</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>open_angle_quotes:</span>  <span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span>	<span class='int'>10</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>close_angle_quotes:</span>  <span class='lbracket'>[</span><span class='int'>15</span><span class='comma'>,</span>	<span class='int'>10</span><span class='rbracket'>]</span><span class='comma'>,</span>
+
+	<span class='label'>light_shade:</span>  <span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span>		<span class='int'>11</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>medium_shade:</span>  <span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span>		<span class='int'>11</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>dark_shade:</span>  <span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span>		<span class='int'>11</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>vertical_bar:</span>  <span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span>		<span class='int'>11</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>vertical_left:</span>  <span class='lbracket'>[</span><span class='int'>4</span><span class='comma'>,</span>		<span class='int'>11</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>vertical_double_left:</span>  <span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span>		<span class='int'>11</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>double_vertical_left:</span>  <span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span>		<span class='int'>11</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>double_down_left:</span>  <span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span>		<span class='int'>11</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>down_double_left:</span>  <span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span>		<span class='int'>11</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>double_vertical_double_left:</span>  <span class='lbracket'>[</span><span class='int'>9</span><span class='comma'>,</span>		<span class='int'>11</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>double_vertical:</span>  <span class='lbracket'>[</span><span class='int'>10</span><span class='comma'>,</span> 	<span class='int'>11</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>double_down_double_left:</span>  <span class='lbracket'>[</span><span class='int'>11</span><span class='comma'>,</span> 	<span class='int'>11</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>double_up_double_left:</span>  <span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span> 	<span class='int'>11</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>double_up_left:</span>  <span class='lbracket'>[</span><span class='int'>13</span><span class='comma'>,</span> 	<span class='int'>11</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>up_double_left:</span>  <span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span> 	<span class='int'>11</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>down_left:</span>  <span class='lbracket'>[</span><span class='int'>15</span><span class='comma'>,</span> 	<span class='int'>11</span><span class='rbracket'>]</span><span class='comma'>,</span>
+
+	<span class='label'>up_right:</span>  <span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span>		<span class='int'>12</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>up_horizontal:</span>  <span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span>		<span class='int'>12</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>down_horizontal:</span>  <span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span>		<span class='int'>12</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>vertical_right:</span>  <span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span>		<span class='int'>12</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>horizontal:</span>  <span class='lbracket'>[</span><span class='int'>4</span><span class='comma'>,</span>		<span class='int'>12</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>vertical_horizontal:</span>  <span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span>		<span class='int'>12</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>vertical_double_right:</span>  <span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span>		<span class='int'>12</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>double_vertical_right:</span>  <span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span>		<span class='int'>12</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>double_up_double_right:</span>  <span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span>		<span class='int'>12</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>double_down_double_right:</span>  <span class='lbracket'>[</span><span class='int'>9</span><span class='comma'>,</span>		<span class='int'>12</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>double_up_double_horizontal:</span>  <span class='lbracket'>[</span><span class='int'>10</span><span class='comma'>,</span> 	<span class='int'>12</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>double_down_double_horizontal:</span>  <span class='lbracket'>[</span><span class='int'>11</span><span class='comma'>,</span> 	<span class='int'>12</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>double_vertical_double_right:</span>  <span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span> 	<span class='int'>12</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>double_horizontal:</span>  <span class='lbracket'>[</span><span class='int'>13</span><span class='comma'>,</span> 	<span class='int'>12</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>double_vertical_double_horizontal:</span>  <span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span> 	<span class='int'>12</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>up_double_horizontal:</span>  <span class='lbracket'>[</span><span class='int'>15</span><span class='comma'>,</span> 	<span class='int'>12</span><span class='rbracket'>]</span><span class='comma'>,</span>
+
+	<span class='label'>double_up_horizontal:</span>  <span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span>		<span class='int'>13</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>down_double_horizontal:</span>  <span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span>		<span class='int'>13</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>double_down_horizontal:</span>  <span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span>		<span class='int'>13</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>double_up_right:</span>  <span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span>		<span class='int'>13</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>up_double_right:</span>  <span class='lbracket'>[</span><span class='int'>4</span><span class='comma'>,</span>		<span class='int'>13</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>down_double_right:</span>  <span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span>		<span class='int'>13</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>double_down_right:</span>  <span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span>		<span class='int'>13</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>double_vertical_horizontal:</span>  <span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span>		<span class='int'>13</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>vertical_double_horizontal:</span>  <span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span>		<span class='int'>13</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>up_left:</span>  <span class='lbracket'>[</span><span class='int'>9</span><span class='comma'>,</span>		<span class='int'>13</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>down_right:</span>  <span class='lbracket'>[</span><span class='int'>10</span><span class='comma'>,</span> 	<span class='int'>13</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>solid_block:</span>  <span class='lbracket'>[</span><span class='int'>11</span><span class='comma'>,</span> 	<span class='int'>13</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>bottom_slab:</span>  <span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span> 	<span class='int'>13</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>left_slab:</span>  <span class='lbracket'>[</span><span class='int'>13</span><span class='comma'>,</span> 	<span class='int'>13</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>right_slab:</span>  <span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span> 	<span class='int'>13</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>up_slab:</span>  <span class='lbracket'>[</span><span class='int'>15</span><span class='comma'>,</span> 	<span class='int'>13</span><span class='rbracket'>]</span><span class='comma'>,</span>
+
+	<span class='label'>alpha:</span>  <span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span>		<span class='int'>14</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>beta:</span>  <span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span>		<span class='int'>14</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>gamma:</span>  <span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span>		<span class='int'>14</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>pi:</span>  <span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span>		<span class='int'>14</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>sigma:</span>  <span class='lbracket'>[</span><span class='int'>4</span><span class='comma'>,</span>		<span class='int'>14</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_sigma:</span>  <span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span>		<span class='int'>14</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>mu:</span>  <span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span>		<span class='int'>14</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>tau:</span>  <span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span>		<span class='int'>14</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>phi:</span>  <span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span>		<span class='int'>14</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>theta:</span>  <span class='lbracket'>[</span><span class='int'>9</span><span class='comma'>,</span>		<span class='int'>14</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>omega:</span>  <span class='lbracket'>[</span><span class='int'>10</span><span class='comma'>,</span> 	<span class='int'>14</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>delta:</span>  <span class='lbracket'>[</span><span class='int'>11</span><span class='comma'>,</span> 	<span class='int'>14</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>infinity:</span>  <span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span> 	<span class='int'>14</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>lowercase_phi:</span>  <span class='lbracket'>[</span><span class='int'>13</span><span class='comma'>,</span> 	<span class='int'>14</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>epsilon:</span>  <span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span> 	<span class='int'>14</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>intersection:</span>  <span class='lbracket'>[</span><span class='int'>15</span><span class='comma'>,</span> 	<span class='int'>14</span><span class='rbracket'>]</span><span class='comma'>,</span>
+
+	<span class='label'>identical:</span>  <span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span>		<span class='int'>15</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>plus_or_minus:</span>  <span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span>		<span class='int'>15</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>greater_than_or_equal_to:</span>  <span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span>		<span class='int'>15</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>less_than_or_equal_to:</span>  <span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span>		<span class='int'>15</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>top_half_intergral:</span>  <span class='lbracket'>[</span><span class='int'>4</span><span class='comma'>,</span>		<span class='int'>15</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>bottom_half_intergral:</span>  <span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span>		<span class='int'>15</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>divide:</span>  <span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span>		<span class='int'>15</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>approximate:</span>  <span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span>		<span class='int'>15</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>degree:</span>  <span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span>		<span class='int'>15</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>multiply:</span>  <span class='lbracket'>[</span><span class='int'>9</span><span class='comma'>,</span>		<span class='int'>15</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>dot:</span>  <span class='lbracket'>[</span><span class='int'>10</span><span class='comma'>,</span> 	<span class='int'>15</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>radical:</span>  <span class='lbracket'>[</span><span class='int'>11</span><span class='comma'>,</span> 	<span class='int'>15</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>nth_power:</span>  <span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span> 	<span class='int'>15</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>squared:</span>  <span class='lbracket'>[</span><span class='int'>13</span><span class='comma'>,</span> 	<span class='int'>15</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>square:</span>  <span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span> 	<span class='int'>15</span><span class='rbracket'>]</span><span class='comma'>,</span>
+	<span class='label'>no_break_space:</span>  <span class='lbracket'>[</span><span class='int'>15</span><span class='comma'>,</span> 	<span class='int'>15</span><span class='rbracket'>]</span><span class='comma'>,</span>
+<span class='rbrace'>}</span></pre></dd>
+      
+        <dt id="SCREEN_WIDTH-constant" class="">SCREEN_WIDTH =
+          
+        </dt>
+        <dd><pre class="code"><span class='int'>1280</span></pre></dd>
+      
+        <dt id="SCREEN_HEIGHT-constant" class="">SCREEN_HEIGHT =
+          
+        </dt>
+        <dd><pre class="code"><span class='int'>720</span></pre></dd>
+      
+        <dt id="DEFAULT_SPRITESHEET_PATH-constant" class="">DEFAULT_SPRITESHEET_PATH =
+          
+        </dt>
+        <dd><pre class="code"><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>sprites/misc/simple-mood-16x16.png</span><span class='tstring_end'>&#39;</span></span></pre></dd>
+      
+        <dt id="NULL-constant" class="">NULL =
+          <div class="docstring">
+  <div class="discussion">
+    
+<p>Named constants for the Simple Mood sprite sheet included with dragon ruby. The arrays reference a 16x16 cell on an image using a flipped Y axis. Sprites can be called directly.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span>		<span class='int'>0</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="W_SMILE-constant" class="">W_SMILE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span> 	<span class='int'>0</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="B_SMILE-constant" class="">B_SMILE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span> 	<span class='int'>0</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="HEART-constant" class="">HEART =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span> 	<span class='int'>0</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DIAMOND-constant" class="">DIAMOND =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>4</span><span class='comma'>,</span> 	<span class='int'>0</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CLUB-constant" class="">CLUB =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span> 	<span class='int'>0</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="SPADE-constant" class="">SPADE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span> 	<span class='int'>0</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="BULLET-constant" class="">BULLET =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span> 	<span class='int'>0</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="INV_BULLET-constant" class="">INV_BULLET =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span> 	<span class='int'>0</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CIRCLE-constant" class="">CIRCLE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>9</span><span class='comma'>,</span> 	<span class='int'>0</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="INV_CIRCLE-constant" class="">INV_CIRCLE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>10</span><span class='comma'>,</span> 	<span class='int'>0</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="MALE-constant" class="">MALE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>11</span><span class='comma'>,</span> 	<span class='int'>0</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="FEMALE-constant" class="">FEMALE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span> 	<span class='int'>0</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="EIGHTH_NOTE-constant" class="">EIGHTH_NOTE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>13</span><span class='comma'>,</span> 	<span class='int'>0</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="BEAMED_EIGHTH_NOTES-constant" class="">BEAMED_EIGHTH_NOTES =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span> 	<span class='int'>0</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="SUN-constant" class="">SUN =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>15</span><span class='comma'>,</span> 	<span class='int'>0</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="RIGHT_POINTER-constant" class="">RIGHT_POINTER =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span> 	<span class='int'>1</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LEFT_POINTER-constant" class="">LEFT_POINTER =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span> 	<span class='int'>1</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="UP_DOWN_ARROW-constant" class="">UP_DOWN_ARROW =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span> 	<span class='int'>1</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DOUBLE_EXCLAMATION-constant" class="">DOUBLE_EXCLAMATION =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span> 	<span class='int'>1</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="PILCROW-constant" class="">PILCROW =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>4</span><span class='comma'>,</span> 	<span class='int'>1</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="SECTION-constant" class="">SECTION =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span> 	<span class='int'>1</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="RECTANGLE-constant" class="">RECTANGLE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span> 	<span class='int'>1</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="UP_DOWN_ARROW_WITH_BASE-constant" class="">UP_DOWN_ARROW_WITH_BASE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span> 	<span class='int'>1</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="UP_ARROW-constant" class="">UP_ARROW =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span> 	<span class='int'>1</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DOWN_ARROW-constant" class="">DOWN_ARROW =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>9</span><span class='comma'>,</span> 	<span class='int'>1</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="RIGHT_ARROW-constant" class="">RIGHT_ARROW =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>10</span><span class='comma'>,</span> 	<span class='int'>1</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LEFT_ARROW-constant" class="">LEFT_ARROW =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>11</span><span class='comma'>,</span> 	<span class='int'>1</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="RIGHT_ANGLE-constant" class="">RIGHT_ANGLE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span> 	<span class='int'>1</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LEFT_RIGHT_ARROW-constant" class="">LEFT_RIGHT_ARROW =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>13</span><span class='comma'>,</span> 	<span class='int'>1</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="UP_TRIANGLE-constant" class="">UP_TRIANGLE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span> 	<span class='int'>1</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DOWN_TRIANGLE-constant" class="">DOWN_TRIANGLE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>15</span><span class='comma'>,</span> 	<span class='int'>1</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="WHITE_SPACE-constant" class="">WHITE_SPACE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span>		<span class='int'>2</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="EXCLAMATION_POINT-constant" class="">EXCLAMATION_POINT =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span>		<span class='int'>2</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="QUOTES-constant" class="">QUOTES =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span>		<span class='int'>2</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="HASH-constant" class="">HASH =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span>		<span class='int'>2</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DOLLAR-constant" class="">DOLLAR =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>4</span><span class='comma'>,</span>		<span class='int'>2</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="PERCENT-constant" class="">PERCENT =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span>		<span class='int'>2</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="AMPERSAND-constant" class="">AMPERSAND =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span>		<span class='int'>2</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="APOSTROPHE-constant" class="">APOSTROPHE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span>		<span class='int'>2</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="OPEN_PAREN-constant" class="">OPEN_PAREN =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span>		<span class='int'>2</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CLOSE_PAREN-constant" class="">CLOSE_PAREN =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>9</span><span class='comma'>,</span>		<span class='int'>2</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="ASTERISK-constant" class="">ASTERISK =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>10</span><span class='comma'>,</span>	<span class='int'>2</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="PLUS-constant" class="">PLUS =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>11</span><span class='comma'>,</span>	<span class='int'>2</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="COMMA-constant" class="">COMMA =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span>	<span class='int'>2</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DASH-constant" class="">DASH =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>13</span><span class='comma'>,</span>	<span class='int'>2</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="PERIOD-constant" class="">PERIOD =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span>	<span class='int'>2</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="FORWARD_SLASH-constant" class="">FORWARD_SLASH =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>15</span><span class='comma'>,</span>	<span class='int'>2</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="ZERO-constant" class="">ZERO =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span> 	<span class='int'>3</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="ONE-constant" class="">ONE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span> 	<span class='int'>3</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="TWO-constant" class="">TWO =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span> 	<span class='int'>3</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="THREE-constant" class="">THREE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span> 	<span class='int'>3</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="FOUR-constant" class="">FOUR =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>4</span><span class='comma'>,</span> 	<span class='int'>3</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="FIVE-constant" class="">FIVE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span> 	<span class='int'>3</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="SIX-constant" class="">SIX =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span> 	<span class='int'>3</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="SEVEN-constant" class="">SEVEN =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span> 	<span class='int'>3</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="EIGHT-constant" class="">EIGHT =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span> 	<span class='int'>3</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="NINE-constant" class="">NINE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>9</span><span class='comma'>,</span> 	<span class='int'>3</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="COLON-constant" class="">COLON =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>10</span><span class='comma'>,</span>	<span class='int'>3</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="SEMICOLON-constant" class="">SEMICOLON =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>11</span><span class='comma'>,</span>	<span class='int'>3</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LESS_THAN-constant" class="">LESS_THAN =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span>	<span class='int'>3</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="EQUAL_SIGN-constant" class="">EQUAL_SIGN =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>13</span><span class='comma'>,</span>	<span class='int'>3</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="GREATER_THAN-constant" class="">GREATER_THAN =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span>	<span class='int'>3</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="QUESTION_MARK-constant" class="">QUESTION_MARK =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>15</span><span class='comma'>,</span>	<span class='int'>3</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="AT_SYMBOL-constant" class="">AT_SYMBOL =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span>		<span class='int'>4</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_A-constant" class="">CAPITAL_A =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span>		<span class='int'>4</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_B-constant" class="">CAPITAL_B =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span>		<span class='int'>4</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_C-constant" class="">CAPITAL_C =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span>		<span class='int'>4</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_D-constant" class="">CAPITAL_D =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>4</span><span class='comma'>,</span>		<span class='int'>4</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_E-constant" class="">CAPITAL_E =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span>		<span class='int'>4</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_F-constant" class="">CAPITAL_F =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span>		<span class='int'>4</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_G-constant" class="">CAPITAL_G =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span>		<span class='int'>4</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_H-constant" class="">CAPITAL_H =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span>		<span class='int'>4</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_I-constant" class="">CAPITAL_I =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>9</span><span class='comma'>,</span>		<span class='int'>4</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_J-constant" class="">CAPITAL_J =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>10</span><span class='comma'>,</span>	<span class='int'>4</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_K-constant" class="">CAPITAL_K =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>11</span><span class='comma'>,</span>	<span class='int'>4</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_L-constant" class="">CAPITAL_L =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span>	<span class='int'>4</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_M-constant" class="">CAPITAL_M =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>13</span><span class='comma'>,</span>	<span class='int'>4</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_N-constant" class="">CAPITAL_N =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span>	<span class='int'>4</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_O-constant" class="">CAPITAL_O =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>15</span><span class='comma'>,</span>	<span class='int'>4</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_P-constant" class="">CAPITAL_P =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span>		<span class='int'>5</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_Q-constant" class="">CAPITAL_Q =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span>		<span class='int'>5</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_R-constant" class="">CAPITAL_R =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span>		<span class='int'>5</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_S-constant" class="">CAPITAL_S =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span>		<span class='int'>5</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_T-constant" class="">CAPITAL_T =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>4</span><span class='comma'>,</span>		<span class='int'>5</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_U-constant" class="">CAPITAL_U =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span>		<span class='int'>5</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_V-constant" class="">CAPITAL_V =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span>		<span class='int'>5</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_W-constant" class="">CAPITAL_W =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span>		<span class='int'>5</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_X-constant" class="">CAPITAL_X =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span>		<span class='int'>5</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_Y-constant" class="">CAPITAL_Y =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>9</span><span class='comma'>,</span>		<span class='int'>5</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_Z-constant" class="">CAPITAL_Z =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>10</span><span class='comma'>,</span>	<span class='int'>5</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="OPEN_BRACKET-constant" class="">OPEN_BRACKET =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>11</span><span class='comma'>,</span>	<span class='int'>5</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="BACK_SLASH-constant" class="">BACK_SLASH =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span>	<span class='int'>5</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CLOSE_BRACKET-constant" class="">CLOSE_BRACKET =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>13</span><span class='comma'>,</span>	<span class='int'>5</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CARET-constant" class="">CARET =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span>	<span class='int'>5</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="UNDERSCORE-constant" class="">UNDERSCORE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>15</span><span class='comma'>,</span>	<span class='int'>5</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="TICK-constant" class="">TICK =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span>		<span class='int'>6</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_A-constant" class="">LOWERCASE_A =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span>		<span class='int'>6</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_B-constant" class="">LOWERCASE_B =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span>		<span class='int'>6</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_C-constant" class="">LOWERCASE_C =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span>		<span class='int'>6</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_D-constant" class="">LOWERCASE_D =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>4</span><span class='comma'>,</span>		<span class='int'>6</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_E-constant" class="">LOWERCASE_E =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span>		<span class='int'>6</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_F-constant" class="">LOWERCASE_F =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span>		<span class='int'>6</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_G-constant" class="">LOWERCASE_G =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span>		<span class='int'>6</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_H-constant" class="">LOWERCASE_H =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span>		<span class='int'>6</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_I-constant" class="">LOWERCASE_I =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>9</span><span class='comma'>,</span>		<span class='int'>6</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_J-constant" class="">LOWERCASE_J =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>10</span><span class='comma'>,</span>	<span class='int'>6</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_K-constant" class="">LOWERCASE_K =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>11</span><span class='comma'>,</span>	<span class='int'>6</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_L-constant" class="">LOWERCASE_L =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span>	<span class='int'>6</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_M-constant" class="">LOWERCASE_M =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>13</span><span class='comma'>,</span>	<span class='int'>6</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_N-constant" class="">LOWERCASE_N =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span>	<span class='int'>6</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_O-constant" class="">LOWERCASE_O =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>15</span><span class='comma'>,</span>	<span class='int'>6</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_P-constant" class="">LOWERCASE_P =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span>		<span class='int'>7</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_Q-constant" class="">LOWERCASE_Q =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span>		<span class='int'>7</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_R-constant" class="">LOWERCASE_R =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span>		<span class='int'>7</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_S-constant" class="">LOWERCASE_S =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span>		<span class='int'>7</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_T-constant" class="">LOWERCASE_T =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>4</span><span class='comma'>,</span>		<span class='int'>7</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_U-constant" class="">LOWERCASE_U =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span>		<span class='int'>7</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_V-constant" class="">LOWERCASE_V =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span>		<span class='int'>7</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_W-constant" class="">LOWERCASE_W =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span>		<span class='int'>7</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_X-constant" class="">LOWERCASE_X =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span>		<span class='int'>7</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_Y-constant" class="">LOWERCASE_Y =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>9</span><span class='comma'>,</span>		<span class='int'>7</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_Z-constant" class="">LOWERCASE_Z =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>10</span><span class='comma'>,</span>	<span class='int'>7</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="OPEN_BRACE-constant" class="">OPEN_BRACE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>11</span><span class='comma'>,</span>	<span class='int'>7</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="SPLIT_BAR-constant" class="">SPLIT_BAR =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span>	<span class='int'>7</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CLOSE_BRACE-constant" class="">CLOSE_BRACE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>13</span><span class='comma'>,</span>	<span class='int'>7</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="TILDE-constant" class="">TILDE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span>	<span class='int'>7</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="HOME-constant" class="">HOME =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>15</span><span class='comma'>,</span>	<span class='int'>7</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_Ç-constant" class="">CAPITAL_Ç =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span>		<span class='int'>8</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_Ü-constant" class="">CAPITAL_Ü =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>10</span><span class='comma'>,</span>	<span class='int'>9</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_É-constant" class="">LOWERCASE_É =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span>		<span class='int'>8</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_Â-constant" class="">LOWERCASE_Â =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span>		<span class='int'>8</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_Ä-constant" class="">LOWERCASE_Ä =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>4</span><span class='comma'>,</span>		<span class='int'>8</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_À-constant" class="">LOWERCASE_À =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span>		<span class='int'>8</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_Å-constant" class="">LOWERCASE_Å =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span>		<span class='int'>8</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_Ç-constant" class="">LOWERCASE_Ç =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span>		<span class='int'>8</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_Ê-constant" class="">LOWERCASE_Ê =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span>		<span class='int'>8</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_Ë-constant" class="">LOWERCASE_Ë =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>9</span><span class='comma'>,</span>		<span class='int'>8</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_È-constant" class="">LOWERCASE_È =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>10</span><span class='comma'>,</span>	<span class='int'>8</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_Î-constant" class="">LOWERCASE_Î =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>11</span><span class='comma'>,</span>	<span class='int'>8</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_Ï-constant" class="">LOWERCASE_Ï =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span>	<span class='int'>8</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_Ì-constant" class="">LOWERCASE_Ì =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>13</span><span class='comma'>,</span>	<span class='int'>8</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_Ä-constant" class="">CAPITAL_Ä =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span>	<span class='int'>8</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_Å-constant" class="">CAPITAL_Å =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>15</span><span class='comma'>,</span>	<span class='int'>8</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_É-constant" class="">CAPITAL_É =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span>		<span class='int'>9</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_ASHE-constant" class="">LOWERCASE_ASHE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span>		<span class='int'>9</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_ASHE-constant" class="">CAPITAL_ASHE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span>		<span class='int'>9</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_Ô-constant" class="">LOWERCASE_Ô =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span>		<span class='int'>9</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_Ö-constant" class="">LOWERCASE_Ö =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>4</span><span class='comma'>,</span>		<span class='int'>9</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_Ò-constant" class="">LOWERCASE_Ò =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span>		<span class='int'>9</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_Û-constant" class="">CAPITAL_Û =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span>		<span class='int'>9</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_Ù-constant" class="">LOWERCASE_Ù =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span>		<span class='int'>9</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_Ÿ-constant" class="">LOWERCASE_Ÿ =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span>		<span class='int'>9</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_Ö-constant" class="">CAPITAL_Ö =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>9</span><span class='comma'>,</span>		<span class='int'>9</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CENT-constant" class="">CENT =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>11</span><span class='comma'>,</span>	<span class='int'>9</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="POUND-constant" class="">POUND =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span>	<span class='int'>9</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="YEN-constant" class="">YEN =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>13</span><span class='comma'>,</span>	<span class='int'>9</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="PESETA-constant" class="">PESETA =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span>	<span class='int'>9</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_ƒ-constant" class="">LOWERCASE_ƒ =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>15</span><span class='comma'>,</span>	<span class='int'>9</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_Á-constant" class="">LOWERCASE_Á =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span>		<span class='int'>10</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_Í-constant" class="">LOWERCASE_Í =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span>		<span class='int'>10</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_Ó-constant" class="">LOWERCASE_Ó =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span>		<span class='int'>10</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_Ú-constant" class="">LOWERCASE_Ú =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span>		<span class='int'>10</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_Ñ-constant" class="">LOWERCASE_Ñ =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>4</span><span class='comma'>,</span>		<span class='int'>10</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CAPITAL_Ñ-constant" class="">CAPITAL_Ñ =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span>		<span class='int'>10</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="ORDINAL_INDICATOR_FEM-constant" class="">ORDINAL_INDICATOR_FEM =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span>		<span class='int'>10</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="ORDINAL_INDICATOR_MASC-constant" class="">ORDINAL_INDICATOR_MASC =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span>		<span class='int'>10</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="INV_QUESTION_MARK-constant" class="">INV_QUESTION_MARK =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span>		<span class='int'>10</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="BACK_NOT-constant" class="">BACK_NOT =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>9</span><span class='comma'>,</span> 	<span class='int'>10</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="NOT-constant" class="">NOT =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>10</span><span class='comma'>,</span> 	<span class='int'>10</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="HALF-constant" class="">HALF =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>11</span><span class='comma'>,</span>	<span class='int'>10</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="QUARTER-constant" class="">QUARTER =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span>	<span class='int'>10</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="INV_EXCLAMATION_POINT-constant" class="">INV_EXCLAMATION_POINT =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>13</span><span class='comma'>,</span>	<span class='int'>10</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="OPEN_ANGLE_QUOTES-constant" class="">OPEN_ANGLE_QUOTES =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span>	<span class='int'>10</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="CLOSE_ANGLE_QUOTES-constant" class="">CLOSE_ANGLE_QUOTES =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>15</span><span class='comma'>,</span>	<span class='int'>10</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LIGHT_SHADE-constant" class="">LIGHT_SHADE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span>		<span class='int'>11</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="MEDIUM_SHADE-constant" class="">MEDIUM_SHADE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span>		<span class='int'>11</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DARK_SHADE-constant" class="">DARK_SHADE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span>		<span class='int'>11</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="VERTICAL_BAR-constant" class="">VERTICAL_BAR =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span>		<span class='int'>11</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="VERTICAL_LEFT-constant" class="">VERTICAL_LEFT =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>4</span><span class='comma'>,</span>		<span class='int'>11</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="VERTICAL_DOUBLE_LEFT-constant" class="">VERTICAL_DOUBLE_LEFT =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span>		<span class='int'>11</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DOUBLE_VERTICAL_LEFT-constant" class="">DOUBLE_VERTICAL_LEFT =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span>		<span class='int'>11</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DOUBLE_DOWN_LEFT-constant" class="">DOUBLE_DOWN_LEFT =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span>		<span class='int'>11</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DOWN_DOUBLE_LEFT-constant" class="">DOWN_DOUBLE_LEFT =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span>		<span class='int'>11</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DOUBLE_VERTICAL_DOUBLE_LEFT-constant" class="">DOUBLE_VERTICAL_DOUBLE_LEFT =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>9</span><span class='comma'>,</span>		<span class='int'>11</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DOUBLE_VERTICAL-constant" class="">DOUBLE_VERTICAL =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>10</span><span class='comma'>,</span> 	<span class='int'>11</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DOUBLE_DOWN_DOUBLE_LEFT-constant" class="">DOUBLE_DOWN_DOUBLE_LEFT =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>11</span><span class='comma'>,</span> 	<span class='int'>11</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DOUBLE_UP_DOUBLE_LEFT-constant" class="">DOUBLE_UP_DOUBLE_LEFT =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span> 	<span class='int'>11</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DOUBLE_UP_LEFT-constant" class="">DOUBLE_UP_LEFT =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>13</span><span class='comma'>,</span> 	<span class='int'>11</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="UP_DOUBLE_LEFT-constant" class="">UP_DOUBLE_LEFT =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span> 	<span class='int'>11</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DOWN_LEFT-constant" class="">DOWN_LEFT =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>15</span><span class='comma'>,</span> 	<span class='int'>11</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="UP_RIGHT-constant" class="">UP_RIGHT =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span>		<span class='int'>12</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="UP_HORIZONTAL-constant" class="">UP_HORIZONTAL =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span>		<span class='int'>12</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DOWN_HORIZONTAL-constant" class="">DOWN_HORIZONTAL =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span>		<span class='int'>12</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="VERTICAL_RIGHT-constant" class="">VERTICAL_RIGHT =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span>		<span class='int'>12</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="HORIZONTAL-constant" class="">HORIZONTAL =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>4</span><span class='comma'>,</span>		<span class='int'>12</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="VERTICAL_HORIZONTAL-constant" class="">VERTICAL_HORIZONTAL =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span>		<span class='int'>12</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="VERTICAL_DOUBLE_RIGHT-constant" class="">VERTICAL_DOUBLE_RIGHT =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span>		<span class='int'>12</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DOUBLE_VERTICAL_RIGHT-constant" class="">DOUBLE_VERTICAL_RIGHT =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span>		<span class='int'>12</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DOUBLE_UP_DOUBLE_RIGHT-constant" class="">DOUBLE_UP_DOUBLE_RIGHT =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span>		<span class='int'>12</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DOUBLE_DOWN_DOUBLE_RIGHT-constant" class="">DOUBLE_DOWN_DOUBLE_RIGHT =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>9</span><span class='comma'>,</span>		<span class='int'>12</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DOUBLE_UP_DOUBLE_HORIZONTAL-constant" class="">DOUBLE_UP_DOUBLE_HORIZONTAL =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>10</span><span class='comma'>,</span> 	<span class='int'>12</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DOUBLE_DOWN_DOUBLE_HORIZONTAL-constant" class="">DOUBLE_DOWN_DOUBLE_HORIZONTAL =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>11</span><span class='comma'>,</span> 	<span class='int'>12</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DOUBLE_VERTICAL_DOUBLE_RIGHT-constant" class="">DOUBLE_VERTICAL_DOUBLE_RIGHT =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span> 	<span class='int'>12</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DOUBLE_HORIZONTAL-constant" class="">DOUBLE_HORIZONTAL =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>13</span><span class='comma'>,</span> 	<span class='int'>12</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DOUBLE_VERTICAL_DOUBLE_HORIZONTAL-constant" class="">DOUBLE_VERTICAL_DOUBLE_HORIZONTAL =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span> 	<span class='int'>12</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="UP_DOUBLE_HORIZONTAL-constant" class="">UP_DOUBLE_HORIZONTAL =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>15</span><span class='comma'>,</span> 	<span class='int'>12</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DOUBLE_UP_HORIZONTAL-constant" class="">DOUBLE_UP_HORIZONTAL =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span>		<span class='int'>13</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DOWN_DOUBLE_HORIZONTAL-constant" class="">DOWN_DOUBLE_HORIZONTAL =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span>		<span class='int'>13</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DOUBLE_DOWN_HORIZONTAL-constant" class="">DOUBLE_DOWN_HORIZONTAL =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span>		<span class='int'>13</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DOUBLE_UP_RIGHT-constant" class="">DOUBLE_UP_RIGHT =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span>		<span class='int'>13</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="UP_DOUBLE_RIGHT-constant" class="">UP_DOUBLE_RIGHT =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>4</span><span class='comma'>,</span>		<span class='int'>13</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DOWN_DOUBLE_RIGHT-constant" class="">DOWN_DOUBLE_RIGHT =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span>		<span class='int'>13</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DOUBLE_DOWN_RIGHT-constant" class="">DOUBLE_DOWN_RIGHT =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span>		<span class='int'>13</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DOUBLE_VERTICAL_HORIZONTAL-constant" class="">DOUBLE_VERTICAL_HORIZONTAL =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span>		<span class='int'>13</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="VERTICAL_DOUBLE_HORIZONTAL-constant" class="">VERTICAL_DOUBLE_HORIZONTAL =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span>		<span class='int'>13</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="UP_LEFT-constant" class="">UP_LEFT =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>9</span><span class='comma'>,</span>		<span class='int'>13</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DOWN_RIGHT-constant" class="">DOWN_RIGHT =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>10</span><span class='comma'>,</span> 	<span class='int'>13</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="SOLID_BLOCK-constant" class="">SOLID_BLOCK =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>11</span><span class='comma'>,</span> 	<span class='int'>13</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="BOTTOM_SLAB-constant" class="">BOTTOM_SLAB =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span> 	<span class='int'>13</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LEFT_SLAB-constant" class="">LEFT_SLAB =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>13</span><span class='comma'>,</span> 	<span class='int'>13</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="RIGHT_SLAB-constant" class="">RIGHT_SLAB =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span> 	<span class='int'>13</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="UP_SLAB-constant" class="">UP_SLAB =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>15</span><span class='comma'>,</span> 	<span class='int'>13</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="ALPHA-constant" class="">ALPHA =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span>		<span class='int'>14</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="BETA-constant" class="">BETA =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span>		<span class='int'>14</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="GAMMA-constant" class="">GAMMA =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span>		<span class='int'>14</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="PI-constant" class="">PI =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span>		<span class='int'>14</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="SIGMA-constant" class="">SIGMA =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>4</span><span class='comma'>,</span>		<span class='int'>14</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_SIGMA-constant" class="">LOWERCASE_SIGMA =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span>		<span class='int'>14</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="MU-constant" class="">MU =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span>		<span class='int'>14</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="TAU-constant" class="">TAU =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span>		<span class='int'>14</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="PHI-constant" class="">PHI =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span>		<span class='int'>14</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="THETA-constant" class="">THETA =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>9</span><span class='comma'>,</span>		<span class='int'>14</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="OMEGA-constant" class="">OMEGA =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>10</span><span class='comma'>,</span> 	<span class='int'>14</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DELTA-constant" class="">DELTA =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>11</span><span class='comma'>,</span> 	<span class='int'>14</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="INFINITY-constant" class="">INFINITY =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span> 	<span class='int'>14</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LOWERCASE_PHI-constant" class="">LOWERCASE_PHI =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>13</span><span class='comma'>,</span> 	<span class='int'>14</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="EPSILON-constant" class="">EPSILON =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span> 	<span class='int'>14</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="INTERSECTION-constant" class="">INTERSECTION =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>15</span><span class='comma'>,</span> 	<span class='int'>14</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="IDENTICAL-constant" class="">IDENTICAL =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span>		<span class='int'>15</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="PLUS_OR_MINUS-constant" class="">PLUS_OR_MINUS =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span>		<span class='int'>15</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="GREATER_THAN_OR_EQUAL_TO-constant" class="">GREATER_THAN_OR_EQUAL_TO =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>2</span><span class='comma'>,</span>		<span class='int'>15</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="LESS_THAN_OR_EQUAL_TO-constant" class="">LESS_THAN_OR_EQUAL_TO =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>3</span><span class='comma'>,</span>		<span class='int'>15</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="TOP_HALF_INTERGRAL-constant" class="">TOP_HALF_INTERGRAL =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>4</span><span class='comma'>,</span>		<span class='int'>15</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="BOTTOM_HALF_INTERGRAL-constant" class="">BOTTOM_HALF_INTERGRAL =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>5</span><span class='comma'>,</span>		<span class='int'>15</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DIVIDE-constant" class="">DIVIDE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>6</span><span class='comma'>,</span>		<span class='int'>15</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="APPROXIMATE-constant" class="">APPROXIMATE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>7</span><span class='comma'>,</span>		<span class='int'>15</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DEGREE-constant" class="">DEGREE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>8</span><span class='comma'>,</span>		<span class='int'>15</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="MULTIPLY-constant" class="">MULTIPLY =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>9</span><span class='comma'>,</span>		<span class='int'>15</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="DOT-constant" class="">DOT =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>10</span><span class='comma'>,</span> 	<span class='int'>15</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="RADICAL-constant" class="">RADICAL =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>11</span><span class='comma'>,</span> 	<span class='int'>15</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="NTH_POWER-constant" class="">NTH_POWER =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>12</span><span class='comma'>,</span> 	<span class='int'>15</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="SQUARED-constant" class="">SQUARED =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>13</span><span class='comma'>,</span> 	<span class='int'>15</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="SQUARE-constant" class="">SQUARE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>14</span><span class='comma'>,</span> 	<span class='int'>15</span><span class='rbracket'>]</span></pre></dd>
+      
+        <dt id="NO_BREAK_SPACE-constant" class="">NO_BREAK_SPACE =
+          
+        </dt>
+        <dd><pre class="code"><span class='lbracket'>[</span><span class='int'>15</span><span class='comma'>,</span> 	<span class='int'>15</span><span class='rbracket'>]</span></pre></dd>
+      
+    </dl>
+  
+
+
+
+
+
+
+
+
+
+</div>
+
+      <div id="footer">
+  Generated on Thu Feb 29 23:50:35 2024 by
+  <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.34 (ruby-3.2.2).
+</div>
+
+    </div>
+  </body>
+</html>
