@@ -1,269 +1,322 @@
 ##
-# This CLASS contains color hashes to be merged with other objects' rendering hashes.
-# Colors can be removed, modified or added within this class directly.
-# Below is an example of its usage:
-#
-# args.outputs.solids << {
-# 	x: 100,
-# 	y: 100,
-# 	w: 50,
-# 	y: 50,
-# }.merge(Color.green)
+# This class contains color hashes to be merged with other objects' rendering hashes.
+# 	Colors can be removed, modified or added within this class directly.
+# 	Below is an example of its usage:
+# @example
+# 	args.outputs.solids << {
+# 		x: 100,
+# 		y: 100,
+# 		w: 50,
+# 		y: 50,
+# 	}.merge(Color.green)
 
 class Color
-	def self.all
-		[
-			self.pink,
-			self.cyan,
-			self.brown,
-			self.dark_brown,
-			self.red,
-			self.dark_red,
-			self.orange,
-			self.dark_orange,
-			self.yellow,
-			self.dark_yellow,
-			self.green,
-			self.dark_green,
-			self.blue,
-			self.dark_blue,
-			self.purple,
-			self.indigo,
-			self.black,
-			self.grey,
-			self.white,
-			self.background,
-		]
-	end
+	class << self
+		# A list of all colors.
+		# @return [Array<Hash>]
+		def all
+			[
+				pink,
+				cyan,
+				brown,
+				dark_brown,
+				red,
+				dark_red,
+				orange,
+				dark_orange,
+				yellow,
+				dark_yellow,
+				green,
+				dark_green,
+				blue,
+				dark_blue,
+				purple,
+				indigo,
+				black,
+				grey,
+				white,
+				background,
+			]
+		end
 
-	def self.background
-		rgb = [	230, 230, 230]
+		def all_names
+			all.map { |color_hash| color_hash[:color_name] }
+		end
 
-		{
-			r: rgb[0],
-			g: rgb[1],
-			b: rgb[2],
-			color_name: :background
-		}
-	end
+		# @return [Hash]
+		def background
+			rgb = [	230, 230, 230]
 
-	def self.white
-		rgb = [255, 255, 255]
-		
-		{
-			r: rgb[0],
-			g: rgb[1],
-			b: rgb[2],
-			color_name: :white
-		}
-	end
+			{
+				r: rgb[0],
+				g: rgb[1],
+				b: rgb[2],
+				color_name: :background,
+				color_id: 1
+			}
+		end
 
-	def self.grey
-		rgb = [178, 178, 178]
+		# @return [Hash]
+		def white
+			rgb = [255, 255, 255]
+			
+			{
+				r: rgb[0],
+				g: rgb[1],
+				b: rgb[2],
+				color_name: :white,
+				color_id: 2
+			}
+		end
 
-		{
-			r: rgb[0],
-			g: rgb[1],
-			b: rgb[2],
-			color_name: :grey
-		}
-	end
+		# @return [Hash]
+		def grey
+			rgb = [178, 178, 178]
 
-	def self.black
-		rgb = [0, 0, 0]
+			{
+				r: rgb[0],
+				g: rgb[1],
+				b: rgb[2],
+				color_name: :grey,
+				color_id: 3
+			}
+		end
 
-		{
-			r: rgb[0],
-			g: rgb[1],
-			b: rgb[2],
-			color_name: :black
-		}
-	end
+		# @return [Hash]
+		def black
+			rgb = [0, 0, 0]
 
-	def self.pink
-		rgb = [255, 77, 128]
+			{
+				r: rgb[0],
+				g: rgb[1],
+				b: rgb[2],
+				color_name: :black,
+				color_id: 4
+			}
+		end
 
-		{
-			r: rgb[0],
-			g: rgb[1],
-			b: rgb[2],
-			color_name: :pink
-		}
-	end 
+		# @return [Hash]
+		def pink
+			rgb = [255, 77, 128]
 
-	def self.cyan
-		rgb = [22, 244, 208]
+			{
+				r: rgb[0],
+				g: rgb[1],
+				b: rgb[2],
+				color_name: :pink,
+				color_id: 5
+			}
+		end 
 
-		{
-			r: rgb[0],
-			g: rgb[1],
-			b: rgb[2],
-			color_name: :cyan
-		}
-	end 
+		# @return [Hash]
+		def cyan
+			rgb = [22, 244, 208]
 
-	def self.brown
-		rgb = [206, 129, 71]
-		
-		{
-			r: rgb[0],
-			g: rgb[1],
-			b: rgb[2],
-			color_name: :brown
-		}
-	end
+			{
+				r: rgb[0],
+				g: rgb[1],
+				b: rgb[2],
+				color_name: :cyan,
+				color_id: 6
+			}
+		end 
 
-	def self.dark_brown
-		rgb = [86, 29, 37]
-		
-		{
-			r: rgb[0],
-			g: rgb[1],
-			b: rgb[2],
-			color_name: :dark_brown
-		}
-	end
+		# @return [Hash]
+		def brown
+			rgb = [206, 129, 71]
+			
+			{
+				r: rgb[0],
+				g: rgb[1],
+				b: rgb[2],
+				color_name: :brown,
+				color_id: 7
+			}
+		end
 
-	def self.red
-		rgb = [239, 39, 27]
+		# @return [Hash]
+		def dark_brown
+			rgb = [86, 29, 37]
+			
+			{
+				r: rgb[0],
+				g: rgb[1],
+				b: rgb[2],
+				color_name: :dark_brown,
+				color_id: 8
+			}
+		end
 
-		{
-			r: rgb[0],
-			g: rgb[1],
-			b: rgb[2],
-			color_name: :red
-		}
-	end
+		# @return [Hash]
+		def red
+			rgb = [239, 39, 27]
 
-	def self.dark_red
-		rgb = [113, 0, 0]
+			{
+				r: rgb[0],
+				g: rgb[1],
+				b: rgb[2],
+				color_name: :red,
+				color_id: 9
+			}
+		end
 
-		{
-			r: rgb[0],
-			g: rgb[1],
-			b: rgb[2],
-			color_name: :dark_red
-		}
-	end
+		# @return [Hash]
+		def dark_red
+			rgb = [113, 0, 0]
 
-	def self.yellow
-		rgb = [252, 186, 4]
-		
-		{
-			r: rgb[0],
-			g: rgb[1],
-			b: rgb[2],
-			color_name: :yellow
-		}
-	end
+			{
+				r: rgb[0],
+				g: rgb[1],
+				b: rgb[2],
+				color_name: :dark_red,
+				color_id: 10
+			}
+		end
 
-	def self.dark_yellow
-		rgb = [100, 69, 54]
-		
-		{
-			r: rgb[0],
-			g: rgb[1],
-			b: rgb[2],
-			color_name: :dark_yellow
-		}
-	end
+		# @return [Hash]
+		def yellow
+			rgb = [252, 186, 4]
+			
+			{
+				r: rgb[0],
+				g: rgb[1],
+				b: rgb[2],
+				color_name: :yellow,
+				color_id: 11
+			}
+		end
 
-	def self.orange
-		rgb = [230, 127, 13]
-		
-		{
-			r: rgb[0],
-			g: rgb[1],
-			b: rgb[2],
-			color_name: :orange
-		}
-	end
+		# @return [Hash]
+		def dark_yellow
+			rgb = [100, 69, 54]
+			
+			{
+				r: rgb[0],
+				g: rgb[1],
+				b: rgb[2],
+				color_name: :dark_yellow,
+				color_id: 12
+			}
+		end
 
-	def self.dark_orange
-		rgb = [172, 57, 49]
-		
-		{
-			r: rgb[0],
-			g: rgb[1],
-			b: rgb[2],
-			color_name: :dark_orange
-		}
-	end
+		# @return [Hash]
+		def orange
+			rgb = [230, 127, 13]
+			
+			{
+				r: rgb[0],
+				g: rgb[1],
+				b: rgb[2],
+				color_name: :orange,
+				color_id: 13
+			}
+		end
 
-	def self.green
-		rgb = [47, 191, 113]
-		
-		{
-			r: rgb[0],
-			g: rgb[1],
-			b: rgb[2],
-			color_name: :green
-		}
-	end
+		# @return [Hash]
+		def dark_orange
+			rgb = [172, 57, 49]
+			
+			{
+				r: rgb[0],
+				g: rgb[1],
+				b: rgb[2],
+				color_name: :dark_orange,
+				color_id: 14
+			}
+		end
 
-	def self.dark_green
-		rgb = [36, 62, 54]
+		# @return [Hash]
+		def green
+			rgb = [47, 191, 113]
+			
+			{
+				r: rgb[0],
+				g: rgb[1],
+				b: rgb[2],
+				color_name: :green,
+				color_id: 15
+			}
+		end
 
-		{
-			r: rgb[0],
-			g: rgb[1],
-			b: rgb[2],
-			color_name: :dark_green
-		}
-	end
+		# @return [Hash]
+		def dark_green
+			rgb = [36, 62, 54]
 
-	def self.blue
-		rgb = [60, 145, 230]
-		
-		{
-			r: rgb[0],
-			g: rgb[1],
-			b: rgb[2],
-			color_name: :blue
-		}
-	end
+			{
+				r: rgb[0],
+				g: rgb[1],
+				b: rgb[2],
+				color_name: :dark_green,
+				color_id: 16
+			}
+		end
 
-	def self.dark_blue
-		rgb = [1, 22, 56]
-		
-		{
-			r: rgb[0],
-			g: rgb[1],
-			b: rgb[2],
-			color_name: :dark_blue
-		}
-	end
+		# @return [Hash]
+		def blue
+			rgb = [60, 145, 230]
+			
+			{
+				r: rgb[0],
+				g: rgb[1],
+				b: rgb[2],
+				color_name: :blue,
+				color_id: 17
+			}
+		end
 
-	def self.purple
-		rgb = [138, 79, 255]
-		
-		{
-			r: rgb[0],
-			g: rgb[1],
-			b: rgb[2],
-			color_name: :purple
-		}
-	end
+		# @return [Hash]
+		def dark_blue
+			rgb = [1, 22, 56]
+			
+			{
+				r: rgb[0],
+				g: rgb[1],
+				b: rgb[2],
+				color_name: :dark_blue,
+				color_id: 18
+			}
+		end
 
-	def self.indigo
-		rgb = [57, 20, 99]
-		
-		{
-			r: rgb[0],
-			g: rgb[1],
-			b: rgb[2],
-			color_name: :indigo
-		}
-	end
+		# @return [Hash]
+		def purple
+			rgb = [138, 79, 255]
+			
+			{
+				r: rgb[0],
+				g: rgb[1],
+				b: rgb[2],
+				color_name: :purple,
+				color_id: 19
+			}
+		end
 
-	def self.test_color(r, g, b)
-		rgb = [r, g, b]
+		# @return [Hash]
+		def indigo
+			rgb = [57, 20, 99]
+			
+			{
+				r: rgb[0],
+				g: rgb[1],
+				b: rgb[2],
+				color_name: :indigo,
+				color_id: 20
+			}
+		end
 
-		{
-			r: rgb[0],
-			g: rgb[1],
-			b: rgb[2],
-			color_name: :new
-		}
+		# @param r [Integer] Red value.
+		# @param g [Integer] Green value.
+		# @param b [Integer] Blue value.
+		# @return [Hash]
+		def test_color(r, g, b)
+			rgb = [r, g, b]
+
+			{
+				r: rgb[0],
+				g: rgb[1],
+				b: rgb[2],
+				color_name: :test,
+				color_id: 0
+			}
+		end
 	end
 end
