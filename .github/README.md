@@ -1,1 +1,1 @@
-tomes/README.md
+../tomes/README.md
