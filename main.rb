@@ -1,9 +1,14 @@
-# This is the way DragonRuby recommends setting up multiple file requirements.
+require 'app/tomes/spells/librarian/librarian.rb'
 
-# All basic files are 'required' here, ignoring the ones in the 'app' directory itself.
-# @note I recommend you remove this from 'tomes/' and put in your 'app/' folder.
-require 'app/require_file_module.rb'
-RequireFile::require_all_ruby_files
+IGNORED_FILES = Librarian::dredge_directory('app/tomes') + ['app/main.rb', 'app/tick.rb']
 
-# The game itself is here and must be required *last*.
+# The order these directories are loaded matters.
+Librarian::require_directory('app/tomes/alterations')
+Librarian::require_directory('app/tomes/spells')
+Librarian::require_directory('app/tomes/components')
+Librarian::require_directory('app/tomes/conjurations')
+
+# Load the rest of the game.
+Librarian::require_directory('app', ignore: IGNORED_FILES )
+
 require 'app/tick.rb'
