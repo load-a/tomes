@@ -33,14 +33,14 @@ class Card
 		output
 	end
 
-	# @param [<String, Symbol>, object]
-
+	# @param type [<String, Symbol>, object]
+	# @param value [<String, Symbol>, object]
 	def add_attribute(type, value)
 		@card_attributes[type.to_sym] = value
 	end
 
-	# @param [String, Symbol] The attribute name you want to remove.
-	# @return [void] Removes it from the #card_attributes hash. 
+	# @param type [String, Symbol] The attribute name you want to remove.
+	# @return [Void] Removes it from the #card_attributes hash. 
 	# @note It is possible to erase the two default attributes this way, but #suit and #value will return nil.
 	def remove_attribute(type)
 		@card_attributes.reject! {|card_type| card_type.to_s == type}

@@ -1,6 +1,10 @@
+# A module containing a reference to every sprite in the simple-mood sprite sheet included in DragonRuby.
+#   Instead of one hash with 256 entries, I've split it into 16 hashes with 16 entries each.
+
 module SpriteHash
   extend self
 
+  # @return [Hash<Arrays>]
   def row_zero 
     {
       null:  [0, 0], 
@@ -22,6 +26,7 @@ module SpriteHash
     }
   end
 
+  # @return [Hash<Arrays>]
   def row_one 
     {
       right_pointer:  [0, 1],
@@ -43,6 +48,7 @@ module SpriteHash
     }
   end
 
+  # @return [Hash<Arrays>]
   def row_two 
     {
       white_space:  [0, 2],
@@ -64,6 +70,7 @@ module SpriteHash
     }
   end
 
+  # @return [Hash<Arrays>]
   def row_three 
     {
       zero:  [0, 3],
@@ -85,6 +92,7 @@ module SpriteHash
     }
   end
 
+  # @return [Hash<Arrays>]
   def row_four 
     {
       at:  [0, 4],
@@ -106,6 +114,7 @@ module SpriteHash
     }
   end
 
+  # @return [Hash<Arrays>]
   def row_five 
     {
       capital_p:  [0, 5],
@@ -127,6 +136,7 @@ module SpriteHash
     }
   end
 
+  # @return [Hash<Arrays>]
   def row_six 
     {
       tick:  [0, 6],
@@ -148,6 +158,7 @@ module SpriteHash
     }
   end
 
+  # @return [Hash<Arrays>]
   def row_seven 
     {
       lowercase_p:  [0, 7],
@@ -169,6 +180,7 @@ module SpriteHash
     }
   end
 
+  # @return [Hash<Arrays>]
   def row_eight 
     {
       capital_ç:  [0, 8],
@@ -190,6 +202,7 @@ module SpriteHash
     }
   end
 
+  # @return [Hash<Arrays>]
   def row_nine 
     {
       capital_é:  [0, 9],
@@ -211,6 +224,7 @@ module SpriteHash
     }
   end
 
+  # @return [Hash<Arrays>]
   def row_ten 
     {
       lowercase_á:  [0, 10],
@@ -232,6 +246,7 @@ module SpriteHash
     }
   end
 
+  # @return [Hash<Arrays>]
   def row_eleven 
     {
       light_shade:  [0, 11],
@@ -253,6 +268,7 @@ module SpriteHash
     }
   end
 
+  # @return [Hash<Arrays>]
   def row_twelve 
     {
       up_right:  [0, 12],
@@ -274,6 +290,7 @@ module SpriteHash
     }
   end
 
+  # @return [Hash<Arrays>]
   def row_thirteen 
     {
       double_up_horizontal:  [0, 13],
@@ -295,6 +312,7 @@ module SpriteHash
     }
   end
 
+  # @return [Hash<Arrays>]
   def row_fourteen 
     {
       alpha:  [0, 14],
@@ -316,6 +334,7 @@ module SpriteHash
     }
   end
 
+  # @return [Hash<Arrays>]
   def row_fifteen 
     {
       identical:  [0, 15],
@@ -337,6 +356,8 @@ module SpriteHash
     }
   end
 
+  # This will let you call any sprite by name.
+  # @return [Hash<Arrays>]
   def all
     row_zero.merge(row_one, 
     row_two, 
@@ -355,6 +376,9 @@ module SpriteHash
     row_fifteen)
   end
 
+  # This allows the module to be used as a Hash itself.
+  # @param sprite_name_symbol [Symbol]
+  # @return [Array<Integers>]
   def [](sprite_name_symbol)
     all[sprite_name_symbol]
   end

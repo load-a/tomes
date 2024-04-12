@@ -15,7 +15,7 @@ bike.add_cards(%w[joker small red], %w[joker big black])
 # 	if card.value.to_i > 0
 # 		card.value
 # 	elsif card.value == 'ace'
-# 		[1, 11]
+# 		11
 # 	else
 # 		10
 # 	end

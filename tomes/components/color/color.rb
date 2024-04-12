@@ -2,7 +2,7 @@
 
 class Color
 	class << self
-		# A list of all colors.
+		# A list of all colors in this class (except #test_color).
 		# @return [Array<Hash>]
 		def all
 			[
@@ -18,10 +18,13 @@ class Color
 			]
 		end
 
+		# See #all
+		# @return [Array<Symbol>]
 		def all_names
 			all.map { |color_hash| color_hash[:color_name] }
 		end
 
+		# The default background white.
 		# @return [Hash]
 		def background
 			rgb = [	230, 230, 230]
@@ -35,6 +38,7 @@ class Color
 			}
 		end
 
+		# Pure white.
 		# @return [Hash]
 		def white
 			rgb = [255, 255, 255]

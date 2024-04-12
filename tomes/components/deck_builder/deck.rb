@@ -1,17 +1,21 @@
 require 'app/tomes/components/deck_builder/deck_manipulation.rb'
 require 'app/tomes/components/deck_builder/card.rb'
 
-##
-# A class for creating and manipulating an ordered set of Cards. 
-# Each deck must be initialized with one or more *suits* to be combined with one or more *values*, forming a Card.
-# The order these attributes are given will become the default order for the entire deck.
-# Cards are unique objects, so multiple identical cards can exist in a Deck without issue.
+# A class for creating and manipulating an ordered set of Card objects. 
+# Usage:
+# 	Each deck is initialized with one or more *suits* to be combined with one or more *values*.
+# 	These attributes are iterated over to create a set of Cards. 
+# 	Cards can be added or removed from the Deck at any time thereafter.
+# 	Cards are unique objects, so multiple identical Cards can exist in a Deck without issue.
+# 	@note The order these attributes are given will become the default order for the entire deck.
 
 class Deck
 
 	include DeckManipulation
 
-	def initialize(suits: ['card'], values: ['0..1'])
+	# @param suits [Array<Strings>]
+	# @param values [Array<String, Range, Integer>]
+	def initialize(suits: ['card'], values: [0..1])
 
 		@card_list = Array.new
 		suits.each do |suit|

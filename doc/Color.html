@@ -1,0 +1,2275 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>
+  Class: Color
+  
+    &mdash; Documentation by YARD 0.9.36
+  
+</title>
+
+  <link rel="stylesheet" href="css/style.css" type="text/css" />
+
+  <link rel="stylesheet" href="css/common.css" type="text/css" />
+
+<script type="text/javascript">
+  pathId = "Color";
+  relpath = '';
+</script>
+
+
+  <script type="text/javascript" charset="utf-8" src="js/jquery.js"></script>
+
+  <script type="text/javascript" charset="utf-8" src="js/app.js"></script>
+
+
+  </head>
+  <body>
+    <div class="nav_wrap">
+      <iframe id="nav" src="class_list.html?1"></iframe>
+      <div id="resizer"></div>
+    </div>
+
+    <div id="main" tabindex="-1">
+      <div id="header">
+        <div id="menu">
+  
+    <a href="_index.html">Index (C)</a> &raquo;
+    
+    
+    <span class="title">Color</span>
+  
+</div>
+
+        <div id="search">
+  
+    <a class="full_list_link" id="class_list_link"
+        href="class_list.html">
+
+        <svg width="24" height="24">
+          <rect x="0" y="4" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="12" width="24" height="4" rx="1" ry="1"></rect>
+          <rect x="0" y="20" width="24" height="4" rx="1" ry="1"></rect>
+        </svg>
+    </a>
+  
+</div>
+        <div class="clear"></div>
+      </div>
+
+      <div id="content"><h1>Class: Color
+  
+  
+  
+</h1>
+<div class="box_info">
+  
+  <dl>
+    <dt>Inherits:</dt>
+    <dd>
+      <span class="inheritName"><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></span>
+      
+        <ul class="fullTree">
+          <li><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></li>
+          
+            <li class="next">Color</li>
+          
+        </ul>
+        <a href="#" class="inheritanceTree">show all</a>
+      
+    </dd>
+  </dl>
+  
+
+  
+  
+  
+  
+  
+
+  
+
+  
+  <dl>
+    <dt>Defined in:</dt>
+    <dd>tomes/components/color/color.rb</dd>
+  </dl>
+  
+</div>
+
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>A class that contains hashes with color data.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
+
+
+
+
+
+
+  
+    <h2>
+      Class Method Summary
+      <small><a href="#" class="summary_toggle">collapse</a></small>
+    </h2>
+
+    <ul class="summary">
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#all-class_method" title="all (class method)">.<strong>all</strong>  &#x21d2; Array&lt;Hash&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A list of all colors in this class (except #test_color).</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#all_names-class_method" title="all_names (class method)">.<strong>all_names</strong>  &#x21d2; Array&lt;Symbol&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>See #all.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#background-class_method" title="background (class method)">.<strong>background</strong>  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>The default background white.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#black-class_method" title="black (class method)">.<strong>black</strong>  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#blue-class_method" title="blue (class method)">.<strong>blue</strong>  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#brown-class_method" title="brown (class method)">.<strong>brown</strong>  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#cyan-class_method" title="cyan (class method)">.<strong>cyan</strong>  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#dark_blue-class_method" title="dark_blue (class method)">.<strong>dark_blue</strong>  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#dark_brown-class_method" title="dark_brown (class method)">.<strong>dark_brown</strong>  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#dark_green-class_method" title="dark_green (class method)">.<strong>dark_green</strong>  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#dark_orange-class_method" title="dark_orange (class method)">.<strong>dark_orange</strong>  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#dark_red-class_method" title="dark_red (class method)">.<strong>dark_red</strong>  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#dark_yellow-class_method" title="dark_yellow (class method)">.<strong>dark_yellow</strong>  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#green-class_method" title="green (class method)">.<strong>green</strong>  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#grey-class_method" title="grey (class method)">.<strong>grey</strong>  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#indigo-class_method" title="indigo (class method)">.<strong>indigo</strong>  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#orange-class_method" title="orange (class method)">.<strong>orange</strong>  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#pink-class_method" title="pink (class method)">.<strong>pink</strong>  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#purple-class_method" title="purple (class method)">.<strong>purple</strong>  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#red-class_method" title="red (class method)">.<strong>red</strong>  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#test_color-class_method" title="test_color (class method)">.<strong>test_color</strong>(r, g, b)  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#white-class_method" title="white (class method)">.<strong>white</strong>  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Pure white.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#yellow-class_method" title="yellow (class method)">.<strong>yellow</strong>  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'></div></span>
+  
+</li>
+
+      
+    </ul>
+  
+
+
+
+  <div id="class_method_details" class="method_details_list">
+    <h2>Class Method Details</h2>
+
+    
+      <div class="method_details first">
+  <h3 class="signature first" id="all-class_method">
+  
+    .<strong>all</strong>  &#x21d2; <tt>Array&lt;Hash&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>A list of all colors in this class (except #test_color).</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;Hash&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/components/color/color.rb', line 7</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_all'>all</span>
+	<span class='lbracket'>[</span>
+		<span class='id identifier rubyid_pink'>pink</span><span class='comma'>,</span> 					<span class='id identifier rubyid_cyan'>cyan</span><span class='comma'>,</span>
+		<span class='id identifier rubyid_brown'>brown</span><span class='comma'>,</span> 					<span class='id identifier rubyid_dark_brown'>dark_brown</span><span class='comma'>,</span>
+		<span class='id identifier rubyid_red'>red</span><span class='comma'>,</span> 						<span class='id identifier rubyid_dark_red'>dark_red</span><span class='comma'>,</span>
+		<span class='id identifier rubyid_orange'>orange</span><span class='comma'>,</span> 				<span class='id identifier rubyid_dark_orange'>dark_orange</span><span class='comma'>,</span>
+		<span class='id identifier rubyid_yellow'>yellow</span><span class='comma'>,</span> 				<span class='id identifier rubyid_dark_yellow'>dark_yellow</span><span class='comma'>,</span>
+		<span class='id identifier rubyid_green'>green</span><span class='comma'>,</span> 					<span class='id identifier rubyid_dark_green'>dark_green</span><span class='comma'>,</span>
+		<span class='id identifier rubyid_blue'>blue</span><span class='comma'>,</span> 					<span class='id identifier rubyid_dark_blue'>dark_blue</span><span class='comma'>,</span>
+		<span class='id identifier rubyid_purple'>purple</span><span class='comma'>,</span> 				<span class='id identifier rubyid_indigo'>indigo</span><span class='comma'>,</span>
+		<span class='id identifier rubyid_black'>black</span><span class='comma'>,</span> 	<span class='id identifier rubyid_grey'>grey</span><span class='comma'>,</span> 	<span class='id identifier rubyid_white'>white</span><span class='comma'>,</span> 				<span class='id identifier rubyid_background'>background</span><span class='comma'>,</span>
+	<span class='rbracket'>]</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="all_names-class_method">
+  
+    .<strong>all_names</strong>  &#x21d2; <tt>Array&lt;<span class='object_link'><a href="Symbol.html" title="Symbol (class)">Symbol</a></span>&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>See #all</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;<span class='object_link'><a href="Symbol.html" title="Symbol (class)">Symbol</a></span>&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+23
+24
+25</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/components/color/color.rb', line 23</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_all_names'>all_names</span>
+	<span class='id identifier rubyid_all'>all</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_color_hash'>color_hash</span><span class='op'>|</span> <span class='id identifier rubyid_color_hash'>color_hash</span><span class='lbracket'>[</span><span class='symbol'>:color_name</span><span class='rbracket'>]</span> <span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="background-class_method">
+  
+    .<strong>background</strong>  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The default background white.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/components/color/color.rb', line 29</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_background'>background</span>
+	<span class='id identifier rubyid_rgb'>rgb</span> <span class='op'>=</span> <span class='lbracket'>[</span>	<span class='int'>230</span><span class='comma'>,</span> <span class='int'>230</span><span class='comma'>,</span> <span class='int'>230</span><span class='rbracket'>]</span>
+
+	<span class='lbrace'>{</span>
+		<span class='label'>r:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>g:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>b:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>color_name:</span> <span class='symbol'>:background</span><span class='comma'>,</span>
+		<span class='label'>color_id:</span> <span class='int'>1</span>
+	<span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="black-class_method">
+  
+    .<strong>black</strong>  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/components/color/color.rb', line 69</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_black'>black</span>
+	<span class='id identifier rubyid_rgb'>rgb</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='int'>0</span><span class='comma'>,</span> <span class='int'>0</span><span class='comma'>,</span> <span class='int'>0</span><span class='rbracket'>]</span>
+
+	<span class='lbrace'>{</span>
+		<span class='label'>r:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>g:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>b:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>color_name:</span> <span class='symbol'>:black</span><span class='comma'>,</span>
+		<span class='label'>color_id:</span> <span class='int'>4</span>
+	<span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="blue-class_method">
+  
+    .<strong>blue</strong>  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+238
+239
+240
+241
+242
+243
+244
+245
+246
+247
+248</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/components/color/color.rb', line 238</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_blue'>blue</span>
+	<span class='id identifier rubyid_rgb'>rgb</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='int'>60</span><span class='comma'>,</span> <span class='int'>145</span><span class='comma'>,</span> <span class='int'>230</span><span class='rbracket'>]</span>
+	
+	<span class='lbrace'>{</span>
+		<span class='label'>r:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>g:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>b:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>color_name:</span> <span class='symbol'>:blue</span><span class='comma'>,</span>
+		<span class='label'>color_id:</span> <span class='int'>17</span>
+	<span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="brown-class_method">
+  
+    .<strong>brown</strong>  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/components/color/color.rb', line 108</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_brown'>brown</span>
+	<span class='id identifier rubyid_rgb'>rgb</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='int'>206</span><span class='comma'>,</span> <span class='int'>129</span><span class='comma'>,</span> <span class='int'>71</span><span class='rbracket'>]</span>
+	
+	<span class='lbrace'>{</span>
+		<span class='label'>r:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>g:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>b:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>color_name:</span> <span class='symbol'>:brown</span><span class='comma'>,</span>
+		<span class='label'>color_id:</span> <span class='int'>7</span>
+	<span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="cyan-class_method">
+  
+    .<strong>cyan</strong>  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/components/color/color.rb', line 95</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_cyan'>cyan</span>
+	<span class='id identifier rubyid_rgb'>rgb</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='int'>22</span><span class='comma'>,</span> <span class='int'>244</span><span class='comma'>,</span> <span class='int'>208</span><span class='rbracket'>]</span>
+
+	<span class='lbrace'>{</span>
+		<span class='label'>r:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>g:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>b:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>color_name:</span> <span class='symbol'>:cyan</span><span class='comma'>,</span>
+		<span class='label'>color_id:</span> <span class='int'>6</span>
+	<span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="dark_blue-class_method">
+  
+    .<strong>dark_blue</strong>  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+251
+252
+253
+254
+255
+256
+257
+258
+259
+260
+261</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/components/color/color.rb', line 251</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_dark_blue'>dark_blue</span>
+	<span class='id identifier rubyid_rgb'>rgb</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='int'>1</span><span class='comma'>,</span> <span class='int'>22</span><span class='comma'>,</span> <span class='int'>56</span><span class='rbracket'>]</span>
+	
+	<span class='lbrace'>{</span>
+		<span class='label'>r:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>g:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>b:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>color_name:</span> <span class='symbol'>:dark_blue</span><span class='comma'>,</span>
+		<span class='label'>color_id:</span> <span class='int'>18</span>
+	<span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="dark_brown-class_method">
+  
+    .<strong>dark_brown</strong>  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/components/color/color.rb', line 121</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_dark_brown'>dark_brown</span>
+	<span class='id identifier rubyid_rgb'>rgb</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='int'>86</span><span class='comma'>,</span> <span class='int'>29</span><span class='comma'>,</span> <span class='int'>37</span><span class='rbracket'>]</span>
+	
+	<span class='lbrace'>{</span>
+		<span class='label'>r:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>g:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>b:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>color_name:</span> <span class='symbol'>:dark_brown</span><span class='comma'>,</span>
+		<span class='label'>color_id:</span> <span class='int'>8</span>
+	<span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="dark_green-class_method">
+  
+    .<strong>dark_green</strong>  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+225
+226
+227
+228
+229
+230
+231
+232
+233
+234
+235</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/components/color/color.rb', line 225</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_dark_green'>dark_green</span>
+	<span class='id identifier rubyid_rgb'>rgb</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='int'>36</span><span class='comma'>,</span> <span class='int'>62</span><span class='comma'>,</span> <span class='int'>54</span><span class='rbracket'>]</span>
+
+	<span class='lbrace'>{</span>
+		<span class='label'>r:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>g:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>b:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>color_name:</span> <span class='symbol'>:dark_green</span><span class='comma'>,</span>
+		<span class='label'>color_id:</span> <span class='int'>16</span>
+	<span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="dark_orange-class_method">
+  
+    .<strong>dark_orange</strong>  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+199
+200
+201
+202
+203
+204
+205
+206
+207
+208
+209</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/components/color/color.rb', line 199</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_dark_orange'>dark_orange</span>
+	<span class='id identifier rubyid_rgb'>rgb</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='int'>172</span><span class='comma'>,</span> <span class='int'>57</span><span class='comma'>,</span> <span class='int'>49</span><span class='rbracket'>]</span>
+	
+	<span class='lbrace'>{</span>
+		<span class='label'>r:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>g:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>b:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>color_name:</span> <span class='symbol'>:dark_orange</span><span class='comma'>,</span>
+		<span class='label'>color_id:</span> <span class='int'>14</span>
+	<span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="dark_red-class_method">
+  
+    .<strong>dark_red</strong>  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/components/color/color.rb', line 147</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_dark_red'>dark_red</span>
+	<span class='id identifier rubyid_rgb'>rgb</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='int'>113</span><span class='comma'>,</span> <span class='int'>0</span><span class='comma'>,</span> <span class='int'>0</span><span class='rbracket'>]</span>
+
+	<span class='lbrace'>{</span>
+		<span class='label'>r:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>g:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>b:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>color_name:</span> <span class='symbol'>:dark_red</span><span class='comma'>,</span>
+		<span class='label'>color_id:</span> <span class='int'>10</span>
+	<span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="dark_yellow-class_method">
+  
+    .<strong>dark_yellow</strong>  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/components/color/color.rb', line 173</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_dark_yellow'>dark_yellow</span>
+	<span class='id identifier rubyid_rgb'>rgb</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='int'>100</span><span class='comma'>,</span> <span class='int'>69</span><span class='comma'>,</span> <span class='int'>54</span><span class='rbracket'>]</span>
+	
+	<span class='lbrace'>{</span>
+		<span class='label'>r:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>g:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>b:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>color_name:</span> <span class='symbol'>:dark_yellow</span><span class='comma'>,</span>
+		<span class='label'>color_id:</span> <span class='int'>12</span>
+	<span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="green-class_method">
+  
+    .<strong>green</strong>  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+212
+213
+214
+215
+216
+217
+218
+219
+220
+221
+222</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/components/color/color.rb', line 212</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_green'>green</span>
+	<span class='id identifier rubyid_rgb'>rgb</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='int'>47</span><span class='comma'>,</span> <span class='int'>191</span><span class='comma'>,</span> <span class='int'>113</span><span class='rbracket'>]</span>
+	
+	<span class='lbrace'>{</span>
+		<span class='label'>r:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>g:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>b:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>color_name:</span> <span class='symbol'>:green</span><span class='comma'>,</span>
+		<span class='label'>color_id:</span> <span class='int'>15</span>
+	<span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="grey-class_method">
+  
+    .<strong>grey</strong>  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/components/color/color.rb', line 56</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_grey'>grey</span>
+	<span class='id identifier rubyid_rgb'>rgb</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='int'>178</span><span class='comma'>,</span> <span class='int'>178</span><span class='comma'>,</span> <span class='int'>178</span><span class='rbracket'>]</span>
+
+	<span class='lbrace'>{</span>
+		<span class='label'>r:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>g:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>b:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>color_name:</span> <span class='symbol'>:grey</span><span class='comma'>,</span>
+		<span class='label'>color_id:</span> <span class='int'>3</span>
+	<span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="indigo-class_method">
+  
+    .<strong>indigo</strong>  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+277
+278
+279
+280
+281
+282
+283
+284
+285
+286
+287</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/components/color/color.rb', line 277</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_indigo'>indigo</span>
+	<span class='id identifier rubyid_rgb'>rgb</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='int'>57</span><span class='comma'>,</span> <span class='int'>20</span><span class='comma'>,</span> <span class='int'>99</span><span class='rbracket'>]</span>
+	
+	<span class='lbrace'>{</span>
+		<span class='label'>r:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>g:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>b:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>color_name:</span> <span class='symbol'>:indigo</span><span class='comma'>,</span>
+		<span class='label'>color_id:</span> <span class='int'>20</span>
+	<span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="orange-class_method">
+  
+    .<strong>orange</strong>  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+186
+187
+188
+189
+190
+191
+192
+193
+194
+195
+196</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/components/color/color.rb', line 186</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_orange'>orange</span>
+	<span class='id identifier rubyid_rgb'>rgb</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='int'>230</span><span class='comma'>,</span> <span class='int'>127</span><span class='comma'>,</span> <span class='int'>13</span><span class='rbracket'>]</span>
+	
+	<span class='lbrace'>{</span>
+		<span class='label'>r:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>g:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>b:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>color_name:</span> <span class='symbol'>:orange</span><span class='comma'>,</span>
+		<span class='label'>color_id:</span> <span class='int'>13</span>
+	<span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="pink-class_method">
+  
+    .<strong>pink</strong>  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/components/color/color.rb', line 82</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_pink'>pink</span>
+	<span class='id identifier rubyid_rgb'>rgb</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='int'>255</span><span class='comma'>,</span> <span class='int'>77</span><span class='comma'>,</span> <span class='int'>128</span><span class='rbracket'>]</span>
+
+	<span class='lbrace'>{</span>
+		<span class='label'>r:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>g:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>b:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>color_name:</span> <span class='symbol'>:pink</span><span class='comma'>,</span>
+		<span class='label'>color_id:</span> <span class='int'>5</span>
+	<span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="purple-class_method">
+  
+    .<strong>purple</strong>  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+264
+265
+266
+267
+268
+269
+270
+271
+272
+273
+274</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/components/color/color.rb', line 264</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_purple'>purple</span>
+	<span class='id identifier rubyid_rgb'>rgb</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='int'>138</span><span class='comma'>,</span> <span class='int'>79</span><span class='comma'>,</span> <span class='int'>255</span><span class='rbracket'>]</span>
+	
+	<span class='lbrace'>{</span>
+		<span class='label'>r:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>g:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>b:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>color_name:</span> <span class='symbol'>:purple</span><span class='comma'>,</span>
+		<span class='label'>color_id:</span> <span class='int'>19</span>
+	<span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="red-class_method">
+  
+    .<strong>red</strong>  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/components/color/color.rb', line 134</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_red'>red</span>
+	<span class='id identifier rubyid_rgb'>rgb</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='int'>239</span><span class='comma'>,</span> <span class='int'>39</span><span class='comma'>,</span> <span class='int'>27</span><span class='rbracket'>]</span>
+
+	<span class='lbrace'>{</span>
+		<span class='label'>r:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>g:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>b:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>color_name:</span> <span class='symbol'>:red</span><span class='comma'>,</span>
+		<span class='label'>color_id:</span> <span class='int'>9</span>
+	<span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="test_color-class_method">
+  
+    .<strong>test_color</strong>(r, g, b)  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>r</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Red value.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>g</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Green value.</p>
+</div>
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>b</span>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Blue value.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+293
+294
+295
+296
+297
+298
+299
+300
+301
+302
+303</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/components/color/color.rb', line 293</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_test_color'>test_color</span><span class='lparen'>(</span><span class='id identifier rubyid_r'>r</span><span class='comma'>,</span> <span class='id identifier rubyid_g'>g</span><span class='comma'>,</span> <span class='id identifier rubyid_b'>b</span><span class='rparen'>)</span>
+	<span class='id identifier rubyid_rgb'>rgb</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='id identifier rubyid_r'>r</span><span class='comma'>,</span> <span class='id identifier rubyid_g'>g</span><span class='comma'>,</span> <span class='id identifier rubyid_b'>b</span><span class='rbracket'>]</span>
+
+	<span class='lbrace'>{</span>
+		<span class='label'>r:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>g:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>b:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>color_name:</span> <span class='symbol'>:test</span><span class='comma'>,</span>
+		<span class='label'>color_id:</span> <span class='int'>0</span>
+	<span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="white-class_method">
+  
+    .<strong>white</strong>  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Pure white.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/components/color/color.rb', line 43</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_white'>white</span>
+	<span class='id identifier rubyid_rgb'>rgb</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='int'>255</span><span class='comma'>,</span> <span class='int'>255</span><span class='comma'>,</span> <span class='int'>255</span><span class='rbracket'>]</span>
+	
+	<span class='lbrace'>{</span>
+		<span class='label'>r:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>g:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>b:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>color_name:</span> <span class='symbol'>:white</span><span class='comma'>,</span>
+		<span class='label'>color_id:</span> <span class='int'>2</span>
+	<span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="yellow-class_method">
+  
+    .<strong>yellow</strong>  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/components/color/color.rb', line 160</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_yellow'>yellow</span>
+	<span class='id identifier rubyid_rgb'>rgb</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='int'>252</span><span class='comma'>,</span> <span class='int'>186</span><span class='comma'>,</span> <span class='int'>4</span><span class='rbracket'>]</span>
+	
+	<span class='lbrace'>{</span>
+		<span class='label'>r:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>0</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>g:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>1</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>b:</span> <span class='id identifier rubyid_rgb'>rgb</span><span class='lbracket'>[</span><span class='int'>2</span><span class='rbracket'>]</span><span class='comma'>,</span>
+		<span class='label'>color_name:</span> <span class='symbol'>:yellow</span><span class='comma'>,</span>
+		<span class='label'>color_id:</span> <span class='int'>11</span>
+	<span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+  </div>
+
+</div>
+
+      <div id="footer">
+  Generated on Thu Apr 11 22:06:29 2024 by
+  <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
+  0.9.36 (ruby-3.3.0).
+</div>
+
+    </div>
+  </body>
+</html>

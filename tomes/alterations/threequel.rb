@@ -3,6 +3,9 @@
 
 class ::Symbol
 
+  # Symbols will check for instances of themselves when compared to an Array. Otherwise, this method behaves normally.
+  # @param other [Object]
+  # @return [Void]
   def ===(other)
     case other
     when ::Array
@@ -16,6 +19,9 @@ end
 
 class ::Numeric
 
+  # Numerics will check for instances of themselves when compared to an Array. Otherwise, this method behaves normally.
+  # @param other [Object]
+  # @return [Void]
   def ===(other)
     case other
     when ::Array
