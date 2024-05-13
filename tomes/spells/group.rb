@@ -1,38 +1,47 @@
-# This set of modules imparts a list of all instances as a class method, and includes instance methods for adding and removing an object's self from said list.
+# frozen_string_literal: true
 
+# A module for giving a Class the ability to log and track instances of itself.
 module Group
+  @list = []
 
-	@@all = []
+  # Adds an object to the list.
+  # @param object [Object] An instance of the class.
+  # This method should probably be called in #initialize.
+  # @return [Void]
+  def add(object)
+    @list << object
+  end
 
-	def add(object)
-		@@all << object
-	end
+  # Removes an object from the list.
+  # @param object [Object] An instance of the class.
+  # @return [Void]
+  def delete(object)
+    @list.delete(object)
+  end
 
-	def delete(object)
-		@@all.delete(object)
-	end
-
-	public
-
-	def all
-		@@all
-	end
-
+  # An array of all the instances of a class being tracked.
+  # @return [Array]
+  def list
+    @list
+  end
+  alias all list
 end
 
+# A module for giving objects a way to add or remove themselves to their class's `.list`.
 module Individual
+  private
 
-	private
+  # Adds this object to the Class's `.list` array.
+  # @return [Void]
+  def add_to_group
+    this_class.add(self)
+  end
 
-	def add_to_group
-		this_class::add(self)
-	end
+  public
 
-	public
-
-	def delete_from_group
-		this_class::delete(self)
-	end
-
+  # Adds this object to the Class's `.list` array.
+  # @return [Void]
+  def delete_from_group
+    this_class.delete(self)
+  end
 end
-

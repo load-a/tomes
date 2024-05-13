@@ -76,7 +76,7 @@
   
   <dl>
     <dt>Included in:</dt>
-    <dd><span class='object_link'><a href="Keyboard.html" title="Keyboard (class)">Keyboard</a></span></dd>
+    <dd><span class='object_link'><a href="Keyboard.html" title="Keyboard (module)">Keyboard</a></span></dd>
   </dl>
   
 
@@ -88,7 +88,18 @@
   
 </div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>A module containing all the sets of input presses used by the Keyboard class and its modules.</p>
 
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -106,7 +117,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#buttons-instance_method" title="#buttons (instance method)">#<strong>buttons</strong>  &#x21d2; Object </a>
+      <a href="#alphabet-instance_method" title="#alphabet (instance method)">#<strong>alphabet</strong>  &#x21d2; Array&lt;Symbols&gt; </a>
     
 
     
@@ -120,7 +131,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>A list of alphabet symbols.</p>
+</div></span>
   
 </li>
 
@@ -128,7 +141,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#confirm_buttons-instance_method" title="#confirm_buttons (instance method)">#<strong>confirm_buttons</strong>  &#x21d2; Object </a>
+      <a href="#button_inputs-instance_method" title="#button_inputs (instance method)">#<strong>button_inputs</strong>  &#x21d2; Hash </a>
     
 
     
@@ -142,7 +155,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>All controller-style buttons as a Hash with mixed values.</p>
+</div></span>
   
 </li>
 
@@ -150,7 +165,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#directions-instance_method" title="#directions (instance method)">#<strong>directions</strong>  &#x21d2; Object </a>
+      <a href="#common_punctuation-instance_method" title="#common_punctuation (instance method)">#<strong>common_punctuation</strong>  &#x21d2; Array&lt;Symbols&gt; </a>
     
 
     
@@ -164,7 +179,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>A list of common_punctuation symbols.</p>
+</div></span>
   
 </li>
 
@@ -172,7 +189,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#keys-instance_method" title="#keys (instance method)">#<strong>keys</strong>  &#x21d2; Object </a>
+      <a href="#confirm_button_inputs-instance_method" title="#confirm_button_inputs (instance method)">#<strong>confirm_button_inputs</strong>  &#x21d2; Hash </a>
     
 
     
@@ -186,7 +203,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>A hash of common confirm/deny buttons.</p>
+</div></span>
   
 </li>
 
@@ -194,7 +213,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#letters-instance_method" title="#letters (instance method)">#<strong>letters</strong>  &#x21d2; Object </a>
+      <a href="#direction_inputs-instance_method" title="#direction_inputs (instance method)">#<strong>direction_inputs</strong>  &#x21d2; Hash&lt;Array&gt; </a>
     
 
     
@@ -208,7 +227,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>The directional arrows or WASD keys as a hash of arrays containing both options.</p>
+</div></span>
   
 </li>
 
@@ -216,7 +237,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#numbers-instance_method" title="#numbers (instance method)">#<strong>numbers</strong>  &#x21d2; Object </a>
+      <a href="#enclosing_punctuation-instance_method" title="#enclosing_punctuation (instance method)">#<strong>enclosing_punctuation</strong>  &#x21d2; Array&lt;Symbols&gt; </a>
     
 
     
@@ -230,7 +251,105 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>A list of enclosing_punctuation symbols.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#keys-instance_method" title="#keys (instance method)">#<strong>keys</strong>  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>All other lists in this module merged into one.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#letter_inputs-instance_method" title="#letter_inputs (instance method)">#<strong>letter_inputs</strong>  &#x21d2; Array </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Any key that is not a number or directional arrow.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#number_inputs-instance_method" title="#number_inputs (instance method)">#<strong>number_inputs</strong>  &#x21d2; Hash </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>All ten number keys as a hash.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#uncommon_punctuation-instance_method" title="#uncommon_punctuation (instance method)">#<strong>uncommon_punctuation</strong>  &#x21d2; Array&lt;Symbols&gt; </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A list of uncommon_punctuation symbols.</p>
+</div></span>
   
 </li>
 
@@ -245,175 +364,44 @@
 
     
       <div class="method_details first">
-  <h3 class="signature first" id="buttons-instance_method">
+  <h3 class="signature first" id="alphabet-instance_method">
   
-    #<strong>buttons</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt> 
-  
-
+    #<strong>alphabet</strong>  &#x21d2; <tt>Array&lt;Symbols&gt;</tt> 
   
 
   
-</h3><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
 
-
-47
-48
-49
-50
-51
-52
-53
-54
-55
-56</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'tomes/conjurations/keyboard/input_lists.rb', line 47</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_buttons'>buttons</span> 
-	<span class='lbrace'>{</span>
-		<span class='label'>A:</span> <span class='lbracket'>[</span><span class='symbol'>:c</span><span class='comma'>,</span> <span class='symbol'>:j</span><span class='rbracket'>]</span><span class='comma'>,</span>
-		<span class='label'>B:</span> <span class='lbracket'>[</span><span class='symbol'>:x</span><span class='comma'>,</span> <span class='symbol'>:k</span><span class='rbracket'>]</span><span class='comma'>,</span>
-		<span class='label'>X:</span> <span class='lbracket'>[</span><span class='symbol'>:z</span><span class='comma'>,</span> <span class='symbol'>:l</span><span class='rbracket'>]</span><span class='comma'>,</span>
-		<span class='label'>Y:</span> <span class='lbracket'>[</span><span class='symbol'>:shift</span><span class='comma'>,</span> <span class='symbol'>:semicolon</span><span class='rbracket'>]</span><span class='comma'>,</span>
-		<span class='label'>START:</span> <span class='symbol'>:enter</span><span class='comma'>,</span>
-		<span class='label'>SELECT:</span> <span class='symbol'>:space</span>
-	<span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_merge'>merge</span><span class='lparen'>(</span><span class='id identifier rubyid_directions'>directions</span><span class='rparen'>)</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
+  
+</h3><div class="docstring">
+  <div class="discussion">
     
-      <div class="method_details ">
-  <h3 class="signature " id="confirm_buttons-instance_method">
-  
-    #<strong>confirm_buttons</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt> 
-  
-
-  
-
-  
-</h3><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
+<p>A list of alphabet symbols.</p>
 
 
-58
-59
-60
-61
-62
-63</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'tomes/conjurations/keyboard/input_lists.rb', line 58</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_confirm_buttons'>confirm_buttons</span> 
-	<span class='lbrace'>{</span>
-		<span class='label'>yes:</span> <span class='lbracket'>[</span><span class='symbol'>:j</span><span class='comma'>,</span> <span class='symbol'>:enter</span><span class='comma'>,</span> <span class='symbol'>:c</span><span class='rbracket'>]</span><span class='comma'>,</span>
-		<span class='label'>no:</span> <span class='lbracket'>[</span><span class='symbol'>:k</span><span class='comma'>,</span> <span class='symbol'>:x</span><span class='rbracket'>]</span>
-	<span class='rbrace'>}</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
+  </div>
 </div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="directions-instance_method">
+<div class="tags">
   
-    #<strong>directions</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt> 
+<p class="tag_title">Returns:</p>
+<ul class="return">
   
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;Symbols&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
 
-  
-
-  
-</h3><table class="source_code">
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-38
-39
-40
-41
-42
-43
-44
-45</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'tomes/conjurations/keyboard/input_lists.rb', line 38</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_directions'>directions</span> 
-	<span class='lbrace'>{</span>
-		<span class='label'>up:</span> <span class='lbracket'>[</span><span class='symbol'>:up_arrow</span><span class='comma'>,</span> <span class='symbol'>:w</span><span class='rbracket'>]</span><span class='comma'>,</span>
-		<span class='label'>down:</span> <span class='lbracket'>[</span><span class='symbol'>:down_arrow</span><span class='comma'>,</span> <span class='symbol'>:s</span><span class='rbracket'>]</span><span class='comma'>,</span>
-		<span class='label'>left:</span> <span class='lbracket'>[</span><span class='symbol'>:left_arrow</span><span class='comma'>,</span> <span class='symbol'>:a</span><span class='rbracket'>]</span><span class='comma'>,</span>
-		<span class='label'>right:</span> <span class='lbracket'>[</span><span class='symbol'>:right_arrow</span><span class='comma'>,</span> <span class='symbol'>:d</span><span class='rbracket'>]</span>
-	<span class='rbrace'>}</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="keys-instance_method">
-  
-    #<strong>keys</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt> 
-  
-
-  
-
-  
-</h3><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-65
-66
-67</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'tomes/conjurations/keyboard/input_lists.rb', line 65</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_keys'>keys</span>
-	<span class='id identifier rubyid_letters'>letters</span> <span class='op'>+</span> <span class='id identifier rubyid_numbers'>numbers</span><span class='period'>.</span><span class='id identifier rubyid_keys'>keys</span> <span class='op'>+</span> <span class='id identifier rubyid_directions'>directions</span> <span class='op'>+</span> <span class='id identifier rubyid_buttons'>buttons</span> <span class='op'>+</span> <span class='id identifier rubyid_confirm_buttons'>confirm_buttons</span> 
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="letters-instance_method">
-  
-    #<strong>letters</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt> 
-  
-
-  
-
-  
-</h3><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-2
-3
-4
-5
-6
 7
 8
 9
@@ -423,35 +411,20 @@
 13
 14
 15
-16
-17
-18
-19
-20
-21</pre>
+16</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'tomes/conjurations/keyboard/input_lists.rb', line 2</span>
+      <pre class="code"><span class="info file"># File 'tomes/conjurations/keyboard/input_lists.rb', line 7</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_letters'>letters</span> 
-	<span class='lbracket'>[</span>
-		<span class='symbol'>:a</span><span class='comma'>,</span> <span class='symbol'>:b</span><span class='comma'>,</span> <span class='symbol'>:c</span><span class='comma'>,</span> <span class='symbol'>:d</span><span class='comma'>,</span> <span class='symbol'>:e</span><span class='comma'>,</span> <span class='symbol'>:f</span><span class='comma'>,</span> <span class='symbol'>:g</span><span class='comma'>,</span>
-		<span class='symbol'>:h</span><span class='comma'>,</span> <span class='symbol'>:i</span><span class='comma'>,</span> <span class='symbol'>:j</span><span class='comma'>,</span> <span class='symbol'>:k</span><span class='comma'>,</span> <span class='symbol'>:l</span><span class='comma'>,</span> <span class='symbol'>:m</span><span class='comma'>,</span> <span class='symbol'>:n</span><span class='comma'>,</span> <span class='symbol'>:o</span><span class='comma'>,</span> <span class='symbol'>:p</span><span class='comma'>,</span>
-		<span class='symbol'>:q</span><span class='comma'>,</span> <span class='symbol'>:r</span><span class='comma'>,</span> <span class='symbol'>:s</span><span class='comma'>,</span>
-		<span class='symbol'>:t</span><span class='comma'>,</span> <span class='symbol'>:u</span><span class='comma'>,</span> <span class='symbol'>:v</span><span class='comma'>,</span>
-		<span class='symbol'>:w</span><span class='comma'>,</span> <span class='symbol'>:x</span><span class='comma'>,</span>
-		<span class='symbol'>:y</span><span class='comma'>,</span> <span class='symbol'>:z</span><span class='comma'>,</span>
-
-		<span class='symbol'>:comma</span><span class='comma'>,</span> <span class='symbol'>:period</span><span class='comma'>,</span> <span class='symbol'>:exclamation_mark</span><span class='comma'>,</span> <span class='symbol'>:question_mark</span><span class='comma'>,</span> <span class='symbol'>:colon</span><span class='comma'>,</span> <span class='symbol'>:semicolon</span><span class='comma'>,</span>
-		<span class='symbol'>:less_than</span><span class='comma'>,</span> <span class='symbol'>:greater_than</span><span class='comma'>,</span> <span class='symbol'>:equal</span><span class='comma'>,</span> 
-		<span class='symbol'>:space</span><span class='comma'>,</span> <span class='symbol'>:enter</span><span class='comma'>,</span> <span class='symbol'>:shift</span><span class='comma'>,</span> <span class='symbol'>:tab</span><span class='comma'>,</span> <span class='symbol'>:backspace</span><span class='comma'>,</span>
-
-		<span class='symbol'>:meta</span><span class='comma'>,</span> <span class='symbol'>:alt</span><span class='comma'>,</span> <span class='symbol'>:control</span><span class='comma'>,</span>
-		<span class='symbol'>:forward_slash</span><span class='comma'>,</span> <span class='symbol'>:back_slash</span><span class='comma'>,</span>
-
-		<span class='symbol'>:open_square_brace</span><span class='comma'>,</span> <span class='symbol'>:close_square_brace</span><span class='comma'>,</span> <span class='symbol'>:open_round_brace</span><span class='comma'>,</span> <span class='symbol'>:close_round_brace</span><span class='comma'>,</span> 
-		<span class='symbol'>:single_quotation_mark</span><span class='comma'>,</span> <span class='symbol'>:double_quotation_mark</span>
-	<span class='rbracket'>]</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_alphabet'>alphabet</span>
+  <span class='qsymbols_beg'>%i[</span><span class='words_sep'>
+</span><span class='words_sep'>    </span><span class='tstring_content'>a</span><span class='words_sep'> </span><span class='tstring_content'>b</span><span class='words_sep'> </span><span class='tstring_content'>c</span><span class='words_sep'> </span><span class='tstring_content'>d</span><span class='words_sep'> </span><span class='tstring_content'>e</span><span class='words_sep'> </span><span class='tstring_content'>f</span><span class='words_sep'> </span><span class='tstring_content'>g</span><span class='words_sep'>
+</span><span class='words_sep'>    </span><span class='tstring_content'>h</span><span class='words_sep'> </span><span class='tstring_content'>i</span><span class='words_sep'> </span><span class='tstring_content'>j</span><span class='words_sep'> </span><span class='tstring_content'>k</span><span class='words_sep'> </span><span class='tstring_content'>l</span><span class='words_sep'> </span><span class='tstring_content'>m</span><span class='words_sep'> </span><span class='tstring_content'>n</span><span class='words_sep'> </span><span class='tstring_content'>o</span><span class='words_sep'> </span><span class='tstring_content'>p</span><span class='words_sep'>
+</span><span class='words_sep'>    </span><span class='tstring_content'>q</span><span class='words_sep'> </span><span class='tstring_content'>r</span><span class='words_sep'> </span><span class='tstring_content'>s</span><span class='words_sep'>
+</span><span class='words_sep'>    </span><span class='tstring_content'>t</span><span class='words_sep'> </span><span class='tstring_content'>u</span><span class='words_sep'> </span><span class='tstring_content'>v</span><span class='words_sep'>
+</span><span class='words_sep'>    </span><span class='tstring_content'>w</span><span class='words_sep'> </span><span class='tstring_content'>x</span><span class='words_sep'>
+</span><span class='words_sep'>    </span><span class='tstring_content'>y</span><span class='words_sep'> </span><span class='tstring_content'>z</span><span class='words_sep'>
+</span><span class='words_sep'>  </span><span class='tstring_end'>]</span></span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -459,51 +432,589 @@
 </div>
     
       <div class="method_details ">
-  <h3 class="signature " id="numbers-instance_method">
+  <h3 class="signature " id="button_inputs-instance_method">
   
-    #<strong>numbers</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt> 
-  
-
+    #<strong>button_inputs</strong>  &#x21d2; <tt>Hash</tt> 
   
 
   
-</h3><table class="source_code">
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class='inline'>
+<p>Directions are included.</p>
+</div>
+  </div>
+
+
+<p>All controller-style buttons as a Hash with mixed values.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The hash keys are the reference input (such as on a Nintendo controller). The values are the accepted key or array of keys for said input.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/conjurations/keyboard/input_lists.rb', line 83</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_button_inputs'>button_inputs</span>
+  <span class='lbrace'>{</span>
+    <span class='label'>A:</span> <span class='qsymbols_beg'>%i[</span><span class='tstring_content'>c</span><span class='words_sep'> </span><span class='tstring_content'>j</span><span class='tstring_end'>]</span></span><span class='comma'>,</span>
+    <span class='label'>B:</span> <span class='qsymbols_beg'>%i[</span><span class='tstring_content'>x</span><span class='words_sep'> </span><span class='tstring_content'>k</span><span class='tstring_end'>]</span></span><span class='comma'>,</span>
+    <span class='label'>X:</span> <span class='qsymbols_beg'>%i[</span><span class='tstring_content'>z</span><span class='words_sep'> </span><span class='tstring_content'>l</span><span class='tstring_end'>]</span></span><span class='comma'>,</span>
+    <span class='label'>Y:</span> <span class='qsymbols_beg'>%i[</span><span class='tstring_content'>shift</span><span class='words_sep'> </span><span class='tstring_content'>semicolon</span><span class='tstring_end'>]</span></span><span class='comma'>,</span>
+    <span class='label'>START:</span> <span class='symbol'>:enter</span><span class='comma'>,</span>
+    <span class='label'>SELECT:</span> <span class='symbol'>:space</span>
+  <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_merge'>merge</span><span class='lparen'>(</span><span class='id identifier rubyid_directions'>directions</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="common_punctuation-instance_method">
+  
+    #<strong>common_punctuation</strong>  &#x21d2; <tt>Array&lt;Symbols&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>A list of common_punctuation symbols.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;Symbols&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+20
+21
+22
 23
 24
 25
-26
-27
-28
-29
+26</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/conjurations/keyboard/input_lists.rb', line 20</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_common_punctuation'>common_punctuation</span>
+  <span class='qsymbols_beg'>%i[</span><span class='words_sep'>
+</span><span class='words_sep'>    </span><span class='tstring_content'>comma</span><span class='words_sep'> </span><span class='tstring_content'>period</span><span class='words_sep'> </span><span class='tstring_content'>exclamation_mark</span><span class='words_sep'> </span><span class='tstring_content'>question_mark</span><span class='words_sep'> </span><span class='tstring_content'>colon</span><span class='words_sep'> </span><span class='tstring_content'>semicolon</span><span class='words_sep'>
+</span><span class='words_sep'>    </span><span class='tstring_content'>less_than</span><span class='words_sep'> </span><span class='tstring_content'>greater_than</span><span class='words_sep'> </span><span class='tstring_content'>equal</span><span class='words_sep'>
+</span><span class='words_sep'>    </span><span class='tstring_content'>space</span><span class='words_sep'> </span><span class='tstring_content'>enter</span><span class='words_sep'> </span><span class='tstring_content'>shift</span><span class='words_sep'> </span><span class='tstring_content'>tab</span><span class='words_sep'> </span><span class='tstring_content'>backspace</span><span class='words_sep'>
+</span><span class='words_sep'>  </span><span class='tstring_end'>]</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="confirm_button_inputs-instance_method">
+  
+    #<strong>confirm_button_inputs</strong>  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>A hash of common confirm/deny buttons.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The hash keys are the reference input, stated as “yes” or “no”. The values are arrays of accepted keys for said input.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+97
+98
+99
+100
+101
+102</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/conjurations/keyboard/input_lists.rb', line 97</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_confirm_button_inputs'>confirm_button_inputs</span>
+  <span class='lbrace'>{</span>
+    <span class='label'>yes:</span> <span class='qsymbols_beg'>%i[</span><span class='tstring_content'>j</span><span class='words_sep'> </span><span class='tstring_content'>enter</span><span class='words_sep'> </span><span class='tstring_content'>c</span><span class='tstring_end'>]</span></span><span class='comma'>,</span>
+    <span class='label'>no:</span> <span class='qsymbols_beg'>%i[</span><span class='tstring_content'>k</span><span class='words_sep'> </span><span class='tstring_content'>x</span><span class='tstring_end'>]</span></span>
+  <span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="direction_inputs-instance_method">
+  
+    #<strong>direction_inputs</strong>  &#x21d2; <tt>Hash&lt;Array&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The directional arrows or WASD keys as a hash of arrays containing both options.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash&lt;Array&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The hash keys are the directions and their values are arrays. The first element in the array is the arrow key; the second is its WASD counterpart.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+70
+71
+72
+73
+74
+75
+76
+77</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/conjurations/keyboard/input_lists.rb', line 70</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_direction_inputs'>direction_inputs</span>
+  <span class='lbrace'>{</span>
+    <span class='label'>up:</span> <span class='qsymbols_beg'>%i[</span><span class='tstring_content'>up_arrow</span><span class='words_sep'> </span><span class='tstring_content'>w</span><span class='tstring_end'>]</span></span><span class='comma'>,</span>
+    <span class='label'>down:</span> <span class='qsymbols_beg'>%i[</span><span class='tstring_content'>down_arrow</span><span class='words_sep'> </span><span class='tstring_content'>s</span><span class='tstring_end'>]</span></span><span class='comma'>,</span>
+    <span class='label'>left:</span> <span class='qsymbols_beg'>%i[</span><span class='tstring_content'>left_arrow</span><span class='words_sep'> </span><span class='tstring_content'>a</span><span class='tstring_end'>]</span></span><span class='comma'>,</span>
+    <span class='label'>right:</span> <span class='qsymbols_beg'>%i[</span><span class='tstring_content'>right_arrow</span><span class='words_sep'> </span><span class='tstring_content'>d</span><span class='tstring_end'>]</span></span>
+  <span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="enclosing_punctuation-instance_method">
+  
+    #<strong>enclosing_punctuation</strong>  &#x21d2; <tt>Array&lt;Symbols&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>A list of enclosing_punctuation symbols.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;Symbols&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+39
+40
+41
+42
+43
+44</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/conjurations/keyboard/input_lists.rb', line 39</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_enclosing_punctuation'>enclosing_punctuation</span>
+  <span class='qsymbols_beg'>%i[</span><span class='words_sep'>
+</span><span class='words_sep'>    </span><span class='tstring_content'>open_square_brace</span><span class='words_sep'> </span><span class='tstring_content'>close_square_brace</span><span class='words_sep'> </span><span class='tstring_content'>open_round_brace</span><span class='words_sep'> </span><span class='tstring_content'>close_round_brace</span><span class='words_sep'>
+</span><span class='words_sep'>    </span><span class='tstring_content'>single_quotation_mark</span><span class='words_sep'> </span><span class='tstring_content'>double_quotation_mark</span><span class='words_sep'>
+</span><span class='words_sep'>  </span><span class='tstring_end'>]</span></span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="keys-instance_method">
+  
+    #<strong>keys</strong>  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class='inline'>
+<p>This method has not been tested!</p>
+</div>
+  </div>
+
+
+<p>All other lists in this module merged into one.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+107
+108
+109</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/conjurations/keyboard/input_lists.rb', line 107</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_keys'>keys</span>
+  <span class='id identifier rubyid_letter_inputs'>letter_inputs</span><span class='period'>.</span><span class='id identifier rubyid_to_h'>to_h</span> <span class='op'>+</span> <span class='id identifier rubyid_number_inputs'>number_inputs</span> <span class='op'>+</span> <span class='id identifier rubyid_direction_inputs'>direction_inputs</span> <span class='op'>+</span> <span class='id identifier rubyid_button_inputs'>button_inputs</span> <span class='op'>+</span> <span class='id identifier rubyid_confirm_button_inputs'>confirm_button_inputs</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="letter_inputs-instance_method">
+  
+    #<strong>letter_inputs</strong>  &#x21d2; <tt>Array</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Any key that is not a number or directional arrow.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+48
+49
+50
+51
+52
+53</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/conjurations/keyboard/input_lists.rb', line 48</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_letter_inputs'>letter_inputs</span>
+  <span class='id identifier rubyid_alphabet'>alphabet</span> <span class='op'>+</span>
+    <span class='id identifier rubyid_common_punctuation'>common_punctuation</span> <span class='op'>+</span>
+    <span class='id identifier rubyid_uncommon_punctuation'>uncommon_punctuation</span> <span class='op'>+</span>
+    <span class='id identifier rubyid_enclosing_punctuation'>enclosing_punctuation</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="number_inputs-instance_method">
+  
+    #<strong>number_inputs</strong>  &#x21d2; <tt>Hash</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>All ten number keys as a hash.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The hash keys are “numbers” and their values are “numerals”.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+57
+58
+59
+60
+61
+62
+63
+64
+65</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/conjurations/keyboard/input_lists.rb', line 57</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_number_inputs'>number_inputs</span>
+  <span class='lbrace'>{</span>
+    <span class='label'>one:</span> <span class='int'>1</span><span class='comma'>,</span> <span class='label'>two:</span> <span class='int'>2</span><span class='comma'>,</span>
+    <span class='label'>three:</span> <span class='int'>3</span><span class='comma'>,</span> <span class='label'>four:</span> <span class='int'>4</span><span class='comma'>,</span>
+    <span class='label'>five:</span> <span class='int'>5</span><span class='comma'>,</span> <span class='label'>six:</span> <span class='int'>6</span><span class='comma'>,</span>
+    <span class='label'>seven:</span> <span class='int'>7</span><span class='comma'>,</span> <span class='label'>eight:</span> <span class='int'>8</span><span class='comma'>,</span>
+    <span class='label'>nine:</span> <span class='int'>9</span><span class='comma'>,</span> <span class='label'>zero:</span> <span class='int'>0</span>
+  <span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="uncommon_punctuation-instance_method">
+  
+    #<strong>uncommon_punctuation</strong>  &#x21d2; <tt>Array&lt;Symbols&gt;</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>A list of uncommon_punctuation symbols.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;Symbols&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
 30
 31
 32
 33
 34
-35
-36</pre>
+35</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'tomes/conjurations/keyboard/input_lists.rb', line 23</span>
+      <pre class="code"><span class="info file"># File 'tomes/conjurations/keyboard/input_lists.rb', line 30</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_numbers'>numbers</span> 
-	<span class='lbrace'>{</span>
-		<span class='label'>one:</span> <span class='int'>1</span><span class='comma'>,</span>
-		<span class='label'>two:</span> <span class='int'>2</span><span class='comma'>,</span>
-		<span class='label'>three:</span> <span class='int'>3</span><span class='comma'>,</span>
-		<span class='label'>four:</span> <span class='int'>4</span><span class='comma'>,</span>
-		<span class='label'>five:</span> <span class='int'>5</span><span class='comma'>,</span>
-		<span class='label'>six:</span> <span class='int'>6</span><span class='comma'>,</span>
-		<span class='label'>seven:</span> <span class='int'>7</span><span class='comma'>,</span>
-		<span class='label'>eight:</span> <span class='int'>8</span><span class='comma'>,</span>
-		<span class='label'>nine:</span> <span class='int'>9</span><span class='comma'>,</span>
-		<span class='label'>zero:</span> <span class='int'>0</span>
-	<span class='rbrace'>}</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_uncommon_punctuation'>uncommon_punctuation</span>
+  <span class='qsymbols_beg'>%i[</span><span class='words_sep'>
+</span><span class='words_sep'>    </span><span class='tstring_content'>meta</span><span class='words_sep'> </span><span class='tstring_content'>alt</span><span class='words_sep'> </span><span class='tstring_content'>control</span><span class='words_sep'>
+</span><span class='words_sep'>    </span><span class='tstring_content'>forward_slash</span><span class='words_sep'> </span><span class='tstring_content'>back_slash</span><span class='words_sep'>
+</span><span class='words_sep'>  </span><span class='tstring_end'>]</span></span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -515,7 +1026,7 @@
 </div>
 
       <div id="footer">
-  Generated on Thu Apr 11 22:27:54 2024 by
+  Generated on Mon May 13 17:23:41 2024 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.36 (ruby-3.3.0).
 </div>

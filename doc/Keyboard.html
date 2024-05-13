@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>
-  Class: Keyboard
+  Module: Keyboard
   
     &mdash; Documentation by YARD 0.9.36
   
@@ -59,28 +59,12 @@
         <div class="clear"></div>
       </div>
 
-      <div id="content"><h1>Class: Keyboard
+      <div id="content"><h1>Module: Keyboard
   
   
   
 </h1>
 <div class="box_info">
-  
-  <dl>
-    <dt>Inherits:</dt>
-    <dd>
-      <span class="inheritName"><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></span>
-      
-        <ul class="fullTree">
-          <li><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></li>
-          
-            <li class="next">Keyboard</li>
-          
-        </ul>
-        <a href="#" class="inheritanceTree">show all</a>
-      
-    </dd>
-  </dl>
   
 
   
@@ -107,7 +91,7 @@
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
     
-<p>A class for handling Keyboard input.</p>
+<p>A module for handling Keyboard input.</p>
 
 
   </div>
@@ -121,11 +105,6 @@
 
 
 
-  <h2>Instance Attribute Summary</h2>
-  
-  <h3 class="inherited">Attributes included from <span class='object_link'><a href="ArgsUpdate.html" title="ArgsUpdate (module)">ArgsUpdate</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="ArgsUpdate.html#args-instance_method" title="ArgsUpdate#args (method)">#args</a></span></p>
-
 
   
     <h2>
@@ -138,7 +117,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#inputs-class_method" title="inputs (class method)">.<strong>inputs</strong>  &#x21d2; Object </a>
+      <a href="#inputs-class_method" title="inputs (class method)">.<strong>inputs</strong>  &#x21d2; Array&lt;Symbols&gt; </a>
     
 
     
@@ -152,7 +131,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>The raw list of current keyboard inputs.</p>
+</div></span>
   
 </li>
 
@@ -181,7 +162,7 @@
   
   
   <h3 class="inherited">Methods included from <span class='object_link'><a href="InputLists.html" title="InputLists (module)">InputLists</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="InputLists.html#buttons-instance_method" title="InputLists#buttons (method)">buttons</a></span>, <span class='object_link'><a href="InputLists.html#confirm_buttons-instance_method" title="InputLists#confirm_buttons (method)">confirm_buttons</a></span>, <span class='object_link'><a href="InputLists.html#directions-instance_method" title="InputLists#directions (method)">directions</a></span>, <span class='object_link'><a href="InputLists.html#keys-instance_method" title="InputLists#keys (method)">keys</a></span>, <span class='object_link'><a href="InputLists.html#letters-instance_method" title="InputLists#letters (method)">letters</a></span>, <span class='object_link'><a href="InputLists.html#numbers-instance_method" title="InputLists#numbers (method)">numbers</a></span></p>
+  <p class="inherited"><span class='object_link'><a href="InputLists.html#alphabet-instance_method" title="InputLists#alphabet (method)">alphabet</a></span>, <span class='object_link'><a href="InputLists.html#button_inputs-instance_method" title="InputLists#button_inputs (method)">button_inputs</a></span>, <span class='object_link'><a href="InputLists.html#common_punctuation-instance_method" title="InputLists#common_punctuation (method)">common_punctuation</a></span>, <span class='object_link'><a href="InputLists.html#confirm_button_inputs-instance_method" title="InputLists#confirm_button_inputs (method)">confirm_button_inputs</a></span>, <span class='object_link'><a href="InputLists.html#direction_inputs-instance_method" title="InputLists#direction_inputs (method)">direction_inputs</a></span>, <span class='object_link'><a href="InputLists.html#enclosing_punctuation-instance_method" title="InputLists#enclosing_punctuation (method)">enclosing_punctuation</a></span>, <span class='object_link'><a href="InputLists.html#keys-instance_method" title="InputLists#keys (method)">keys</a></span>, <span class='object_link'><a href="InputLists.html#letter_inputs-instance_method" title="InputLists#letter_inputs (method)">letter_inputs</a></span>, <span class='object_link'><a href="InputLists.html#number_inputs-instance_method" title="InputLists#number_inputs (method)">number_inputs</a></span>, <span class='object_link'><a href="InputLists.html#uncommon_punctuation-instance_method" title="InputLists#uncommon_punctuation (method)">uncommon_punctuation</a></span></p>
 
   
   
@@ -268,27 +249,51 @@
       <div class="method_details first">
   <h3 class="signature first" id="inputs-class_method">
   
-    .<strong>inputs</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt> 
+    .<strong>inputs</strong>  &#x21d2; <tt>Array&lt;Symbols&gt;</tt> 
   
 
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The raw list of current keyboard inputs.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;Symbols&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-14
-15
-16</pre>
+16
+17
+18</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'tomes/conjurations/keyboard/keyboard.rb', line 14</span>
+      <pre class="code"><span class="info file"># File 'tomes/conjurations/keyboard/keyboard.rb', line 16</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_inputs'>inputs</span>
-	<span class='id identifier rubyid_args'>args</span><span class='period'>.</span><span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_keyboard'>keyboard</span><span class='period'>.</span><span class='id identifier rubyid_keys'>keys</span>
+  <span class='id identifier rubyid_args'>args</span><span class='period'>.</span><span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_keyboard'>keyboard</span><span class='period'>.</span><span class='id identifier rubyid_keys'>keys</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -300,7 +305,7 @@
 </div>
 
       <div id="footer">
-  Generated on Thu Apr 11 22:27:54 2024 by
+  Generated on Mon May 13 17:23:40 2024 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.36 (ruby-3.3.0).
 </div>

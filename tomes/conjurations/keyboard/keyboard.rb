@@ -1,20 +1,19 @@
-# Should not need to require ArgsUpdate
+# frozen_string_literal: true
 
-require 'app/tomes/conjurations/keyboard/input_lists.rb'
-require 'app/tomes/conjurations/keyboard/full_keyboard.rb'
+require 'app/tomes/conjurations/keyboard/input_lists'
+require 'app/tomes/conjurations/keyboard/full_keyboard'
 
-# A class for handling Keyboard input.
-class Keyboard
-	extend ArgsUpdate
-	extend InputLists
-	extend FullKeyboard
+# A module for handling Keyboard input.
+module Keyboard
+  extend ArgsUpdate
+  extend InputLists
+  extend FullKeyboard
 
-	class << self
+  module_function
 
-		def inputs
-			args.inputs.keyboard.keys
-		end
-		
-	end
-
+  # The raw list of current keyboard inputs.
+  # @return [Array<Symbols>]
+  def inputs
+    args.inputs.keyboard.keys
+  end
 end

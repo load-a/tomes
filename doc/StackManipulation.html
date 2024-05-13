@@ -328,7 +328,7 @@
       <pre class="code"><span class="info file"># File 'tomes/components/selector/stack_manipulation.rb', line 21</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_copy_memory'>copy_memory</span>
-	<span class='id identifier rubyid_stack'>stack</span><span class='period'>.</span><span class='id identifier rubyid_push'>push</span> <span class='ivar'>@memory</span>
+  <span class='id identifier rubyid_stack'>stack</span><span class='period'>.</span><span class='id identifier rubyid_push'>push</span> <span class='ivar'>@memory</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -350,15 +350,15 @@
       <pre class="lines">
 
 
-3
 4
-5</pre>
+5
+6</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'tomes/components/selector/stack_manipulation.rb', line 3</span>
+      <pre class="code"><span class="info file"># File 'tomes/components/selector/stack_manipulation.rb', line 4</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_copy_possession'>copy_possession</span>
-	<span class='id identifier rubyid_stack'>stack</span><span class='period'>.</span><span class='id identifier rubyid_push'>push</span> <span class='ivar'>@possession</span>
+  <span class='id identifier rubyid_stack'>stack</span><span class='period'>.</span><span class='id identifier rubyid_push'>push</span> <span class='ivar'>@possession</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -388,7 +388,7 @@
       <pre class="code"><span class="info file"># File 'tomes/components/selector/stack_manipulation.rb', line 38</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_empty'>empty</span>
-	<span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_stack'>stack</span> <span class='op'>=</span> <span class='const'>Array</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_stack'>stack</span> <span class='op'>=</span> <span class='lbracket'>[</span><span class='rbracket'>]</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -418,7 +418,7 @@
       <pre class="code"><span class="info file"># File 'tomes/components/selector/stack_manipulation.rb', line 34</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_load_memory'>load_memory</span>
-	<span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_memory'>memory</span> <span class='op'>=</span> <span class='id identifier rubyid_stack'>stack</span><span class='period'>.</span><span class='id identifier rubyid_last'>last</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_memory'>memory</span> <span class='op'>=</span> <span class='id identifier rubyid_stack'>stack</span><span class='period'>.</span><span class='id identifier rubyid_last'>last</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -440,15 +440,15 @@
       <pre class="lines">
 
 
-16
 17
-18</pre>
+18
+19</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'tomes/components/selector/stack_manipulation.rb', line 16</span>
+      <pre class="code"><span class="info file"># File 'tomes/components/selector/stack_manipulation.rb', line 17</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_load_possession'>load_possession</span>
-	<span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_possession'>possession</span> <span class='op'>=</span> <span class='id identifier rubyid_stack'>stack</span><span class='period'>.</span><span class='id identifier rubyid_last'>last</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_possession'>possession</span> <span class='op'>=</span> <span class='id identifier rubyid_stack'>stack</span><span class='period'>.</span><span class='id identifier rubyid_last'>last</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -478,7 +478,7 @@
       <pre class="code"><span class="info file"># File 'tomes/components/selector/stack_manipulation.rb', line 30</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_pop_memory!'>pop_memory!</span>
-	<span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_memory'>memory</span> <span class='op'>=</span> <span class='id identifier rubyid_stack'>stack</span><span class='period'>.</span><span class='id identifier rubyid_pop'>pop</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_memory'>memory</span> <span class='op'>=</span> <span class='id identifier rubyid_stack'>stack</span><span class='period'>.</span><span class='id identifier rubyid_pop'>pop</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -500,15 +500,15 @@
       <pre class="lines">
 
 
-12
 13
-14</pre>
+14
+15</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'tomes/components/selector/stack_manipulation.rb', line 12</span>
+      <pre class="code"><span class="info file"># File 'tomes/components/selector/stack_manipulation.rb', line 13</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_pop_possession!'>pop_possession!</span>
-	<span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_possession'>possession</span> <span class='op'>=</span> <span class='id identifier rubyid_stack'>stack</span><span class='period'>.</span><span class='id identifier rubyid_pop'>pop</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_possession'>possession</span> <span class='op'>=</span> <span class='id identifier rubyid_stack'>stack</span><span class='period'>.</span><span class='id identifier rubyid_pop'>pop</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -539,8 +539,8 @@
       <pre class="code"><span class="info file"># File 'tomes/components/selector/stack_manipulation.rb', line 25</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_push_memory!'>push_memory!</span>
-	<span class='id identifier rubyid_stack'>stack</span><span class='period'>.</span><span class='id identifier rubyid_push'>push</span> <span class='ivar'>@memory</span>
-	<span class='id identifier rubyid_forget'>forget</span>
+  <span class='id identifier rubyid_stack'>stack</span><span class='period'>.</span><span class='id identifier rubyid_push'>push</span> <span class='ivar'>@memory</span>
+  <span class='id identifier rubyid_forget'>forget</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -562,17 +562,17 @@
       <pre class="lines">
 
 
-7
 8
 9
-10</pre>
+10
+11</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'tomes/components/selector/stack_manipulation.rb', line 7</span>
+      <pre class="code"><span class="info file"># File 'tomes/components/selector/stack_manipulation.rb', line 8</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_push_possession!'>push_possession!</span>
-	<span class='id identifier rubyid_stack'>stack</span><span class='period'>.</span><span class='id identifier rubyid_push'>push</span> <span class='ivar'>@possession</span>
-	<span class='id identifier rubyid_drop'>drop</span>
+  <span class='id identifier rubyid_stack'>stack</span><span class='period'>.</span><span class='id identifier rubyid_push'>push</span> <span class='ivar'>@possession</span>
+  <span class='id identifier rubyid_drop'>drop</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -584,7 +584,7 @@
 </div>
 
       <div id="footer">
-  Generated on Thu Apr 11 22:27:54 2024 by
+  Generated on Mon May 13 17:18:50 2024 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.36 (ruby-3.3.0).
 </div>

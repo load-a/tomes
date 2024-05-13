@@ -1,65 +1,101 @@
-##
-# Objects used by the Deck class. Each Card is a set of two or more attributes (types) and their values.
-# The default attributes are "suit" and "value", though these can be changed after the deck has been created.
-# Note that the order of attributes is important when referencing Cards by their values.
+# frozen_string_literal: true
 
+# A data structure consisting of a set of traits.
+#   A "trait" is a key value-pair consisting of a *type*
+#   (i.e. "suit") and a *value* (i.e. "spades").
 class Card
-	# @return [Hash] The hash table for each attribute name and value.
-	attr_reader :card_attributes
+  private
 
-	def initialize(attributes, values)
+  # @!attribute traits [w]
+  # 	A Hash of all the card's traits.
+  # @!attribute archive [w] attribute
+  # 	A variable that can be used to hold an instance of #traits.
+  # 	@note Experimental. Not implemented.
+  attr_writer :traits, :archive
 
-		@card_attributes = Hash.new(0)
+  def initialize(types = %i[suit rank], values = [nil, 0])
+    self.traits = Hash.new(0)
 
-		attributes.each_with_index { |type, position|
-			@card_attributes[type.to_sym] = values[position]
-		}
-		
-	end
+    types.length.times do |index|
+      traits[types[index]] = values[index]
+    end
 
-	# @return [Array] An array version of #card_attributes
-	def to_a
-		@card_attributes.to_a
-	end
+    self.archive = traits
 
-	alias attributes card_attributes
-	alias to_h card_attributes
+    self.to_s = self
+  end
 
-	def to_s
-		output = ""
-		@card_attributes.each_value { |value|
-			output += "%s\t" % [value]
-		}		
-		output
-	end
+  public
 
-	# @param type [<String, Symbol>, object]
-	# @param value [<String, Symbol>, object]
-	def add_attribute(type, value)
-		@card_attributes[type.to_sym] = value
-	end
+  # @!attribute traits [r]
+  # 	A Hash of all the card's traits.
+  # @!attribute archive [r]
+  # 	A variable that can be used to hold an instance of #traits.
+  # 	@note Experimental. Not implemented.
+  attr_reader :traits, :archive
+  attr_accessor :to_s
 
-	# @param type [String, Symbol] The attribute name you want to remove.
-	# @return [Void] Removes it from the #card_attributes hash. 
-	# @note It is possible to erase the two default attributes this way, but #suit and #value will return nil.
-	def remove_attribute(type)
-		@card_attributes.reject! {|card_type| card_type.to_s == type}
-	end
+  # Creates a trait and adds it to `#traits`.
+  # @note *Do not* distribute traits to Cards unevenly.
+  # 	This may cause other classes that handle them to function improperly.
+  # 	If certain Cards have a trait that others don't,
+  # 		give those other Cards the same type with a default value.
+  # 	See the Hanafuda demo for an example.
+  # @param type [Symbol]
+  # @param value [String, Numeric]
+  def add_trait(type, value)
+    traits[type] = value
+  end
+  alias change_trait add_trait
+  alias change add_trait
+  alias []= add_trait
 
-	# @return [String] The 'suit' attribute value as a String.
-	def suit
-		@card_attributes[:suit]
-	end
+  # Deletes a trait from `#traits`.
+  # @param type [Symbol] The type of trait to be deleted.
+  # @return [String, Numeric] The value of the recently deleted trait.
+  def remove_trait(type)
+    traits.delete(type)
+  end
 
-	##
-	# @return [String] The 'value' attribute value as a String.
-	# @note This is the value parameter assigned at initialization.
-	def value
-		@card_attributes[:value]
-	end
+  # Allows Card values to be accessed like a Hash.
+  # @param type [Symbol]
+  def [](type)
+    traits[type]
+  end
 
-	# @return [Array<Arrays>] Converts each key-value pair into an array of strings, then returns those withing an array.
-	def type_values
-		@card_attributes.each_value.to_a
-	end
+  # Checks for the given type.
+  # @return [Boolean]
+  def type?(type)
+    traits.include? type
+  end
+  alias has? type?
+
+  # Checks for an instance of the given values. Returns true if *at least one of them* are found.
+  # @return [Boolean]
+  def value?(*values)
+    values.map do |value|
+      traits.value? value
+    end.any?
+  end
+  alias is? value?
+
+  # Checks the given trait is a proper subset of `#traits`.
+  # @note It is possible to check for multiple traits at a time,
+  #   but this method will return true only if *all of them* exist in `#traits`.
+  # @param trait [Hash]
+  # @return [Boolean]
+  def trait?(trait)
+    traits >= trait
+  end
+  alias include? trait?
+
+  # ADD TO TOMES
+  def types
+    traits.keys
+  end
+
+  # ADD TO TOMES
+  def values
+    traits.values
+  end
 end

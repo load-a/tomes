@@ -102,7 +102,11 @@
 <h2>Overview</h2><div class="docstring">
   <div class="discussion">
     
-<p>Objects used by the Deck class. Each Card is a set of two or more attributes (types) and their values. The default attributes are “suit” and “value”, though these can be changed after the deck has been created. Note that the order of attributes is important when referencing Cards by their values.</p>
+<p>A data structure consisting of a set of traits.</p>
+
+<pre class="code ruby"><code class="ruby">A &quot;trait&quot; is a key value-pair consisting of a *type*
+(i.e. &quot;suit&quot;) and a *value* (i.e. &quot;spades&quot;).
+</code></pre>
 
 
   </div>
@@ -120,11 +124,9 @@
       <li class="public ">
   <span class="summary_signature">
     
-      <a href="#card_attributes-instance_method" title="#card_attributes (instance method)">#<strong>card_attributes</strong>  &#x21d2; Hash </a>
+      <a href="#archive-instance_method" title="#archive (instance method)">#<strong>archive</strong>  &#x21d2; Object </a>
     
 
-    
-      (also: #attributes, #to_h)
     
   </span>
   
@@ -142,7 +144,63 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>The hash table for each attribute name and value.</p>
+<p>Returns the value of attribute archive.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#to_s-instance_method" title="#to_s (instance method)">#<strong>to_s</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the value of attribute to_s.</p>
+</div></span>
+  
+</li>
+
+    
+      <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#traits-instance_method" title="#traits (instance method)">#<strong>traits</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+    
+      <span class="note title readonly">readonly</span>
+    
+    
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>A Hash of all the card’s traits.</p>
 </div></span>
   
 </li>
@@ -164,36 +222,12 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#add_attribute-instance_method" title="#add_attribute (instance method)">#<strong>add_attribute</strong>(type, value)  &#x21d2; Object </a>
+      <a href="#[]-instance_method" title="#[] (instance method)">#<strong>[]</strong>(type)  &#x21d2; Object </a>
     
 
     
   </span>
   
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(attributes, values)  &#x21d2; Card </a>
-    
-
-    
-  </span>
-  
-  
-    <span class="note title constructor">constructor</span>
   
   
   
@@ -203,7 +237,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>A new instance of Card.</p>
+<p>Allows Card values to be accessed like a Hash.</p>
 </div></span>
   
 </li>
@@ -212,9 +246,11 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#remove_attribute-instance_method" title="#remove_attribute (instance method)">#<strong>remove_attribute</strong>(type)  &#x21d2; Void </a>
+      <a href="#add_trait-instance_method" title="#add_trait (instance method)">#<strong>add_trait</strong>(type, value)  &#x21d2; Object </a>
     
 
+    
+      (also: #change_trait, #change, #[]=)
     
   </span>
   
@@ -227,7 +263,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Removes it from the #card_attributes hash.</p>
+<p>Creates a trait and adds it to ‘#traits`.</p>
 </div></span>
   
 </li>
@@ -236,7 +272,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#suit-instance_method" title="#suit (instance method)">#<strong>suit</strong>  &#x21d2; String </a>
+      <a href="#remove_trait-instance_method" title="#remove_trait (instance method)">#<strong>remove_trait</strong>(type)  &#x21d2; String, Numeric </a>
     
 
     
@@ -251,7 +287,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>The ‘suit’ attribute value as a String.</p>
+<p>Deletes a trait from ‘#traits`.</p>
 </div></span>
   
 </li>
@@ -260,9 +296,11 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#to_a-instance_method" title="#to_a (instance method)">#<strong>to_a</strong>  &#x21d2; Array </a>
+      <a href="#trait%3F-instance_method" title="#trait? (instance method)">#<strong>trait?</strong>(trait)  &#x21d2; Boolean </a>
     
 
+    
+      (also: #include?)
     
   </span>
   
@@ -275,7 +313,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>An array version of #card_attributes.</p>
+<p>Checks the given trait is a proper subset of ‘#traits`.</p>
 </div></span>
   
 </li>
@@ -284,31 +322,11 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#to_s-instance_method" title="#to_s (instance method)">#<strong>to_s</strong>  &#x21d2; Object </a>
+      <a href="#type%3F-instance_method" title="#type? (instance method)">#<strong>type?</strong>(type)  &#x21d2; Boolean </a>
     
 
     
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#type_values-instance_method" title="#type_values (instance method)">#<strong>type_values</strong>  &#x21d2; Array&lt;Arrays&gt; </a>
-    
-
+      (also: #has?)
     
   </span>
   
@@ -321,7 +339,7 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>Converts each key-value pair into an array of strings, then returns those withing an array.</p>
+<p>Checks for the given type.</p>
 </div></span>
   
 </li>
@@ -330,7 +348,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#value-instance_method" title="#value (instance method)">#<strong>value</strong>  &#x21d2; String </a>
+      <a href="#types-instance_method" title="#types (instance method)">#<strong>types</strong>  &#x21d2; Object </a>
     
 
     
@@ -345,7 +363,57 @@
 
   
     <span class="summary_desc"><div class='inline'>
-<p>The ‘value’ attribute value as a String.</p>
+<p>ADD TO TOMES.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#value%3F-instance_method" title="#value? (instance method)">#<strong>value?</strong>(*values)  &#x21d2; Boolean </a>
+    
+
+    
+      (also: #is?)
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Checks for an instance of the given values.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#values-instance_method" title="#values (instance method)">#<strong>values</strong>  &#x21d2; Object </a>
+    
+
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>ADD TO TOMES.</p>
 </div></span>
   
 </li>
@@ -354,110 +422,31 @@
     </ul>
   
 
-<div id="constructor_details" class="method_details_list">
-  <h2>Constructor Details</h2>
-  
-    <div class="method_details first">
-  <h3 class="signature first" id="initialize-instance_method">
-  
-    #<strong>initialize</strong>(attributes, values)  &#x21d2; <tt><span class='object_link'><a href="" title="Card (class)">Card</a></span></tt> 
-  
-
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    
-<p>Returns a new instance of Card.</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-10
-11
-12
-13
-14
-15
-16
-17
-18</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'tomes/components/deck_builder/card.rb', line 10</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_initialize'><span class='object_link'><a href="top-level-namespace.html#initialize-instance_method" title="#initialize (method)">initialize</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_attributes'>attributes</span><span class='comma'>,</span> <span class='id identifier rubyid_values'>values</span><span class='rparen'>)</span>
-
-	<span class='ivar'>@card_attributes</span> <span class='op'>=</span> <span class='const'>Hash</span><span class='period'>.</span><span class='id identifier rubyid_new'>new</span><span class='lparen'>(</span><span class='int'>0</span><span class='rparen'>)</span>
-
-	<span class='id identifier rubyid_attributes'>attributes</span><span class='period'>.</span><span class='id identifier rubyid_each_with_index'>each_with_index</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_type'>type</span><span class='comma'>,</span> <span class='id identifier rubyid_position'>position</span><span class='op'>|</span>
-		<span class='ivar'>@card_attributes</span><span class='lbracket'>[</span><span class='id identifier rubyid_type'>type</span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_values'>values</span><span class='lbracket'>[</span><span class='id identifier rubyid_position'>position</span><span class='rbracket'>]</span>
-	<span class='rbrace'>}</span>
-	
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-  
-</div>
 
   <div id="instance_attr_details" class="attr_details">
     <h2>Instance Attribute Details</h2>
     
       
-      <span id=""></span>
+      <span id="archive=-instance_method"></span>
       <div class="method_details first">
-  <h3 class="signature first" id="card_attributes-instance_method">
+  <h3 class="signature first" id="archive-instance_method">
   
-    #<strong>card_attributes</strong>  &#x21d2; <tt>Hash</tt>  <span class="extras">(readonly)</span>
+    #<strong>archive</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt> 
   
 
-  
-    <span class="aliases">Also known as:
-    <span class="names"><span id='attributes-instance_method'>attributes</span>, <span id='to_h-instance_method'>to_h</span></span>
-    </span>
   
 
   
 </h3><div class="docstring">
   <div class="discussion">
     
-<p>Returns The hash table for each attribute name and value.</p>
+<p>Returns the value of attribute archive.</p>
 
 
   </div>
 </div>
 <div class="tags">
   
-<p class="tag_title">Returns:</p>
-<ul class="return">
-  
-    <li>
-      
-      
-        <span class='type'>(<tt>Hash</tt>)</span>
-      
-      
-      
-        &mdash;
-        <div class='inline'>
-<p>The hash table for each attribute name and value.</p>
-</div>
-      
-    </li>
-  
-</ul>
 
 </div><table class="source_code">
   <tr>
@@ -465,15 +454,97 @@
       <pre class="lines">
 
 
-8
-9
-10</pre>
+35</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'tomes/components/deck_builder/card.rb', line 8</span>
+      <pre class="code"><span class="info file"># File 'tomes/components/deck_builder/card.rb', line 35</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_card_attributes'>card_attributes</span>
-  <span class='ivar'>@card_attributes</span>
+<span class='id identifier rubyid_attr_reader'>attr_reader</span> <span class='symbol'>:traits</span><span class='comma'>,</span> <span class='symbol'>:archive</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="to_s=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="to_s-instance_method">
+  
+    #<strong>to_s</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the value of attribute to_s.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+36
+37
+38</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/components/deck_builder/card.rb', line 36</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_to_s'>to_s</span>
+  <span class='ivar'>@to_s</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      
+      <span id="traits=-instance_method"></span>
+      <div class="method_details ">
+  <h3 class="signature " id="traits-instance_method">
+  
+    #<strong>traits</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>A Hash of all the card’s traits.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+35
+36
+37</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/components/deck_builder/card.rb', line 35</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_traits'>traits</span>
+  <span class='ivar'>@traits</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -488,74 +559,9 @@
 
     
       <div class="method_details first">
-  <h3 class="signature first" id="add_attribute-instance_method">
+  <h3 class="signature first" id="[]-instance_method">
   
-    #<strong>add_attribute</strong>(type, value)  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt> 
-  
-
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    
-
-  </div>
-</div>
-<div class="tags">
-  <p class="tag_title">Parameters:</p>
-<ul class="param">
-  
-    <li>
-      
-        <span class='name'>type</span>
-      
-      
-        <span class='type'>(<tt>&lt;String, <span class='object_link'><a href="Symbol.html" title="Symbol (class)">Symbol</a></span>&gt;</tt>, <tt>object</tt>)</span>
-      
-      
-      
-    </li>
-  
-    <li>
-      
-        <span class='name'>value</span>
-      
-      
-        <span class='type'>(<tt>&lt;String, <span class='object_link'><a href="Symbol.html" title="Symbol (class)">Symbol</a></span>&gt;</tt>, <tt>object</tt>)</span>
-      
-      
-      
-    </li>
-  
-</ul>
-
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-38
-39
-40</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'tomes/components/deck_builder/card.rb', line 38</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_add_attribute'>add_attribute</span><span class='lparen'>(</span><span class='id identifier rubyid_type'>type</span><span class='comma'>,</span> <span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
-	<span class='ivar'>@card_attributes</span><span class='lbracket'>[</span><span class='id identifier rubyid_type'>type</span><span class='period'>.</span><span class='id identifier rubyid_to_sym'>to_sym</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_value'>value</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="remove_attribute-instance_method">
-  
-    #<strong>remove_attribute</strong>(type)  &#x21d2; <tt>Void</tt> 
+    #<strong>[]</strong>(type)  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt> 
   
 
   
@@ -564,15 +570,7 @@
 </h3><div class="docstring">
   <div class="discussion">
     
-  <div class="note notetag">
-    <strong>Note:</strong>
-    <div class='inline'>
-<p>It is possible to erase the two default attributes this way, but #suit and #value will return nil.</p>
-</div>
-  </div>
-
-
-<p>Returns Removes it from the #card_attributes hash.</p>
+<p>Allows Card values to be accessed like a Hash.</p>
 
 
   </div>
@@ -586,252 +584,14 @@
         <span class='name'>type</span>
       
       
-        <span class='type'>(<tt>String</tt>, <tt><span class='object_link'><a href="Symbol.html" title="Symbol (class)">Symbol</a></span></tt>)</span>
+        <span class='type'>(<tt><span class='object_link'><a href="Symbol.html" title="Symbol (class)">Symbol</a></span></tt>)</span>
       
       
-      
-        &mdash;
-        <div class='inline'>
-<p>The attribute name you want to remove.</p>
-</div>
       
     </li>
   
 </ul>
 
-<p class="tag_title">Returns:</p>
-<ul class="return">
-  
-    <li>
-      
-      
-        <span class='type'>(<tt>Void</tt>)</span>
-      
-      
-      
-        &mdash;
-        <div class='inline'>
-<p>Removes it from the #card_attributes hash.</p>
-</div>
-      
-    </li>
-  
-</ul>
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-45
-46
-47</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'tomes/components/deck_builder/card.rb', line 45</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_remove_attribute'>remove_attribute</span><span class='lparen'>(</span><span class='id identifier rubyid_type'>type</span><span class='rparen'>)</span>
-	<span class='ivar'>@card_attributes</span><span class='period'>.</span><span class='id identifier rubyid_reject!'>reject!</span> <span class='lbrace'>{</span><span class='op'>|</span><span class='id identifier rubyid_card_type'>card_type</span><span class='op'>|</span> <span class='id identifier rubyid_card_type'>card_type</span><span class='period'>.</span><span class='id identifier rubyid_to_s'>to_s</span> <span class='op'>==</span> <span class='id identifier rubyid_type'>type</span><span class='rbrace'>}</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="suit-instance_method">
-  
-    #<strong>suit</strong>  &#x21d2; <tt>String</tt> 
-  
-
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    
-<p>Returns The ‘suit’ attribute value as a String.</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  
-<p class="tag_title">Returns:</p>
-<ul class="return">
-  
-    <li>
-      
-      
-        <span class='type'>(<tt>String</tt>)</span>
-      
-      
-      
-        &mdash;
-        <div class='inline'>
-<p>The ‘suit’ attribute value as a String.</p>
-</div>
-      
-    </li>
-  
-</ul>
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-50
-51
-52</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'tomes/components/deck_builder/card.rb', line 50</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_suit'>suit</span>
-	<span class='ivar'>@card_attributes</span><span class='lbracket'>[</span><span class='symbol'>:suit</span><span class='rbracket'>]</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="to_a-instance_method">
-  
-    #<strong>to_a</strong>  &#x21d2; <tt>Array</tt> 
-  
-
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    
-<p>Returns An array version of #card_attributes.</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  
-<p class="tag_title">Returns:</p>
-<ul class="return">
-  
-    <li>
-      
-      
-        <span class='type'>(<tt>Array</tt>)</span>
-      
-      
-      
-        &mdash;
-        <div class='inline'>
-<p>An array version of #card_attributes</p>
-</div>
-      
-    </li>
-  
-</ul>
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-21
-22
-23</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'tomes/components/deck_builder/card.rb', line 21</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_to_a'>to_a</span>
-	<span class='ivar'>@card_attributes</span><span class='period'>.</span><span class='id identifier rubyid_to_a'>to_a</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="to_s-instance_method">
-  
-    #<strong>to_s</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt> 
-  
-
-  
-
-  
-</h3><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-28
-29
-30
-31
-32
-33
-34</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'tomes/components/deck_builder/card.rb', line 28</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_to_s'>to_s</span>
-	<span class='id identifier rubyid_output'>output</span> <span class='op'>=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_end'>&quot;</span></span>
-	<span class='ivar'>@card_attributes</span><span class='period'>.</span><span class='id identifier rubyid_each_value'>each_value</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_value'>value</span><span class='op'>|</span>
-		<span class='id identifier rubyid_output'>output</span> <span class='op'>+=</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>%s\t</span><span class='tstring_end'>&quot;</span></span> <span class='op'>%</span> <span class='lbracket'>[</span><span class='id identifier rubyid_value'>value</span><span class='rbracket'>]</span>
-	<span class='rbrace'>}</span>		
-	<span class='id identifier rubyid_output'>output</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="type_values-instance_method">
-  
-    #<strong>type_values</strong>  &#x21d2; <tt>Array&lt;Arrays&gt;</tt> 
-  
-
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    
-<p>Returns Converts each key-value pair into an array of strings, then returns those withing an array.</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  
-<p class="tag_title">Returns:</p>
-<ul class="return">
-  
-    <li>
-      
-      
-        <span class='type'>(<tt>Array&lt;Arrays&gt;</tt>)</span>
-      
-      
-      
-        &mdash;
-        <div class='inline'>
-<p>Converts each key-value pair into an array of strings, then returns those withing an array.</p>
-</div>
-      
-    </li>
-  
-</ul>
 
 </div><table class="source_code">
   <tr>
@@ -846,8 +606,8 @@
     <td>
       <pre class="code"><span class="info file"># File 'tomes/components/deck_builder/card.rb', line 62</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_type_values'>type_values</span>
-	<span class='ivar'>@card_attributes</span><span class='period'>.</span><span class='id identifier rubyid_each_value'>each_value</span><span class='period'>.</span><span class='id identifier rubyid_to_a'>to_a</span>
+<span class='kw'>def</span> <span class='op'>[]</span><span class='lparen'>(</span><span class='id identifier rubyid_type'>type</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_traits'>traits</span><span class='lbracket'>[</span><span class='id identifier rubyid_type'>type</span><span class='rbracket'>]</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -855,11 +615,15 @@
 </div>
     
       <div class="method_details ">
-  <h3 class="signature " id="value-instance_method">
+  <h3 class="signature " id="add_trait-instance_method">
   
-    #<strong>value</strong>  &#x21d2; <tt>String</tt> 
+    #<strong>add_trait</strong>(type, value)  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt> 
   
 
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='change_trait-instance_method'>change_trait</span>, <span id='change-instance_method'>change</span>, <span id='[]=-instance_method'>[]=</span></span>
+    </span>
   
 
   
@@ -869,31 +633,118 @@
   <div class="note notetag">
     <strong>Note:</strong>
     <div class='inline'>
-<p>This is the value parameter assigned at initialization.</p>
+<p>*Do not* distribute traits to Cards unevenly. This may cause other classes that handle them to function improperly. If certain Cards have a trait that others don’t, 	give those other Cards the same type with a default value. See the Hanafuda demo for an example.</p>
 </div>
   </div>
 
 
-<p>Returns The ‘value’ attribute value as a String.</p>
+<p>Creates a trait and adds it to ‘#traits`.</p>
 
 
   </div>
 </div>
 <div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
   
+    <li>
+      
+        <span class='name'>type</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Symbol.html" title="Symbol (class)">Symbol</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+    <li>
+      
+        <span class='name'>value</span>
+      
+      
+        <span class='type'>(<tt>String</tt>, <tt><span class='object_link'><a href="Numeric.html" title="Numeric (class)">Numeric</a></span></tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+46
+47
+48</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/components/deck_builder/card.rb', line 46</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_add_trait'>add_trait</span><span class='lparen'>(</span><span class='id identifier rubyid_type'>type</span><span class='comma'>,</span> <span class='id identifier rubyid_value'>value</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_traits'>traits</span><span class='lbracket'>[</span><span class='id identifier rubyid_type'>type</span><span class='rbracket'>]</span> <span class='op'>=</span> <span class='id identifier rubyid_value'>value</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="remove_trait-instance_method">
+  
+    #<strong>remove_trait</strong>(type)  &#x21d2; <tt>String</tt>, <tt><span class='object_link'><a href="Numeric.html" title="Numeric (class)">Numeric</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Deletes a trait from ‘#traits`.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>type</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Symbol.html" title="Symbol (class)">Symbol</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The type of trait to be deleted.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
 <p class="tag_title">Returns:</p>
 <ul class="return">
   
     <li>
       
       
-        <span class='type'>(<tt>String</tt>)</span>
+        <span class='type'>(<tt>String</tt>, <tt><span class='object_link'><a href="Numeric.html" title="Numeric (class)">Numeric</a></span></tt>)</span>
       
       
       
         &mdash;
         <div class='inline'>
-<p>The ‘value’ attribute value as a String.</p>
+<p>The value of the recently deleted trait.</p>
 </div>
       
     </li>
@@ -906,15 +757,298 @@
       <pre class="lines">
 
 
+56
 57
-58
-59</pre>
+58</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'tomes/components/deck_builder/card.rb', line 57</span>
+      <pre class="code"><span class="info file"># File 'tomes/components/deck_builder/card.rb', line 56</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_value'>value</span>
-	<span class='ivar'>@card_attributes</span><span class='lbracket'>[</span><span class='symbol'>:value</span><span class='rbracket'>]</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_remove_trait'>remove_trait</span><span class='lparen'>(</span><span class='id identifier rubyid_type'>type</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_traits'>traits</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='id identifier rubyid_type'>type</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="trait?-instance_method">
+  
+    #<strong>trait?</strong>(trait)  &#x21d2; <tt>Boolean</tt> 
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='include?-instance_method'>include?</span></span>
+    </span>
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class='inline'>
+<p>It is possible to check for multiple traits at a time, but this method will return true only if *all of them* exist in ‘#traits`.</p>
+</div>
+  </div>
+
+
+<p>Checks the given trait is a proper subset of ‘#traits`.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>trait</span>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+87
+88
+89</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/components/deck_builder/card.rb', line 87</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_trait?'>trait?</span><span class='lparen'>(</span><span class='id identifier rubyid_trait'>trait</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_traits'>traits</span> <span class='op'>&gt;=</span> <span class='id identifier rubyid_trait'>trait</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="type?-instance_method">
+  
+    #<strong>type?</strong>(type)  &#x21d2; <tt>Boolean</tt> 
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='has?-instance_method'>has?</span></span>
+    </span>
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Checks for the given type.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+68
+69
+70</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/components/deck_builder/card.rb', line 68</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_type?'>type?</span><span class='lparen'>(</span><span class='id identifier rubyid_type'>type</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_traits'>traits</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span> <span class='id identifier rubyid_type'>type</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="types-instance_method">
+  
+    #<strong>types</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>ADD TO TOMES</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+93
+94
+95</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/components/deck_builder/card.rb', line 93</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_types'>types</span>
+  <span class='id identifier rubyid_traits'>traits</span><span class='period'>.</span><span class='id identifier rubyid_keys'>keys</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="value?-instance_method">
+  
+    #<strong>value?</strong>(*values)  &#x21d2; <tt>Boolean</tt> 
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='is?-instance_method'>is?</span></span>
+    </span>
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Checks for an instance of the given values. Returns true if *at least one of them* are found.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+75
+76
+77
+78
+79</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/components/deck_builder/card.rb', line 75</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_value?'>value?</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_values'>values</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_values'>values</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_value'>value</span><span class='op'>|</span>
+    <span class='id identifier rubyid_traits'>traits</span><span class='period'>.</span><span class='id identifier rubyid_value?'>value?</span> <span class='id identifier rubyid_value'>value</span>
+  <span class='kw'>end</span><span class='period'>.</span><span class='id identifier rubyid_any?'>any?</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="values-instance_method">
+  
+    #<strong>values</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>ADD TO TOMES</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+98
+99
+100</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/components/deck_builder/card.rb', line 98</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_values'>values</span>
+  <span class='id identifier rubyid_traits'>traits</span><span class='period'>.</span><span class='id identifier rubyid_values'>values</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -926,7 +1060,7 @@
 </div>
 
       <div id="footer">
-  Generated on Thu Apr 11 22:27:54 2024 by
+  Generated on Mon May 13 17:23:41 2024 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.36 (ruby-3.3.0).
 </div>

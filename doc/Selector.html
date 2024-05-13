@@ -94,7 +94,7 @@
   
   <dl>
       <dt>Includes:</dt>
-      <dd><span class='object_link'><a href="Acquire.html" title="Acquire (module)">Acquire</a></span>, <span class='object_link'><a href="Identity.html" title="Identity (module)">Identity</a></span>, <span class='object_link'><a href="Query.html" title="Query (module)">Query</a></span>, <span class='object_link'><a href="Relinquish.html" title="Relinquish (module)">Relinquish</a></span></dd>
+      <dd><span class='object_link'><a href="Identity.html" title="Identity (module)">Identity</a></span>, <span class='object_link'><a href="SelectorAcquire.html" title="SelectorAcquire (module)">SelectorAcquire</a></span>, <span class='object_link'><a href="SelectorQuery.html" title="SelectorQuery (module)">SelectorQuery</a></span>, <span class='object_link'><a href="SelectorRelinquish.html" title="SelectorRelinquish (module)">SelectorRelinquish</a></span></dd>
   </dl>
   
   
@@ -115,12 +115,15 @@
   <div class="note notetag">
     <strong>Note:</strong>
     <div class='inline'>
-<p>Stack-based functionality is experimental so it has been omitted. it can be added manually.</p>
+<p>Stack-based functionality is experimental so it has been omitted. It can be added manually.</p>
 </div>
   </div>
 
 
-<p>A mechanism for tracking two pieces of information at a time. 	For example, while dragging an item on screen a selector can track both what the item is and the cursor’s relative position to it.</p>
+<p>A mechanism for tracking two pieces of information at a time. 	For example, while dragging an item on screen a selector can track</p>
+
+<pre class="code ruby"><code class="ruby">both what the item is and the cursor&#39;s relative position to it.
+</code></pre>
 
 
   </div>
@@ -146,6 +149,8 @@
   
   
   
+    
+      <span class="note title readonly">readonly</span>
     
     
   
@@ -173,6 +178,8 @@
   
   
   
+    
+      <span class="note title readonly">readonly</span>
     
     
   
@@ -210,30 +217,6 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#formatted_info-instance_method" title="#formatted_info (instance method)">#<strong>formatted_info</strong>  &#x21d2; String </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'>
-<p>A one-line string of some basic data about the selector.</p>
-</div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
       <a href="#info-instance_method" title="#info (instance method)">#<strong>info</strong>  &#x21d2; Hash </a>
     
 
@@ -255,27 +238,25 @@
 </li>
 
       
-        <li class="private ">
+        <li class="public ">
   <span class="summary_signature">
     
-      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>  &#x21d2; Selector </a>
+      <a href="#to_s-instance_method" title="#to_s (instance method)">#<strong>to_s</strong>  &#x21d2; String </a>
     
 
     
   </span>
   
   
-    <span class="note title constructor">constructor</span>
   
   
-  <span class="note title private">private</span>
   
   
   
 
   
     <span class="summary_desc"><div class='inline'>
-<p>A new instance of Selector.</p>
+<p>A one-line string of some basic data about the selector.</p>
 </div></span>
   
 </li>
@@ -294,7 +275,7 @@
   
   
   <h3 class="inherited">Methods included from <span class='object_link'><a href="Identifiable.html" title="Identifiable (module)">Identifiable</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="Identifiable.html#id_counter-instance_method" title="Identifiable#id_counter (method)">id_counter</a></span>, <span class='object_link'><a href="Identifiable.html#increment_id_counter-instance_method" title="Identifiable#increment_id_counter (method)">increment_id_counter</a></span>, <span class='object_link'><a href="Identifiable.html#set_class_tag-instance_method" title="Identifiable#set_class_tag (method)">set_class_tag</a></span>, <span class='object_link'><a href="Identifiable.html#tag-instance_method" title="Identifiable#tag (method)">tag</a></span></p>
+  <p class="inherited"><span class='object_link'><a href="Identifiable.html#id_counter-instance_method" title="Identifiable#id_counter (method)">id_counter</a></span>, <span class='object_link'><a href="Identifiable.html#increment_id_counter-instance_method" title="Identifiable#increment_id_counter (method)">increment_id_counter</a></span>, <span class='object_link'><a href="Identifiable.html#tag-instance_method" title="Identifiable#tag (method)">tag</a></span>, <span class='object_link'><a href="Identifiable.html#tag=-instance_method" title="Identifiable#tag= (method)">tag=</a></span></p>
 
   
   
@@ -304,8 +285,8 @@
   
   
   
-  <h3 class="inherited">Methods included from <span class='object_link'><a href="Query.html" title="Query (module)">Query</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="Query.html#blank%3F-instance_method" title="Query#blank? (method)">#blank?</a></span>, <span class='object_link'><a href="Query.html#empty%3F-instance_method" title="Query#empty? (method)">#empty?</a></span>, <span class='object_link'><a href="Query.html#has%3F-instance_method" title="Query#has? (method)">#has?</a></span>, <span class='object_link'><a href="Query.html#knows%3F-instance_method" title="Query#knows? (method)">#knows?</a></span></p>
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="SelectorQuery.html" title="SelectorQuery (module)">SelectorQuery</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="SelectorQuery.html#blank%3F-instance_method" title="SelectorQuery#blank? (method)">#blank?</a></span>, <span class='object_link'><a href="SelectorQuery.html#empty%3F-instance_method" title="SelectorQuery#empty? (method)">#empty?</a></span>, <span class='object_link'><a href="SelectorQuery.html#has%3F-instance_method" title="SelectorQuery#has? (method)">#has?</a></span>, <span class='object_link'><a href="SelectorQuery.html#knows%3F-instance_method" title="SelectorQuery#knows? (method)">#knows?</a></span></p>
 
   
   
@@ -315,8 +296,8 @@
   
   
   
-  <h3 class="inherited">Methods included from <span class='object_link'><a href="Relinquish.html" title="Relinquish (module)">Relinquish</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="Relinquish.html#drop-instance_method" title="Relinquish#drop (method)">#drop</a></span>, <span class='object_link'><a href="Relinquish.html#forget-instance_method" title="Relinquish#forget (method)">#forget</a></span>, <span class='object_link'><a href="Relinquish.html#reset!-instance_method" title="Relinquish#reset! (method)">#reset!</a></span></p>
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="SelectorRelinquish.html" title="SelectorRelinquish (module)">SelectorRelinquish</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="SelectorRelinquish.html#drop-instance_method" title="SelectorRelinquish#drop (method)">#drop</a></span>, <span class='object_link'><a href="SelectorRelinquish.html#forget-instance_method" title="SelectorRelinquish#forget (method)">#forget</a></span>, <span class='object_link'><a href="SelectorRelinquish.html#reset!-instance_method" title="SelectorRelinquish#reset! (method)">#reset!</a></span></p>
 
   
   
@@ -326,8 +307,8 @@
   
   
   
-  <h3 class="inherited">Methods included from <span class='object_link'><a href="Acquire.html" title="Acquire (module)">Acquire</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="Acquire.html#remember-instance_method" title="Acquire#remember (method)">#remember</a></span>, <span class='object_link'><a href="Acquire.html#take-instance_method" title="Acquire#take (method)">#take</a></span></p>
+  <h3 class="inherited">Methods included from <span class='object_link'><a href="SelectorAcquire.html" title="SelectorAcquire (module)">SelectorAcquire</a></span></h3>
+  <p class="inherited"><span class='object_link'><a href="SelectorAcquire.html#remember-instance_method" title="SelectorAcquire#remember (method)">#remember</a></span>, <span class='object_link'><a href="SelectorAcquire.html#take-instance_method" title="SelectorAcquire#take (method)">#take</a></span></p>
 
   
   
@@ -338,60 +319,7 @@
   
   
   <h3 class="inherited">Methods included from <span class='object_link'><a href="Identity.html" title="Identity (module)">Identity</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="Identity.html#id_tag-instance_method" title="Identity#id_tag (method)">#id_tag</a></span>, <span class='object_link'><a href="Identity.html#set_id-instance_method" title="Identity#set_id (method)">#set_id</a></span></p>
-<div id="constructor_details" class="method_details_list">
-  <h2>Constructor Details</h2>
-  
-    <div class="method_details first">
-  <h3 class="signature first" id="initialize-instance_method">
-  
-    #<strong>initialize</strong>  &#x21d2; <tt><span class='object_link'><a href="" title="Selector (class)">Selector</a></span></tt>  <span class="extras">(private)</span>
-  
-
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    
-<p>Returns a new instance of Selector.</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-26
-27
-28
-29
-30
-31
-32</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'tomes/components/selector/selector.rb', line 26</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_initialize'><span class='object_link'><a href="top-level-namespace.html#initialize-instance_method" title="#initialize (method)">initialize</a></span></span>
-	<span class='id identifier rubyid_set_id'>set_id</span>
-
-	<span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_possession'>possession</span> <span class='op'>=</span> <span class='kw'>nil</span>	
-	<span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_memory'>memory</span> <span class='op'>=</span> <span class='kw'>nil</span>			
-
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-  
-</div>
+  <p class="inherited"><span class='object_link'><a href="Identity.html#id_tag-instance_method" title="Identity#id_tag (method)">#id_tag</a></span></p>
 
   <div id="instance_attr_details" class="attr_details">
     <h2>Instance Attribute Details</h2>
@@ -424,10 +352,10 @@
       <pre class="lines">
 
 
-42</pre>
+43</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'tomes/components/selector/selector.rb', line 42</span>
+      <pre class="code"><span class="info file"># File 'tomes/components/selector/selector.rb', line 43</span>
 
 <span class='id identifier rubyid_attr_reader'>attr_reader</span> <span class='symbol'>:possession</span><span class='comma'>,</span> <span class='symbol'>:memory</span></pre>
     </td>
@@ -476,12 +404,12 @@
       <pre class="lines">
 
 
-42
 43
-44</pre>
+44
+45</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'tomes/components/selector/selector.rb', line 42</span>
+      <pre class="code"><span class="info file"># File 'tomes/components/selector/selector.rb', line 43</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_possession'>possession</span>
   <span class='ivar'>@possession</span>
@@ -499,61 +427,7 @@
 
     
       <div class="method_details first">
-  <h3 class="signature first" id="formatted_info-instance_method">
-  
-    #<strong>formatted_info</strong>  &#x21d2; <tt>String</tt> 
-  
-
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    
-<p>A one-line string of some basic data about the selector.</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  
-<p class="tag_title">Returns:</p>
-<ul class="return">
-  
-    <li>
-      
-      
-        <span class='type'>(<tt>String</tt>)</span>
-      
-      
-      
-    </li>
-  
-</ul>
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-58
-59
-60</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'tomes/components/selector/selector.rb', line 58</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_formatted_info'>formatted_info</span>
-	<span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>%&lt;id&gt;s - h: %&lt;has&gt;s | r: %&lt;remembers&gt;s | s: %&lt;stack&gt;s</span><span class='tstring_end'>&quot;</span></span> <span class='op'>%</span> <span class='id identifier rubyid_info'>info</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="info-instance_method">
+  <h3 class="signature first" id="info-instance_method">
   
     #<strong>info</strong>  &#x21d2; <tt>Hash</tt> 
   
@@ -594,25 +468,79 @@
       <pre class="lines">
 
 
-47
 48
 49
 50
 51
 52
 53
-54</pre>
+54
+55</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'tomes/components/selector/selector.rb', line 47</span>
+      <pre class="code"><span class="info file"># File 'tomes/components/selector/selector.rb', line 48</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_info'>info</span> 
-	<span class='lbrace'>{</span>
-		<span class='label'>self:</span> <span class='kw'>self</span><span class='comma'>,</span>
-		<span class='label'>id:</span> <span class='id identifier rubyid_id_tag'>id_tag</span><span class='comma'>,</span>
-		<span class='label'>has:</span> <span class='ivar'>@possession</span><span class='comma'>,</span>
-		<span class='label'>remembers:</span> <span class='ivar'>@memory</span><span class='comma'>,</span>
-	<span class='rbrace'>}</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_info'>info</span>
+  <span class='lbrace'>{</span>
+    <span class='label'>self:</span> <span class='kw'>self</span><span class='comma'>,</span>
+    <span class='label'>id:</span> <span class='id identifier rubyid_id_tag'>id_tag</span><span class='comma'>,</span>
+    <span class='label'>has:</span> <span class='ivar'>@possession</span><span class='comma'>,</span>
+    <span class='label'>remembers:</span> <span class='ivar'>@memory</span>
+  <span class='rbrace'>}</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="to_s-instance_method">
+  
+    #<strong>to_s</strong>  &#x21d2; <tt>String</tt> 
+  
+
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>A one-line string of some basic data about the selector.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+59
+60
+61</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/components/selector/selector.rb', line 59</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_to_s'>to_s</span>
+  <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%&lt;id&gt;s - h: %&lt;has&gt;s | r: %&lt;remembers&gt;s | s: %&lt;stack&gt;s</span><span class='tstring_end'>&#39;</span></span> <span class='op'>%</span> <span class='id identifier rubyid_info'>info</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -624,7 +552,7 @@
 </div>
 
       <div id="footer">
-  Generated on Thu Apr 11 22:27:54 2024 by
+  Generated on Mon May 13 17:23:41 2024 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.36 (ruby-3.3.0).
 </div>

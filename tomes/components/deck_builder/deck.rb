@@ -1,116 +1,64 @@
-require 'app/tomes/components/deck_builder/deck_manipulation.rb'
-require 'app/tomes/components/deck_builder/card.rb'
+# frozen_string_literal: true
 
-# A class for creating and manipulating an ordered set of Card objects. 
-# Usage:
-# 	Each deck is initialized with one or more *suits* to be combined with one or more *values*.
-# 	These attributes are iterated over to create a set of Cards. 
-# 	Cards can be added or removed from the Deck at any time thereafter.
-# 	Cards are unique objects, so multiple identical Cards can exist in a Deck without issue.
-# 	@note The order these attributes are given will become the default order for the entire deck.
+require 'app/tomes/components/deck_builder/hand'
 
-class Deck
+# A Hand that uses and generates other Hands
+class Deck < Hand
+  VALID_REFERENCES = [Integer, Range, Symbol].freeze
 
-	include DeckManipulation
+  private
 
-	# @param suits [Array<Strings>]
-	# @param values [Array<String, Range, Integer>]
-	def initialize(suits: ['card'], values: [0..1])
+  attr_accessor :hands
 
-		@card_list = Array.new
-		suits.each do |suit|
-			values.each do |value|
-				if value.class == Range
-					value.each { |range_number|
-						@card_list << Card.new(%w[suit value], [suit, range_number.to_s])
-					}
-				else
-					@card_list << Card.new(%w[suit value], [suit, value.to_s])
-				end
-			end
-		end
+  def initialize(initial_cards)
+    super(initial_cards)
+    self.hands = {
+      draw: Hand.new(initial_cards),
+      discard: Hand.new
+    }
+  end
 
-		@deck = @card_list
+  # A component method to `#[]`.
+  def sort_references(references)
+    references.sort_by! { |reference| VALID_REFERENCES.index(reference.class) }
+  end
 
-		@discard_pile = Array.new
+  public
 
-		@deck_attributes = %w[suit value]
-		@suit_order = suits
-		@value_order = values.map { |e|
-				if e.class == Range
-					e.to_a
-				else 
-					e
-				end
-			}.flatten.map {|e| e.to_s}
-	end
+  # Returns both Cards via their indices in #cards and Hands via their key in #hands.
+  #   Both can be referenced in a single call.
+  # @param references [Integer, Range, Symbol] Integers and Ranges will return cards; Symbols will return Hands.
+  # @return [Array] The array will always be sorted as [Cards, Hands]
+  def [](*references)
+    results = sort_references(references).map do |reference|
+      if reference.is_a?(Integer) || reference.is_a?(Range)
+        cards[reference]
+      elsif reference.is_a? Symbol
+        hands[reference]
+      end
+    end
 
-	attr_reader :discard_pile, :deck
-	
-	# The following methods apply to the card_list.
+    results.flatten
+  end
 
-	def card_list
-		@card_list.sort_by! { |card| 
-			[@suit_order.index(card.suit), @value_order.index(card.value)]
-		}
-	end
-	alias list card_list
+  # Deals the provided number of cards to the provided number of hands.
+  # @param number_of_hands [Integer]
+  # @param number_of_cards [Integer] Optional; defaults to 5.
+  def generate_hands(number_of_hands, number_of_cards = 5)
+    Array.new(number_of_hands) { Hand.new(deal(number_of_cards)) }
+  end
 
-	##
-	# Creates new cards and adds them to the card_list.
-	# If a Deck is already in play, the Deck must be reset or these new cards must be added to it manually.
-	
-	def create_cards(*card_as_value_list)
-		card_as_value_list.each { |card_values|
-			@suit_order << card_values[0].to_s unless @suit_order.include? card_values[1].to_s
-			@value_order << card_values[1].to_s unless @value_order.include? card_values[1].to_s
-			@card_list << Card.new(@deck_attributes, card_values)
-		}
-	end
-	alias add_cards create_cards
+  # Removes and returns the topmost card in the draw stack.
+  # @param [number_of_cards] Optional; defaults to 1.
+  # @return [Card, Array]
+  def deal(number_of_cards = 1)
+    hands[:draw].pop(number_of_cards)
+  end
 
-	##
-	# Permanently removes Cards from the card_list.
-
-	def delete_cards!
-		@card_list.reject! { |card| yield(card) }
-	end
-
-	##
-	# Adds a new attribute to each Card in the deck.
-	# The attribute's name is passed as an argument. 
-	# The logic for the values each card receives is passed through a block. 
-	# The return values for the block are directly assigned as the card's new attribute.
-
-	def append_deck_attribute(type)
-		@deck_attributes << type
-		@card_list.each { |card| card.add_attribute( type, yield(card)) }
-	end
-
-	## 
-	# Removes an attribute from every card in the deck. 
-	# This attribute's name can be passed as a string.
-
-	def remove_deck_attribute(attribute)
-		@card_list.each	{ |card| card.remove_attribute(attribute) }
-	end
-
-	def change_suit_order(new_order)
-		@suit_order = new_order
-	end
-
-	def change_value_order(new_order)
-		@value_order = new_order
-	end
-
-	# The following methods apply to the actual deck.
-
-	def to_a
-		@deck.map {|card| card.to_s}
-	end
-
-	def length
-		@deck.length
-	end
-
+  # Deals cards to the provided hands.
+  # @param hands [Hands]
+  # @param number_of_cards [Integer] Optional keyword argument; defaults to 1.
+  def deal_to(*hands, number_of_cards: 1)
+    hands.each { |hand| hand.draw(deal(number_of_cards)) }
+  end
 end

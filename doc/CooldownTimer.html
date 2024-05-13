@@ -123,12 +123,6 @@
 </div>
 
 
-  <h2>Constant Summary</h2>
-  
-  <h3 class="inherited">Constants included
-     from <span class='object_link'><a href="TimerConverter.html" title="TimerConverter (module)">TimerConverter</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="TimerConverter.html#TIME_FORMAT-constant" title="TimerConverter::TIME_FORMAT (constant)">TimerConverter::TIME_FORMAT</a></span></p>
-
 
   <h2>Instance Attribute Summary <small><a href="#" class="summary_toggle">collapse</a></small></h2>
   <ul class="summary">
@@ -144,6 +138,8 @@
   
   
   
+    
+      <span class="note title readonly">readonly</span>
     
     
   
@@ -168,11 +164,6 @@
   
   <h3 class="inherited">Attributes inherited from <span class='object_link'><a href="Timer.html" title="Timer (class)">Timer</a></span></h3>
   <p class="inherited"><span class='object_link'><a href="Timer.html#frames-instance_method" title="Timer#frames (method)">#frames</a></span>, <span class='object_link'><a href="Timer.html#name-instance_method" title="Timer#name (method)">#name</a></span>, <span class='object_link'><a href="Timer.html#on-instance_method" title="Timer#on (method)">#on</a></span></p>
-
-  
-  
-  <h3 class="inherited">Attributes included from <span class='object_link'><a href="TimerConverter.html" title="TimerConverter (module)">TimerConverter</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="TimerConverter.html#hours-instance_method" title="TimerConverter#hours (method)">#hours</a></span>, <span class='object_link'><a href="TimerConverter.html#minutes-instance_method" title="TimerConverter#minutes (method)">#minutes</a></span>, <span class='object_link'><a href="TimerConverter.html#seconds-instance_method" title="TimerConverter#seconds (method)">#seconds</a></span></p>
 
 
   
@@ -202,32 +193,6 @@
   
     <span class="summary_desc"><div class='inline'>
 <p>This decrements the frame counter every tick the Timer is active.</p>
-</div></span>
-  
-</li>
-
-      
-        <li class="private ">
-  <span class="summary_signature">
-    
-      <a href="#initialize-instance_method" title="#initialize (instance method)">#<strong>initialize</strong>(name, reset_time_in_frames = 60)  &#x21d2; CooldownTimer </a>
-    
-
-    
-  </span>
-  
-  
-    <span class="note title constructor">constructor</span>
-  
-  
-  <span class="note title private">private</span>
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'>
-<p>A new instance of CooldownTimer.</p>
 </div></span>
   
 </li>
@@ -294,7 +259,7 @@
   
   
   <h3 class="inherited">Methods inherited from <span class='object_link'><a href="Timer.html" title="Timer (class)">Timer</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="Timer.html#flip!-instance_method" title="Timer#flip! (method)">#flip!</a></span>, <span class='object_link'><a href="Timer.html#set_time!-instance_method" title="Timer#set_time! (method)">#set_time!</a></span>, <span class='object_link'><a href="Timer.html#turn_off-instance_method" title="Timer#turn_off (method)">#turn_off</a></span>, <span class='object_link'><a href="Timer.html#turn_on-instance_method" title="Timer#turn_on (method)">#turn_on</a></span></p>
+  <p class="inherited"><span class='object_link'><a href="Timer.html#flip!-instance_method" title="Timer#flip! (method)">#flip!</a></span>, <span class='object_link'><a href="Timer.html#to_s-instance_method" title="Timer#to_s (method)">#to_s</a></span>, <span class='object_link'><a href="Timer.html#turn_off!-instance_method" title="Timer#turn_off! (method)">#turn_off!</a></span>, <span class='object_link'><a href="Timer.html#turn_on!-instance_method" title="Timer#turn_on! (method)">#turn_on!</a></span></p>
 
   
   
@@ -306,55 +271,6 @@
   
   <h3 class="inherited">Methods included from <span class='object_link'><a href="TimerConverter.html" title="TimerConverter (module)">TimerConverter</a></span></h3>
   <p class="inherited"><span class='object_link'><a href="TimerConverter.html#calculate_current_time-instance_method" title="TimerConverter#calculate_current_time (method)">#calculate_current_time</a></span>, <span class='object_link'><a href="TimerConverter.html#formatted_time-instance_method" title="TimerConverter#formatted_time (method)">#formatted_time</a></span>, <span class='object_link'><a href="TimerConverter.html#formatted_time_table-instance_method" title="TimerConverter#formatted_time_table (method)">#formatted_time_table</a></span>, <span class='object_link'><a href="TimerConverter.html#frames_to_seconds-instance_method" title="TimerConverter#frames_to_seconds (method)">#frames_to_seconds</a></span>, <span class='object_link'><a href="TimerConverter.html#full_status-instance_method" title="TimerConverter#full_status (method)">#full_status</a></span>, <span class='object_link'><a href="TimerConverter.html#seconds_to_minutes-instance_method" title="TimerConverter#seconds_to_minutes (method)">#seconds_to_minutes</a></span></p>
-<div id="constructor_details" class="method_details_list">
-  <h2>Constructor Details</h2>
-  
-    <div class="method_details first">
-  <h3 class="signature first" id="initialize-instance_method">
-  
-    #<strong>initialize</strong>(name, reset_time_in_frames = 60)  &#x21d2; <tt><span class='object_link'><a href="" title="CooldownTimer (class)">CooldownTimer</a></span></tt>  <span class="extras">(private)</span>
-  
-
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    
-<p>Returns a new instance of CooldownTimer.</p>
-
-
-  </div>
-</div>
-<div class="tags">
-  
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-13
-14
-15
-16
-17</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'tomes/components/timer/cooldown_timer.rb', line 13</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_initialize'><span class='object_link'><a href="top-level-namespace.html#initialize-instance_method" title="#initialize (method)">initialize</a></span></span><span class='lparen'>(</span><span class='id identifier rubyid_name'>name</span><span class='comma'>,</span> <span class='id identifier rubyid_reset_time_in_frames'>reset_time_in_frames</span> <span class='op'>=</span> <span class='int'>60</span><span class='rparen'>)</span>
-	<span class='kw'>super</span>
-	<span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_on'>on</span> <span class='op'>=</span> <span class='kw'>false</span>
-	<span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_reset_time'>reset_time</span> <span class='op'>=</span> <span class='id identifier rubyid_reset_time_in_frames'>reset_time_in_frames</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-  
-</div>
 
   <div id="instance_attr_details" class="attr_details">
     <h2>Instance Attribute Details</h2>
@@ -387,16 +303,12 @@
       <pre class="lines">
 
 
-11
-12
-13</pre>
+12</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'tomes/components/timer/cooldown_timer.rb', line 11</span>
+      <pre class="code"><span class="info file"># File 'tomes/components/timer/cooldown_timer.rb', line 12</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_reset_time'>reset_time</span>
-  <span class='ivar'>@reset_time</span>
-<span class='kw'>end</span></pre>
+<span class='id identifier rubyid_attr_writer'>attr_writer</span> <span class='symbol'>:reset_time</span></pre>
     </td>
   </tr>
 </table>
@@ -488,8 +400,6 @@
       <pre class="lines">
 
 
-36
-37
 38
 39
 40
@@ -503,20 +413,18 @@
 48</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'tomes/components/timer/cooldown_timer.rb', line 36</span>
+      <pre class="code"><span class="info file"># File 'tomes/components/timer/cooldown_timer.rb', line 38</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_count'>count</span><span class='lparen'>(</span><span class='label'>auto_reset:</span> <span class='kw'>false</span><span class='comma'>,</span> <span class='label'>auto_restart:</span> <span class='kw'>false</span><span class='rparen'>)</span>
-	<span class='kw'>return</span> <span class='kw'>unless</span> <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_on?'>on?</span>
+  <span class='kw'>return</span> <span class='kw'>unless</span> <span class='id identifier rubyid_on?'>on?</span>
 
-	<span class='kw'>if</span> <span class='id identifier rubyid_frames'>frames</span> <span class='op'>&gt;</span> <span class='int'>0</span> <span class='kw'>and</span> <span class='id identifier rubyid_on?'>on?</span>
-		<span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_frames'>frames</span> <span class='op'>-=</span> <span class='int'>1</span>
-
-	<span class='kw'>else</span>
-		<span class='id identifier rubyid_stop'>stop</span>
-		<span class='id identifier rubyid_reset!'>reset!</span> <span class='kw'>if</span> <span class='id identifier rubyid_auto_reset'>auto_reset</span> <span class='op'>||</span> <span class='id identifier rubyid_auto_restart'>auto_restart</span>
-		<span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_on'>on</span> <span class='op'>=</span> <span class='kw'>true</span> <span class='kw'>if</span> <span class='id identifier rubyid_auto_restart'>auto_restart</span>
-
-	<span class='kw'>end</span>
+  <span class='kw'>if</span> <span class='id identifier rubyid_frames'>frames</span><span class='period'>.</span><span class='id identifier rubyid_positive?'>positive?</span> <span class='op'>&amp;&amp;</span> <span class='id identifier rubyid_on?'>on?</span>
+    <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_frames'>frames</span> <span class='op'>-=</span> <span class='int'>1</span>
+  <span class='kw'>else</span>
+    <span class='id identifier rubyid_turn_off!'>turn_off!</span>
+    <span class='id identifier rubyid_reset!'>reset!</span> <span class='kw'>if</span> <span class='id identifier rubyid_auto_reset'>auto_reset</span> <span class='op'>||</span> <span class='id identifier rubyid_auto_restart'>auto_restart</span>
+    <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_on'>on</span> <span class='op'>=</span> <span class='kw'>true</span> <span class='kw'>if</span> <span class='id identifier rubyid_auto_restart'>auto_restart</span>
+  <span class='kw'>end</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -557,7 +465,7 @@
       <pre class="code"><span class="info file"># File 'tomes/components/timer/cooldown_timer.rb', line 51</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_reset!'>reset!</span>
-	<span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_frames'>frames</span> <span class='op'>=</span> <span class='id identifier rubyid_reset_time'>reset_time</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_frames'>frames</span> <span class='op'>=</span> <span class='id identifier rubyid_reset_time'>reset_time</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -603,15 +511,15 @@
       <pre class="lines">
 
 
-25
-26
-27</pre>
+27
+28
+29</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'tomes/components/timer/cooldown_timer.rb', line 25</span>
+      <pre class="code"><span class="info file"># File 'tomes/components/timer/cooldown_timer.rb', line 27</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_signal'>signal</span>
-	<span class='id identifier rubyid_frames'>frames</span> <span class='op'>==</span> <span class='int'>0</span>
+  <span class='id identifier rubyid_frames'>frames</span><span class='period'>.</span><span class='id identifier rubyid_zero?'>zero?</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -623,7 +531,7 @@
 </div>
 
       <div id="footer">
-  Generated on Thu Apr 11 22:27:54 2024 by
+  Generated on Mon May 13 17:23:41 2024 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.36 (ruby-3.3.0).
 </div>

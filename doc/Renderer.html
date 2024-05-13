@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>
-  Class: Renderer
+  Module: Renderer
   
     &mdash; Documentation by YARD 0.9.36
   
@@ -59,28 +59,12 @@
         <div class="clear"></div>
       </div>
 
-      <div id="content"><h1>Class: Renderer
+      <div id="content"><h1>Module: Renderer
   
   
   
 </h1>
 <div class="box_info">
-  
-  <dl>
-    <dt>Inherits:</dt>
-    <dd>
-      <span class="inheritName"><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></span>
-      
-        <ul class="fullTree">
-          <li><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></li>
-          
-            <li class="next">Renderer</li>
-          
-        </ul>
-        <a href="#" class="inheritanceTree">show all</a>
-      
-    </dd>
-  </dl>
   
 
   
@@ -105,31 +89,10 @@
 </div>
 
 
-  
-    <h2>
-      Constant Summary
-      <small><a href="#" class="constants_summary_toggle">collapse</a></small>
-    </h2>
-
-    <dl class="constants">
-      
-        <dt id="render_list-classvariable" class="">@@render_list =
-          
-        </dt>
-        <dd><pre class="code"><span class='lbracket'>[</span><span class='rbracket'>]</span></pre></dd>
-      
-    </dl>
-  
 
 
 
 
-
-
-  <h2>Instance Attribute Summary</h2>
-  
-  <h3 class="inherited">Attributes included from <span class='object_link'><a href="ArgsUpdate.html" title="ArgsUpdate (module)">ArgsUpdate</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="ArgsUpdate.html#args-instance_method" title="ArgsUpdate#args (method)">#args</a></span></p>
 
 
   
@@ -143,7 +106,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#add-class_method" title="add (class method)">.<strong>add</strong>(object)  &#x21d2; Object </a>
+      <a href="#add-class_method" title="add (class method)">.<strong>add</strong>(*objects)  &#x21d2; Void </a>
     
 
     
@@ -157,7 +120,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Individually adds given objects to the render list.</p>
+</div></span>
   
 </li>
 
@@ -165,7 +130,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#delete-class_method" title="delete (class method)">.<strong>delete</strong>(object)  &#x21d2; Object </a>
+      <a href="#delete-class_method" title="delete (class method)">.<strong>delete</strong>(*objects)  &#x21d2; Void </a>
     
 
     
@@ -181,7 +146,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Deletes given objects from the render list.</p>
+</div></span>
   
 </li>
 
@@ -189,7 +156,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#flatten_render_list-class_method" title="flatten_render_list (class method)">.<strong>flatten_render_list</strong>  &#x21d2; Object </a>
+      <a href="#parse_classes-class_method" title="parse_classes (class method)">.<strong>parse_classes</strong>(list = render_list.flatten)  &#x21d2; Array </a>
     
 
     
@@ -203,7 +170,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Maps each object in a list onto its renderable state, based on class; returns said list.</p>
+</div></span>
   
 </li>
 
@@ -211,7 +180,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#parse_classes-class_method" title="parse_classes (class method)">.<strong>parse_classes</strong>(list = flatten_render_list)  &#x21d2; Object </a>
+      <a href="#render-class_method" title="render (class method)">.<strong>render</strong>  &#x21d2; Void </a>
     
 
     
@@ -225,7 +194,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Sends the render list to.</p>
+</div></span>
   
 </li>
 
@@ -233,7 +204,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#render-class_method" title="render (class method)">.<strong>render</strong>  &#x21d2; Object </a>
+      <a href="#render_list-class_method" title="render_list (class method)">.<strong>render_list</strong>  &#x21d2; Array </a>
     
 
     
@@ -247,29 +218,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#render_list-class_method" title="render_list (class method)">.<strong>render_list</strong>  &#x21d2; Object </a>
-    
-
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Returns the class render list.</p>
+</div></span>
   
 </li>
 
@@ -297,29 +248,79 @@
       <div class="method_details first">
   <h3 class="signature first" id="add-class_method">
   
-    .<strong>add</strong>(object)  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt> 
+    .<strong>add</strong>(*objects)  &#x21d2; <tt>Void</tt> 
   
 
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Individually adds given objects to the render list. 	If an object is already in the list it gets skipped in this process.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>objects</span>
+      
+      
+        <span class='type'>(<tt>*<span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>1 or more objects.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Void</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-17
-18
-19
-20</pre>
+20
+21
+22
+23
+24
+25
+26</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'tomes/conjurations/renderer/renderer.rb', line 17</span>
+      <pre class="code"><span class="info file"># File 'tomes/conjurations/renderer/renderer.rb', line 20</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_add'>add</span><span class='lparen'>(</span><span class='id identifier rubyid_object'>object</span><span class='rparen'>)</span>
-	<span class='kw'>return</span> <span class='kw'>if</span> <span class='id identifier rubyid_render_list'>render_list</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span> <span class='id identifier rubyid_object'>object</span>
-	<span class='id identifier rubyid_render_list'>render_list</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_object'>object</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_add'>add</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_objects'>objects</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_objects'>objects</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_object'>object</span><span class='op'>|</span>
+    <span class='kw'>next</span> <span class='kw'>if</span> <span class='id identifier rubyid_render_list'>render_list</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span> <span class='id identifier rubyid_object'>object</span>
+
+    <span class='id identifier rubyid_render_list'>render_list</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_object'>object</span>
+  <span class='kw'>end</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -329,7 +330,7 @@
       <div class="method_details ">
   <h3 class="signature " id="delete-class_method">
   
-    .<strong>delete</strong>(object)  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt> 
+    .<strong>delete</strong>(*objects)  &#x21d2; <tt>Void</tt> 
   
 
   
@@ -339,51 +340,69 @@
   
 
   
-</h3><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-22
-23
-24</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'tomes/conjurations/renderer/renderer.rb', line 22</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='id identifier rubyid_object'>object</span><span class='rparen'>)</span>
-	<span class='id identifier rubyid_render_list'>render_list</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='id identifier rubyid_object'>object</span><span class='rparen'>)</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
+</h3><div class="docstring">
+  <div class="discussion">
     
-      <div class="method_details ">
-  <h3 class="signature " id="flatten_render_list-class_method">
-  
-    .<strong>flatten_render_list</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt> 
-  
+<p>Deletes given objects from the render list.</p>
 
-  
 
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
   
-</h3><table class="source_code">
+    <li>
+      
+        <span class='name'>objects</span>
+      
+      
+        <span class='type'>(<tt>Objects</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>1 or more objects.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Void</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-56
-57
-58</pre>
+31
+32
+33
+34
+35</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'tomes/conjurations/renderer/renderer.rb', line 56</span>
+      <pre class="code"><span class="info file"># File 'tomes/conjurations/renderer/renderer.rb', line 31</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_flatten_render_list'>flatten_render_list</span>
-	<span class='id identifier rubyid_render_list'>render_list</span><span class='period'>.</span><span class='id identifier rubyid_flatten'>flatten</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='op'>*</span><span class='id identifier rubyid_objects'>objects</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_objects'>objects</span><span class='period'>.</span><span class='id identifier rubyid_each'>each</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_object'>object</span><span class='op'>|</span>
+    <span class='id identifier rubyid_render_list'>render_list</span><span class='period'>.</span><span class='id identifier rubyid_delete'>delete</span><span class='lparen'>(</span><span class='id identifier rubyid_object'>object</span><span class='rparen'>)</span>
+  <span class='kw'>end</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -393,33 +412,64 @@
       <div class="method_details ">
   <h3 class="signature " id="parse_classes-class_method">
   
-    .<strong>parse_classes</strong>(list = flatten_render_list)  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt> 
+    .<strong>parse_classes</strong>(list = render_list.flatten)  &#x21d2; <tt>Array</tt> 
   
 
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Maps each object in a list onto its renderable state, based on class; returns said list.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>list</span>
+      
+      
+        <span class='type'>(<tt>Array</tt>)</span>
+      
+      
+        <em class="default">(defaults to: <tt>render_list.flatten</tt>)</em>
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>Uses #flatten_render_list by default.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-32
-33
-34
-35
-36
-37
-38
-39
-40
-41
-42
-43
-44
-45
-46
 47
 48
 49
@@ -427,33 +477,40 @@
 51
 52
 53
-54</pre>
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'tomes/conjurations/renderer/renderer.rb', line 32</span>
+      <pre class="code"><span class="info file"># File 'tomes/conjurations/renderer/renderer.rb', line 47</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_parse_classes'>parse_classes</span><span class='lparen'>(</span><span class='id identifier rubyid_list'>list</span> <span class='op'>=</span> <span class='id identifier rubyid_flatten_render_list'>flatten_render_list</span><span class='rparen'>)</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_parse_classes'>parse_classes</span><span class='lparen'>(</span><span class='id identifier rubyid_list'>list</span> <span class='op'>=</span> <span class='id identifier rubyid_render_list'>render_list</span><span class='period'>.</span><span class='id identifier rubyid_flatten'>flatten</span><span class='rparen'>)</span>
+  <span class='id identifier rubyid_list'>list</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='kw'>do</span> <span class='op'>|</span><span class='id identifier rubyid_object'>object</span><span class='op'>|</span>
+    <span class='kw'>if</span> <span class='id identifier rubyid_object'>object</span><span class='period'>.</span><span class='id identifier rubyid_respond_to?'>respond_to?</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>primitives</span><span class='tstring_end'>&#39;</span></span> 	<span class='comment'># Most objects should fall into this category.
+</span>      <span class='id identifier rubyid_object'>object</span><span class='period'>.</span><span class='id identifier rubyid_primitives'>primitives</span>
 
-	<span class='id identifier rubyid_list'>list</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_object'>object</span><span class='op'>|</span>
+    <span class='kw'>elsif</span> <span class='id identifier rubyid_object'>object</span><span class='period'>.</span><span class='id identifier rubyid_respond_to?'>respond_to?</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>rect</span><span class='tstring_end'>&#39;</span></span>
+      <span class='id identifier rubyid_object'>object</span><span class='period'>.</span><span class='id identifier rubyid_rect'>rect</span>
 
-		<span class='kw'>if</span> <span class='id identifier rubyid_object'>object</span><span class='period'>.</span><span class='id identifier rubyid_respond_to?'>respond_to?</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>primitives</span><span class='tstring_end'>&#39;</span></span>
-			<span class='id identifier rubyid_object'>object</span><span class='period'>.</span><span class='id identifier rubyid_primitives'>primitives</span>
+    <span class='kw'>elsif</span> <span class='id identifier rubyid_object'>object</span><span class='period'>.</span><span class='id identifier rubyid_respond_to?'>respond_to?</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>visible</span><span class='tstring_end'>&#39;</span></span> 	<span class='comment'># This applies to Scenes.
+</span>      <span class='id identifier rubyid_parse_classes'>parse_classes</span><span class='lparen'>(</span><span class='id identifier rubyid_object'>object</span><span class='period'>.</span><span class='id identifier rubyid_visible'>visible</span><span class='rparen'>)</span>	<span class='comment'># This method will call itself on the Scene&#39;s #visible list.
+</span>
+    <span class='kw'>elsif</span> <span class='id identifier rubyid_object'>object</span><span class='period'>.</span><span class='id identifier rubyid_is_a?'>is_a?</span> <span class='const'>Hash</span>
+      <span class='id identifier rubyid_object'>object</span>
 
-		<span class='kw'>elsif</span> <span class='id identifier rubyid_object'>object</span><span class='period'>.</span><span class='id identifier rubyid_respond_to?'>respond_to?</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>rect</span><span class='tstring_end'>&#39;</span></span>
-			<span class='id identifier rubyid_object'>object</span><span class='period'>.</span><span class='id identifier rubyid_rect'>rect</span>
-
-		<span class='kw'>elsif</span> <span class='id identifier rubyid_object'>object</span><span class='period'>.</span><span class='id identifier rubyid_respond_to?'>respond_to?</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>visible</span><span class='tstring_end'>&#39;</span></span>
-			<span class='id identifier rubyid_parse_classes'>parse_classes</span><span class='lparen'>(</span><span class='id identifier rubyid_object'>object</span><span class='period'>.</span><span class='id identifier rubyid_visible'>visible</span><span class='rparen'>)</span>
-
-		<span class='kw'>elsif</span> <span class='id identifier rubyid_object'>object</span><span class='period'>.</span><span class='id identifier rubyid_kind_of?'>kind_of?</span> <span class='const'>Hash</span>
-			<span class='id identifier rubyid_object'>object</span>
-
-		<span class='kw'>else</span>
-			<span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Render Object not accounted for: </span><span class='tstring_end'>&quot;</span></span> <span class='op'>+</span> <span class='id identifier rubyid_object'>object</span>
-		<span class='kw'>end</span>
-
-	<span class='rbrace'>}</span>
-
+    <span class='kw'>else</span>
+      <span class='id identifier rubyid_puts'>puts</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Render Object not accounted for: </span><span class='embexpr_beg'>#{</span><span class='id identifier rubyid_object'>object</span><span class='embexpr_end'>}</span><span class='tstring_end'>&quot;</span></span>
+    <span class='kw'>end</span>
+  <span class='kw'>end</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -463,27 +520,51 @@
       <div class="method_details ">
   <h3 class="signature " id="render-class_method">
   
-    .<strong>render</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt> 
+    .<strong>render</strong>  &#x21d2; <tt>Void</tt> 
   
 
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Sends the render list to</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Void</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-28
-29
-30</pre>
+40
+41
+42</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'tomes/conjurations/renderer/renderer.rb', line 28</span>
+      <pre class="code"><span class="info file"># File 'tomes/conjurations/renderer/renderer.rb', line 40</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_render'>render</span>
-	<span class='id identifier rubyid_args'>args</span><span class='period'>.</span><span class='id identifier rubyid_outputs'>outputs</span><span class='period'>.</span><span class='id identifier rubyid_primitives'>primitives</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_parse_classes'>parse_classes</span>
+  <span class='id identifier rubyid_args'>args</span><span class='period'>.</span><span class='id identifier rubyid_outputs'>outputs</span><span class='period'>.</span><span class='id identifier rubyid_primitives'>primitives</span> <span class='op'>&lt;&lt;</span> <span class='id identifier rubyid_parse_classes'>parse_classes</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -493,27 +574,51 @@
       <div class="method_details ">
   <h3 class="signature " id="render_list-class_method">
   
-    .<strong>render_list</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt> 
+    .<strong>render_list</strong>  &#x21d2; <tt>Array</tt> 
   
 
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Returns the class render list.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
+12
 13
-14
-15</pre>
+14</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'tomes/conjurations/renderer/renderer.rb', line 13</span>
+      <pre class="code"><span class="info file"># File 'tomes/conjurations/renderer/renderer.rb', line 12</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_render_list'>render_list</span>
-	<span class='cvar'>@@render_list</span>
+  <span class='ivar'>@render_list</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -525,7 +630,7 @@
 </div>
 
       <div id="footer">
-  Generated on Thu Apr 11 22:27:54 2024 by
+  Generated on Mon May 13 17:23:41 2024 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.36 (ruby-3.3.0).
 </div>

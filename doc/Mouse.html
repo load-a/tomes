@@ -4,7 +4,7 @@
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>
-  Class: Mouse
+  Module: Mouse
   
     &mdash; Documentation by YARD 0.9.36
   
@@ -59,28 +59,12 @@
         <div class="clear"></div>
       </div>
 
-      <div id="content"><h1>Class: Mouse
+      <div id="content"><h1>Module: Mouse
   
   
   
 </h1>
 <div class="box_info">
-  
-  <dl>
-    <dt>Inherits:</dt>
-    <dd>
-      <span class="inheritName"><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></span>
-      
-        <ul class="fullTree">
-          <li><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></li>
-          
-            <li class="next">Mouse</li>
-          
-        </ul>
-        <a href="#" class="inheritanceTree">show all</a>
-      
-    </dd>
-  </dl>
   
 
   
@@ -110,12 +94,12 @@
   <div class="note notetag">
     <strong>Note:</strong>
     <div class='inline'>
-<p>Mouse#update must be called every tick you wish to use this class.</p>
+<p>Mouse.update must be called every tick you wish to use this class.</p>
 </div>
   </div>
 
 
-<p>An class for handling mouse input.</p>
+<p>A module for handling mouse input.</p>
 
 
   </div>
@@ -130,11 +114,6 @@
 
 
   <h2>Instance Attribute Summary</h2>
-  
-  <h3 class="inherited">Attributes included from <span class='object_link'><a href="ArgsUpdate.html" title="ArgsUpdate (module)">ArgsUpdate</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="ArgsUpdate.html#args-instance_method" title="ArgsUpdate#args (method)">#args</a></span></p>
-
-  
   
   <h3 class="inherited">Attributes included from <span class='object_link'><a href="Location.html" title="Location (module)">Location</a></span></h3>
   <p class="inherited"><span class='object_link'><a href="Location.html#x-instance_method" title="Location#x (method)">#x</a></span>, <span class='object_link'><a href="Location.html#y-instance_method" title="Location#y (method)">#y</a></span></p>
@@ -151,7 +130,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#binary_signals-class_method" title="binary_signals (class method)">.<strong>binary_signals</strong>  &#x21d2; Object </a>
+      <a href="#binary_signals-class_method" title="binary_signals (class method)">.<strong>binary_signals</strong>  &#x21d2; String </a>
     
 
     
@@ -165,7 +144,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Gives an abbreviated look at which Mouse button actions are being performed.</p>
+</div></span>
   
 </li>
 
@@ -187,7 +168,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Check if the left mouse button  was clicked this frame.</p>
+</div></span>
   
 </li>
 
@@ -211,7 +194,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Check if the left mouse button is being held.</p>
+</div></span>
   
 </li>
 
@@ -233,7 +218,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Checks if the Mouse cursor is intersecting a given rectangle.</p>
+</div></span>
   
 </li>
 
@@ -255,7 +242,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Cycles through the given list of Objects and sees if the Mouse intersects with any of them.</p>
+</div></span>
   
 </li>
 
@@ -277,7 +266,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Checks the given list and returns the final object with which the Mouse intersects.</p>
+</div></span>
   
 </li>
 
@@ -285,7 +276,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#sees_in_list-class_method" title="sees_in_list (class method)">.<strong>sees_in_list</strong>(list)  &#x21d2; Object </a>
+      <a href="#sees_in_list-class_method" title="sees_in_list (class method)">.<strong>sees_in_list</strong>(list)  &#x21d2; Array&lt;Objects&gt; </a>
     
 
     
@@ -301,7 +292,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Checks the given list and returns all of the objects with which the Mouse intersects.</p>
+</div></span>
   
 </li>
 
@@ -309,7 +302,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#to_h-class_method" title="to_h (class method)">.<strong>to_h</strong>  &#x21d2; Object </a>
+      <a href="#to_h-class_method" title="to_h (class method)">.<strong>to_h</strong>  &#x21d2; Hash </a>
     
 
     
@@ -323,7 +316,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>A hash that shows the current state of the Mouse.</p>
+</div></span>
   
 </li>
 
@@ -331,7 +326,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#to_i-class_method" title="to_i (class method)">.<strong>to_i</strong>  &#x21d2; Object </a>
+      <a href="#to_i-class_method" title="to_i (class method)">.<strong>to_i</strong>  &#x21d2; Integer </a>
     
 
     
@@ -345,7 +340,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>The current mouse state as a combined decimal/binary integer.</p>
+</div></span>
   
 </li>
 
@@ -353,7 +350,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#to_s-class_method" title="to_s (class method)">.<strong>to_s</strong>  &#x21d2; Object </a>
+      <a href="#to_s-class_method" title="to_s (class method)">.<strong>to_s</strong>  &#x21d2; String </a>
     
 
     
@@ -367,7 +364,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>A line of text that shows the current state of the Mouse.</p>
+</div></span>
   
 </li>
 
@@ -389,7 +388,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>Checks if the left mouse button was released this frame.</p>
+</div></span>
   
 </li>
 
@@ -411,7 +412,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>see ArgsUpdate::update Updates mouse position too.</p>
+</div></span>
   
 </li>
 
@@ -428,11 +431,6 @@
   
   
   
-  <h3 class="inherited">Methods included from <span class='object_link'><a href="ArgsUpdate.html" title="ArgsUpdate (module)">ArgsUpdate</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="ArgsUpdate.html#update-instance_method" title="ArgsUpdate#update (method)">update</a></span></p>
-
-  
-  
   
   
   
@@ -440,7 +438,7 @@
   
   
   <h3 class="inherited">Methods included from <span class='object_link'><a href="Location.html" title="Location (module)">Location</a></span></h3>
-  <p class="inherited"><span class='object_link'><a href="Location.html#adjust_location-instance_method" title="Location#adjust_location (method)">adjust_location</a></span>, <span class='object_link'><a href="Location.html#adjust_x-instance_method" title="Location#adjust_x (method)">adjust_x</a></span>, <span class='object_link'><a href="Location.html#adjust_y-instance_method" title="Location#adjust_y (method)">adjust_y</a></span>, <span class='object_link'><a href="Location.html#get_location-instance_method" title="Location#get_location (method)">get_location</a></span>, <span class='object_link'><a href="Location.html#set_location-instance_method" title="Location#set_location (method)">set_location</a></span>, <span class='object_link'><a href="Location.html#set_x-instance_method" title="Location#set_x (method)">set_x</a></span>, <span class='object_link'><a href="Location.html#set_y-instance_method" title="Location#set_y (method)">set_y</a></span></p>
+  <p class="inherited"><span class='object_link'><a href="Location.html#adjust_location-instance_method" title="Location#adjust_location (method)">adjust_location</a></span>, <span class='object_link'><a href="Location.html#location-instance_method" title="Location#location (method)">location</a></span>, <span class='object_link'><a href="Location.html#location=-instance_method" title="Location#location= (method)">location=</a></span></p>
 
 
   <div id="class_method_details" class="method_details_list">
@@ -450,35 +448,64 @@
       <div class="method_details first">
   <h3 class="signature first" id="binary_signals-class_method">
   
-    .<strong>binary_signals</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt> 
+    .<strong>binary_signals</strong>  &#x21d2; <tt>String</tt> 
   
 
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Gives an abbreviated look at which Mouse button actions are being performed.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A string of binary digits representing the following actions: “click”, “hold”, “up”.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-53
-54
-55
-56
-57
-58
-59</pre>
+77
+78
+79
+80
+81
+82
+83</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'tomes/conjurations/mouse/mouse.rb', line 53</span>
+      <pre class="code"><span class="info file"># File 'tomes/conjurations/mouse/mouse.rb', line 77</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_binary_signals'>binary_signals</span>
-	<span class='id identifier rubyid_click'>click</span> <span class='op'>=</span> <span class='id identifier rubyid_click?'>click?</span> <span class='op'>?</span> <span class='int'>1</span> <span class='op'>:</span> <span class='int'>0</span>
-	<span class='id identifier rubyid_hold'>hold</span> <span class='op'>=</span> <span class='id identifier rubyid_hold?'>hold?</span> <span class='op'>?</span> <span class='int'>1</span> <span class='op'>:</span> <span class='int'>0</span>
-	<span class='id identifier rubyid_up'>up</span> <span class='op'>=</span> <span class='id identifier rubyid_up?'>up?</span> <span class='op'>?</span> <span class='int'>1</span> <span class='op'>:</span> <span class='int'>0</span>
+  <span class='id identifier rubyid_click'>click</span> <span class='op'>=</span> <span class='id identifier rubyid_click?'>click?</span> <span class='op'>?</span> <span class='int'>1</span> <span class='op'>:</span> <span class='int'>0</span>
+  <span class='id identifier rubyid_hold'>hold</span> <span class='op'>=</span> <span class='id identifier rubyid_hold?'>hold?</span> <span class='op'>?</span> <span class='int'>1</span> <span class='op'>:</span> <span class='int'>0</span>
+  <span class='id identifier rubyid_up'>up</span> <span class='op'>=</span> <span class='id identifier rubyid_up?'>up?</span> <span class='op'>?</span> <span class='int'>1</span> <span class='op'>:</span> <span class='int'>0</span>
 
-	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%d%d%d</span><span class='tstring_end'>&#39;</span></span> <span class='op'>%</span> <span class='lbracket'>[</span><span class='id identifier rubyid_click'>click</span><span class='comma'>,</span> <span class='id identifier rubyid_hold'>hold</span><span class='comma'>,</span> <span class='id identifier rubyid_up'>up</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_format'>format</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%d%d%d</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_click'>click</span><span class='comma'>,</span> <span class='id identifier rubyid_hold'>hold</span><span class='comma'>,</span> <span class='id identifier rubyid_up'>up</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -497,62 +524,8 @@
 </h3><div class="docstring">
   <div class="discussion">
     
+<p>Check if the left mouse button  was clicked this frame.</p>
 
-  </div>
-</div>
-<div class="tags">
-  
-<p class="tag_title">Returns:</p>
-<ul class="return">
-  
-    <li>
-      
-      
-        <span class='type'>(<tt>Boolean</tt>)</span>
-      
-      
-      
-    </li>
-  
-</ul>
-
-</div><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-17
-18
-19</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'tomes/conjurations/mouse/mouse.rb', line 17</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_click?'>click?</span>
-	<span class='id identifier rubyid_args'>args</span><span class='period'>.</span><span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_mouse'>mouse</span><span class='period'>.</span><span class='id identifier rubyid_click'>click</span> <span class='op'>?</span> <span class='kw'>true</span> <span class='op'>:</span> <span class='kw'>false</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="held?-class_method">
-  
-    .<strong>held?</strong>  &#x21d2; <tt>Boolean</tt> 
-  
-
-  
-    <span class="aliases">Also known as:
-    <span class="names"><span id='hold?-class_method'>hold?</span></span>
-    </span>
-  
-
-  
-</h3><div class="docstring">
-  <div class="discussion">
-    
 
   </div>
 </div>
@@ -585,8 +558,66 @@
     <td>
       <pre class="code"><span class="info file"># File 'tomes/conjurations/mouse/mouse.rb', line 21</span>
 
+<span class='kw'>def</span> <span class='id identifier rubyid_click?'>click?</span>
+  <span class='id identifier rubyid_args'>args</span><span class='period'>.</span><span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_mouse'>mouse</span><span class='period'>.</span><span class='id identifier rubyid_click'>click</span> <span class='op'>?</span> <span class='kw'>true</span> <span class='op'>:</span> <span class='kw'>false</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="held?-class_method">
+  
+    .<strong>held?</strong>  &#x21d2; <tt>Boolean</tt> 
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='hold?-class_method'>hold?</span></span>
+    </span>
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Check if the left mouse button is being held.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Boolean</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+27
+28
+29</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/conjurations/mouse/mouse.rb', line 27</span>
+
 <span class='kw'>def</span> <span class='id identifier rubyid_held?'>held?</span>
-	<span class='id identifier rubyid_args'>args</span><span class='period'>.</span><span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_mouse'>mouse</span><span class='period'>.</span><span class='id identifier rubyid_held'>held</span> <span class='op'>?</span> <span class='kw'>true</span> <span class='op'>:</span> <span class='kw'>false</span>
+  <span class='id identifier rubyid_args'>args</span><span class='period'>.</span><span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_mouse'>mouse</span><span class='period'>.</span><span class='id identifier rubyid_held'>held</span> <span class='op'>?</span> <span class='kw'>true</span> <span class='op'>:</span> <span class='kw'>false</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -605,11 +636,41 @@
 </h3><div class="docstring">
   <div class="discussion">
     
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class='inline'>
+<p>I cant figure out how to resolve nil errors without a ‘rescue’ statement. DragonRuby is no help in this regard either.</p>
+</div>
+  </div>
+
+
+<p>Checks if the Mouse cursor is intersecting a given rectangle. 	This method uses ‘args` to do this calculation.</p>
+
 
   </div>
 </div>
 <div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
   
+    <li>
+      
+        <span class='name'>thing</span>
+      
+      
+        <span class='type'>(<tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>This object must respond to #rect.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
 <p class="tag_title">Returns:</p>
 <ul class="return">
   
@@ -630,23 +691,19 @@
       <pre class="lines">
 
 
-31
-32
-33
-34
-35
-36
-37</pre>
+44
+45
+46
+47
+48</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'tomes/conjurations/mouse/mouse.rb', line 31</span>
+      <pre class="code"><span class="info file"># File 'tomes/conjurations/mouse/mouse.rb', line 44</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_on?'>on?</span><span class='lparen'>(</span><span class='id identifier rubyid_thing'>thing</span><span class='rparen'>)</span>
-	<span class='id identifier rubyid_args'>args</span><span class='period'>.</span><span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_mouse'>mouse</span><span class='period'>.</span><span class='id identifier rubyid_intersect_rect?'>intersect_rect?</span> <span class='id identifier rubyid_thing'>thing</span><span class='period'>.</span><span class='id identifier rubyid_rect'>rect</span>
-<span class='comment'># I cant figure out how to resolve nil errors without this. 
-</span><span class='comment'># 	DragonRuby won&#39;t tell me what the specific error class is either.
-</span><span class='kw'>rescue</span>
-	<span class='kw'>false</span>
+  <span class='id identifier rubyid_args'>args</span><span class='period'>.</span><span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_mouse'>mouse</span><span class='period'>.</span><span class='id identifier rubyid_intersect_rect?'>intersect_rect?</span> <span class='id identifier rubyid_thing'>thing</span><span class='period'>.</span><span class='id identifier rubyid_rect'>rect</span>
+<span class='kw'>rescue</span> <span class='const'>StandardError</span>
+  <span class='kw'>false</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -665,11 +722,33 @@
 </h3><div class="docstring">
   <div class="discussion">
     
+<p>Cycles through the given list of Objects and sees if the Mouse intersects with any of them.</p>
+
 
   </div>
 </div>
 <div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
   
+    <li>
+      
+        <span class='name'>list</span>
+      
+      
+        <span class='type'>(<tt>Array&lt;Objects&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A list of objects which all must respond to #rect.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
 <p class="tag_title">Returns:</p>
 <ul class="return">
   
@@ -690,15 +769,15 @@
       <pre class="lines">
 
 
-39
-40
-41</pre>
+53
+54
+55</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'tomes/conjurations/mouse/mouse.rb', line 39</span>
+      <pre class="code"><span class="info file"># File 'tomes/conjurations/mouse/mouse.rb', line 53</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_on_something_in?'>on_something_in?</span><span class='lparen'>(</span><span class='id identifier rubyid_list'>list</span><span class='rparen'>)</span>
-	<span class='id identifier rubyid_list'>list</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_thing'>thing</span><span class='op'>|</span> <span class='id identifier rubyid_on?'>on?</span><span class='lparen'>(</span><span class='id identifier rubyid_thing'>thing</span><span class='rparen'>)</span> <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span> <span class='kw'>true</span>
+  <span class='id identifier rubyid_list'>list</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_thing'>thing</span><span class='op'>|</span> <span class='id identifier rubyid_on?'>on?</span><span class='lparen'>(</span><span class='id identifier rubyid_thing'>thing</span><span class='rparen'>)</span> <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span> <span class='kw'>true</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -714,21 +793,70 @@
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Checks the given list and returns the final object with which the Mouse intersects. 	This works in conjunction with .sees_in_list. 	For example, if the cursor is over a bunch of overlapping items, 	the topmost of them (the last one in the ‘.sees_in_list array’) will be the one returned in this method.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>list</span>
+      
+      
+        <span class='type'>(<tt>Array&lt;Objects&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A list of objects which all must respond to #rect.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        
+        <div class='inline'>
+<p>Object This is the last element in the list for which ‘Mouse.on?’ is true.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-43
-44
-45</pre>
+63
+64
+65</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'tomes/conjurations/mouse/mouse.rb', line 43</span>
+      <pre class="code"><span class="info file"># File 'tomes/conjurations/mouse/mouse.rb', line 63</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_sees'>sees</span><span class='lparen'>(</span><span class='id identifier rubyid_list'>list</span><span class='rparen'>)</span>
-	<span class='id identifier rubyid_sees_in_list'>sees_in_list</span><span class='lparen'>(</span><span class='id identifier rubyid_list'>list</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_last'>last</span>
+  <span class='id identifier rubyid_sees_in_list'>sees_in_list</span><span class='lparen'>(</span><span class='id identifier rubyid_list'>list</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_last'>last</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -738,7 +866,7 @@
       <div class="method_details ">
   <h3 class="signature " id="sees_in_list-class_method">
   
-    .<strong>sees_in_list</strong>(list)  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt> 
+    .<strong>sees_in_list</strong>(list)  &#x21d2; <tt>Array&lt;Objects&gt;</tt> 
   
 
   
@@ -748,21 +876,65 @@
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Checks the given list and returns all of the objects with which the Mouse intersects.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  <p class="tag_title">Parameters:</p>
+<ul class="param">
+  
+    <li>
+      
+        <span class='name'>list</span>
+      
+      
+        <span class='type'>(<tt>Array&lt;Objects&gt;</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>A list of objects which all must respond to #rect.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;Objects&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-47
-48
-49</pre>
+70
+71
+72</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'tomes/conjurations/mouse/mouse.rb', line 47</span>
+      <pre class="code"><span class="info file"># File 'tomes/conjurations/mouse/mouse.rb', line 70</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_sees_in_list'>sees_in_list</span><span class='lparen'>(</span><span class='id identifier rubyid_list'>list</span><span class='rparen'>)</span>
-	<span class='id identifier rubyid_list'>list</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_thing'>thing</span><span class='op'>|</span> <span class='id identifier rubyid_thing'>thing</span> <span class='kw'>if</span> <span class='id identifier rubyid_on?'>on?</span><span class='lparen'>(</span><span class='id identifier rubyid_thing'>thing</span><span class='rparen'>)</span> <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_flatten'>flatten</span><span class='period'>.</span><span class='id identifier rubyid_compact'>compact</span>
+  <span class='id identifier rubyid_list'>list</span><span class='period'>.</span><span class='id identifier rubyid_map'>map</span> <span class='lbrace'>{</span> <span class='op'>|</span><span class='id identifier rubyid_thing'>thing</span><span class='op'>|</span> <span class='id identifier rubyid_thing'>thing</span> <span class='kw'>if</span> <span class='id identifier rubyid_on?'>on?</span><span class='lparen'>(</span><span class='id identifier rubyid_thing'>thing</span><span class='rparen'>)</span> <span class='rbrace'>}</span><span class='period'>.</span><span class='id identifier rubyid_flatten'>flatten</span><span class='period'>.</span><span class='id identifier rubyid_compact'>compact</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -772,39 +944,63 @@
       <div class="method_details ">
   <h3 class="signature " id="to_h-class_method">
   
-    .<strong>to_h</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt> 
+    .<strong>to_h</strong>  &#x21d2; <tt>Hash</tt> 
   
 
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>A hash that shows the current state of the Mouse.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Hash</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-65
-66
-67
-68
-69
-70
-71
-72
-73</pre>
+93
+94
+95
+96
+97
+98
+99
+100
+101</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'tomes/conjurations/mouse/mouse.rb', line 65</span>
+      <pre class="code"><span class="info file"># File 'tomes/conjurations/mouse/mouse.rb', line 93</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_to_h'>to_h</span>
-	<span class='lbrace'>{</span>
-		<span class='label'>self:</span> <span class='tstring'><span class='tstring_beg'>&quot;</span><span class='tstring_content'>Mouse</span><span class='tstring_end'>&quot;</span></span><span class='comma'>,</span>
-		<span class='label'>location:</span> <span class='id identifier rubyid_location'>location</span><span class='comma'>,</span>
-		<span class='label'>click:</span> <span class='id identifier rubyid_click?'>click?</span><span class='comma'>,</span>
-		<span class='label'>down:</span> <span class='id identifier rubyid_hold?'>hold?</span><span class='comma'>,</span>
-		<span class='label'>up:</span> <span class='id identifier rubyid_up?'>up?</span>
-	<span class='rbrace'>}</span>
+  <span class='lbrace'>{</span>
+    <span class='label'>self:</span> <span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Mouse</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span>
+    <span class='label'>location:</span> <span class='id identifier rubyid_location'>location</span><span class='comma'>,</span>
+    <span class='label'>click:</span> <span class='id identifier rubyid_click?'>click?</span><span class='comma'>,</span>
+    <span class='label'>down:</span> <span class='id identifier rubyid_hold?'>hold?</span><span class='comma'>,</span>
+    <span class='label'>up:</span> <span class='id identifier rubyid_up?'>up?</span>
+  <span class='rbrace'>}</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -814,27 +1010,56 @@
       <div class="method_details ">
   <h3 class="signature " id="to_i-class_method">
   
-    .<strong>to_i</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt> 
+    .<strong>to_i</strong>  &#x21d2; <tt>Integer</tt> 
   
 
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The current mouse state as a combined decimal/binary integer.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Integer</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>X coordinate, Y coordinate and binary signals concatenated with no separations or leading zeros.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-75
-76
-77</pre>
+105
+106
+107</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'tomes/conjurations/mouse/mouse.rb', line 75</span>
+      <pre class="code"><span class="info file"># File 'tomes/conjurations/mouse/mouse.rb', line 105</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_to_i'>to_i</span>
-	<span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%04d%04d%s</span><span class='tstring_end'>&#39;</span></span> <span class='op'>%</span> <span class='lbracket'>[</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='id identifier rubyid_y'>y</span><span class='comma'>,</span> <span class='id identifier rubyid_binary_signals'>binary_signals</span><span class='rbracket'>]</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span>
+  <span class='id identifier rubyid_format'>format</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>%04d%04d%s</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='id identifier rubyid_y'>y</span><span class='comma'>,</span> <span class='id identifier rubyid_binary_signals'>binary_signals</span><span class='rparen'>)</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -844,27 +1069,56 @@
       <div class="method_details ">
   <h3 class="signature " id="to_s-class_method">
   
-    .<strong>to_s</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt> 
+    .<strong>to_s</strong>  &#x21d2; <tt>String</tt> 
   
 
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>A line of text that shows the current state of the Mouse.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>String</tt>)</span>
+      
+      
+      
+        &mdash;
+        <div class='inline'>
+<p>The Mouse location and binary signals.</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-61
-62
-63</pre>
+87
+88
+89</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'tomes/conjurations/mouse/mouse.rb', line 61</span>
+      <pre class="code"><span class="info file"># File 'tomes/conjurations/mouse/mouse.rb', line 87</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_to_s'>to_s</span>
-	<span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Mouse: %04d-%03d-%s</span><span class='tstring_end'>&#39;</span></span> <span class='op'>%</span> <span class='lbracket'>[</span><span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='id identifier rubyid_y'>y</span><span class='comma'>,</span> <span class='id identifier rubyid_binary_signals'>binary_signals</span><span class='rbracket'>]</span>
+  <span class='id identifier rubyid_format'>format</span><span class='lparen'>(</span><span class='tstring'><span class='tstring_beg'>&#39;</span><span class='tstring_content'>Mouse: %04d-%03d-%s</span><span class='tstring_end'>&#39;</span></span><span class='comma'>,</span> <span class='id identifier rubyid_x'>x</span><span class='comma'>,</span> <span class='id identifier rubyid_y'>y</span><span class='comma'>,</span> <span class='id identifier rubyid_binary_signals'>binary_signals</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -883,6 +1137,8 @@
 </h3><div class="docstring">
   <div class="discussion">
     
+<p>Checks if the left mouse button was released this frame.</p>
+
 
   </div>
 </div>
@@ -908,15 +1164,15 @@
       <pre class="lines">
 
 
-26
-27
-28</pre>
+34
+35
+36</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'tomes/conjurations/mouse/mouse.rb', line 26</span>
+      <pre class="code"><span class="info file"># File 'tomes/conjurations/mouse/mouse.rb', line 34</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_up?'>up?</span>
-	<span class='id identifier rubyid_args'>args</span><span class='period'>.</span><span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_mouse'>mouse</span><span class='period'>.</span><span class='id identifier rubyid_up'>up</span> <span class='op'>?</span> <span class='kw'>true</span> <span class='op'>:</span> <span class='kw'>false</span>
+  <span class='id identifier rubyid_args'>args</span><span class='period'>.</span><span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_mouse'>mouse</span><span class='period'>.</span><span class='id identifier rubyid_up'>up</span> <span class='op'>?</span> <span class='kw'>true</span> <span class='op'>:</span> <span class='kw'>false</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -932,25 +1188,36 @@
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>see ArgsUpdate::update Updates mouse position too.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-10
-11
-12
 13
-14</pre>
+14
+15
+16
+17</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'tomes/conjurations/mouse/mouse.rb', line 10</span>
+      <pre class="code"><span class="info file"># File 'tomes/conjurations/mouse/mouse.rb', line 13</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_update'>update</span><span class='lparen'>(</span><span class='id identifier rubyid_args'>args</span><span class='rparen'>)</span>
-	<span class='kw'>super</span>
-	<span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_x'>x</span> <span class='op'>=</span> <span class='id identifier rubyid_args'>args</span><span class='period'>.</span><span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_mouse'>mouse</span><span class='period'>.</span><span class='id identifier rubyid_x'>x</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span>
-	<span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_y'>y</span> <span class='op'>=</span> <span class='id identifier rubyid_args'>args</span><span class='period'>.</span><span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_mouse'>mouse</span><span class='period'>.</span><span class='id identifier rubyid_y'>y</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span>
+  <span class='kw'>super</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_x'>x</span> <span class='op'>=</span> <span class='id identifier rubyid_args'>args</span><span class='period'>.</span><span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_mouse'>mouse</span><span class='period'>.</span><span class='id identifier rubyid_x'>x</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span>
+  <span class='kw'>self</span><span class='period'>.</span><span class='id identifier rubyid_y'>y</span> <span class='op'>=</span> <span class='id identifier rubyid_args'>args</span><span class='period'>.</span><span class='id identifier rubyid_inputs'>inputs</span><span class='period'>.</span><span class='id identifier rubyid_mouse'>mouse</span><span class='period'>.</span><span class='id identifier rubyid_y'>y</span><span class='period'>.</span><span class='id identifier rubyid_to_i'>to_i</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -962,7 +1229,7 @@
 </div>
 
       <div id="footer">
-  Generated on Thu Apr 11 22:27:54 2024 by
+  Generated on Mon May 13 17:23:40 2024 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.36 (ruby-3.3.0).
 </div>

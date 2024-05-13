@@ -94,12 +94,23 @@
   
   <dl>
     <dt>Defined in:</dt>
-    <dd>tomes/alterations/threequel.rb</dd>
+    <dd>tomes/alterations/numeric_alt.rb</dd>
   </dl>
   
 </div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>An adjustment to the Numeric class.</p>
 
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -117,7 +128,7 @@
         <li class="public ">
   <span class="summary_signature">
     
-      <a href="#===-instance_method" title="#=== (instance method)">#<strong>===</strong>(other)  &#x21d2; Void </a>
+      <a href="#===-instance_method" title="#=== (instance method)">#<strong>===</strong>(target)  &#x21d2; Void </a>
     
 
     
@@ -150,7 +161,7 @@
       <div class="method_details first">
   <h3 class="signature first" id="===-instance_method">
   
-    #<strong>===</strong>(other)  &#x21d2; <tt>Void</tt> 
+    #<strong>===</strong>(target)  &#x21d2; <tt>Void</tt> 
   
 
   
@@ -159,6 +170,14 @@
 </h3><div class="docstring">
   <div class="discussion">
     
+  <div class="note notetag">
+    <strong>Note:</strong>
+    <div class='inline'>
+<p>This change is required for the Keyboard class to function properly.</p>
+</div>
+  </div>
+
+
 <p>Numerics will check for instances of themselves when compared to an Array. Otherwise, this method behaves normally.</p>
 
 
@@ -170,7 +189,7 @@
   
     <li>
       
-        <span class='name'>other</span>
+        <span class='name'>target</span>
       
       
         <span class='type'>(<tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt>)</span>
@@ -201,22 +220,22 @@
       <pre class="lines">
 
 
-25
-26
-27
-28
-29
-30
-31
-32</pre>
+9
+10
+11
+12
+13
+14
+15
+16</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'tomes/alterations/threequel.rb', line 25</span>
+      <pre class="code"><span class="info file"># File 'tomes/alterations/numeric_alt.rb', line 9</span>
 
-<span class='kw'>def</span> <span class='op'>===</span><span class='lparen'>(</span><span class='id identifier rubyid_other'>other</span><span class='rparen'>)</span>
-  <span class='kw'>case</span> <span class='id identifier rubyid_other'>other</span>
+<span class='kw'>def</span> <span class='op'>===</span><span class='lparen'>(</span><span class='id identifier rubyid_target'>target</span><span class='rparen'>)</span>
+  <span class='kw'>case</span> <span class='id identifier rubyid_target'>target</span>
   <span class='kw'>when</span> <span class='op'>::</span><span class='const'>Array</span>
-    <span class='id identifier rubyid_other'>other</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span> <span class='kw'>self</span>
+    <span class='id identifier rubyid_target'>target</span><span class='period'>.</span><span class='id identifier rubyid_include?'>include?</span> <span class='kw'>self</span>
   <span class='kw'>else</span>
     <span class='kw'>super</span>
   <span class='kw'>end</span>
@@ -231,7 +250,7 @@
 </div>
 
       <div id="footer">
-  Generated on Thu Apr 11 22:27:54 2024 by
+  Generated on Mon May 13 17:23:41 2024 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.36 (ruby-3.3.0).
 </div>

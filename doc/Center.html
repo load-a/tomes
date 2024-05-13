@@ -88,7 +88,18 @@
   
 </div>
 
+<h2>Overview</h2><div class="docstring">
+  <div class="discussion">
+    
+<p>A module with methods that calculate various center points on a rectangle.</p>
 
+
+  </div>
+</div>
+<div class="tags">
+  
+
+</div>
 
 
 
@@ -102,30 +113,6 @@
     </h2>
 
     <ul class="summary">
-      
-        <li class="public ">
-  <span class="summary_signature">
-    
-      <a href="#center_point-instance_method" title="#center_point (instance method)">#<strong>center_point</strong>  &#x21d2; Object </a>
-    
-
-    
-      (also: #center)
-    
-  </span>
-  
-  
-  
-  
-  
-  
-  
-
-  
-    <span class="summary_desc"><div class='inline'></div></span>
-  
-</li>
-
       
         <li class="public ">
   <span class="summary_signature">
@@ -146,7 +133,35 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>The horizontal center coordinate.</p>
+</div></span>
+  
+</li>
+
+      
+        <li class="public ">
+  <span class="summary_signature">
+    
+      <a href="#true_center-instance_method" title="#true_center (instance method)">#<strong>true_center</strong>  &#x21d2; Array&lt;Integer, Integer&gt; </a>
+    
+
+    
+      (also: #center, #center_point)
+    
+  </span>
+  
+  
+  
+  
+  
+  
+  
+
+  
+    <span class="summary_desc"><div class='inline'>
+<p>Calculates the vertical and horizontal center and returns that point as an array.</p>
+</div></span>
   
 </li>
 
@@ -170,7 +185,9 @@
   
 
   
-    <span class="summary_desc"><div class='inline'></div></span>
+    <span class="summary_desc"><div class='inline'>
+<p>The vertical center coordinate.</p>
+</div></span>
   
 </li>
 
@@ -185,41 +202,7 @@
 
     
       <div class="method_details first">
-  <h3 class="signature first" id="center_point-instance_method">
-  
-    #<strong>center_point</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt> 
-  
-
-  
-    <span class="aliases">Also known as:
-    <span class="names"><span id='center-instance_method'>center</span></span>
-    </span>
-  
-
-  
-</h3><table class="source_code">
-  <tr>
-    <td>
-      <pre class="lines">
-
-
-5
-6
-7</pre>
-    </td>
-    <td>
-      <pre class="code"><span class="info file"># File 'tomes/spells/geometry/center.rb', line 5</span>
-
-<span class='kw'>def</span> <span class='id identifier rubyid_center_point'>center_point</span>
-	<span class='lbracket'>[</span><span class='id identifier rubyid_horizontal_center'>horizontal_center</span><span class='comma'>,</span> <span class='id identifier rubyid_vertical_center'>vertical_center</span><span class='rbracket'>]</span>
-<span class='kw'>end</span></pre>
-    </td>
-  </tr>
-</table>
-</div>
-    
-      <div class="method_details ">
-  <h3 class="signature " id="horizontal_center-instance_method">
+  <h3 class="signature first" id="horizontal_center-instance_method">
   
     #<strong>horizontal_center</strong>  &#x21d2; <tt><span class='object_link'><a href="Object.html" title="Object (class)">Object</a></span></tt> 
   
@@ -231,7 +214,94 @@
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The horizontal center coordinate.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        
+        <div class='inline'>
+<p>Integer</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
+  <tr>
+    <td>
+      <pre class="lines">
+
+
+18
+19
+20</pre>
+    </td>
+    <td>
+      <pre class="code"><span class="info file"># File 'tomes/spells/geometry/center.rb', line 18</span>
+
+<span class='kw'>def</span> <span class='id identifier rubyid_horizontal_center'>horizontal_center</span>
+  <span class='id identifier rubyid_x'>x</span> <span class='op'>+</span> <span class='lparen'>(</span><span class='id identifier rubyid_width'>width</span> <span class='op'>/</span> <span class='int'>2</span><span class='rparen'>)</span>
+<span class='kw'>end</span></pre>
+    </td>
+  </tr>
+</table>
+</div>
+    
+      <div class="method_details ">
+  <h3 class="signature " id="true_center-instance_method">
+  
+    #<strong>true_center</strong>  &#x21d2; <tt>Array&lt;Integer, Integer&gt;</tt> 
+  
+
+  
+    <span class="aliases">Also known as:
+    <span class="names"><span id='center-instance_method'>center</span>, <span id='center_point-instance_method'>center_point</span></span>
+    </span>
+  
+
+  
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>Calculates the vertical and horizontal center and returns that point as an array.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'>(<tt>Array&lt;Integer, Integer&gt;</tt>)</span>
+      
+      
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
@@ -244,8 +314,8 @@
     <td>
       <pre class="code"><span class="info file"># File 'tomes/spells/geometry/center.rb', line 10</span>
 
-<span class='kw'>def</span> <span class='id identifier rubyid_horizontal_center'>horizontal_center</span>
-	<span class='id identifier rubyid_x'>x</span> <span class='op'>+</span> <span class='id identifier rubyid_width'>width</span><span class='op'>/</span><span class='int'>2</span>
+<span class='kw'>def</span> <span class='id identifier rubyid_true_center'>true_center</span>
+  <span class='lbracket'>[</span><span class='id identifier rubyid_horizontal_center'>horizontal_center</span><span class='comma'>,</span> <span class='id identifier rubyid_vertical_center'>vertical_center</span><span class='rbracket'>]</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -265,21 +335,50 @@
   
 
   
-</h3><table class="source_code">
+</h3><div class="docstring">
+  <div class="discussion">
+    
+<p>The vertical center coordinate.</p>
+
+
+  </div>
+</div>
+<div class="tags">
+  
+<p class="tag_title">Returns:</p>
+<ul class="return">
+  
+    <li>
+      
+      
+        <span class='type'></span>
+      
+      
+      
+        
+        <div class='inline'>
+<p>Integer</p>
+</div>
+      
+    </li>
+  
+</ul>
+
+</div><table class="source_code">
   <tr>
     <td>
       <pre class="lines">
 
 
-15
-16
-17</pre>
+25
+26
+27</pre>
     </td>
     <td>
-      <pre class="code"><span class="info file"># File 'tomes/spells/geometry/center.rb', line 15</span>
+      <pre class="code"><span class="info file"># File 'tomes/spells/geometry/center.rb', line 25</span>
 
 <span class='kw'>def</span> <span class='id identifier rubyid_vertical_center'>vertical_center</span>
-	<span class='id identifier rubyid_y'>y</span> <span class='op'>+</span> <span class='id identifier rubyid_height'>height</span><span class='op'>/</span><span class='int'>2</span>
+  <span class='id identifier rubyid_y'>y</span> <span class='op'>+</span> <span class='lparen'>(</span><span class='id identifier rubyid_height'>height</span> <span class='op'>/</span> <span class='int'>2</span><span class='rparen'>)</span>
 <span class='kw'>end</span></pre>
     </td>
   </tr>
@@ -291,7 +390,7 @@
 </div>
 
       <div id="footer">
-  Generated on Thu Apr 11 22:27:54 2024 by
+  Generated on Mon May 13 17:23:40 2024 by
   <a href="https://yardoc.org" title="Yay! A Ruby Documentation Tool" target="_parent">yard</a>
   0.9.36 (ruby-3.3.0).
 </div>
